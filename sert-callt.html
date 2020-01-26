@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sert-callt</title>
+    <link href="static/css/index.css" rel="stylesheet">
+    <link rel="icon" href="static/favicon.ico">
+  </head>
+  <body>
+    <!-- SVG-->
+    <div class="svg-container" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-vintage-logo" viewBox="0 0 84.1 115.5">
+          <style>
+            .st0 {
+              fill: #000
+            }
+          </style>
+          <path d="M21.7 0H0l5.1 19.8h21.5z" />
+          <path d="M63.2 0L33.7 115.5h21L84.1 0z" />
+        </symbol>
+      </svg>
+    </div>
+    <!-- picture element HTML5 shiv-->
+    <script>
+      document.createElement('picture');
+    </script>
+    <!-- Header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__top__logo" href="#"></a>
+          <form class="header__top__form" method="#" action="#">
+            <input class="header__top__form__input" type="text" required="required" />
+            <span class="bar"></span>
+          </form>
+          <div class="header__top__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__top__contacts">
+            <button class="header__top__contacts__button">Позвонить</button>
+            <div class="header__top__contacts__numbers">
+              <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+              <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <nav class="header__menu">
+            <ul>
+              <li>
+                <a class="header__menu__link has-active mobile-active">Продукты</a>
+                <nav class="sub__menu products">
+                  <div class="sub__menu__block full">
+                    <h5> Технологии</h5>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Платформа</div>
+                          <div class="sub__menu__block__subtitle">Все данные в одном интерфейсе</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/predict.svg" alt="" />
+                          <div class="sub__menu__block__title">Предикт</div>
+                          <div class="sub__menu__block__subtitle">Анализ качества звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/calltracking.svg" alt="" />
+                          <div class="sub__menu__block__title">Коллтрекинг</div>
+                          <div class="sub__menu__block__subtitle">Определение источника звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Антифрод</div>
+                          <div class="sub__menu__block__subtitle">Защита от накрутки звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/optimizer.svg" alt="" />
+                          <div class="sub__menu__block__title">Оптимизатор</div>
+                          <div class="sub__menu__block__subtitle">AI управление рекламой</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/callback.svg" alt="" />
+                          <div class="sub__menu__block__title">Обратный звонок</div>
+                          <div class="sub__menu__block__subtitle">Виджет звонка с сайта</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Применение</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Сквозная аналитика</a>
+                      </li>
+                      <li>
+                        <a href="#">Контекстная реклама</a>
+                      </li>
+                      <li>
+                        <a href="#">Контроль качества</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенерация</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Интеграции</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Системы аналитики</a>
+                      </li>
+                      <li>
+                        <a href="#">Рекламные площадки</a>
+                      </li>
+                      <li>
+                        <a href="#">CRM</a>
+                      </li>
+                      <li>
+                        <a href="#">Оптимизаторы конекста</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенераторы</a>
+                      </li>
+                      <li>
+                        <a href="#">+50 интеграций Albato</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#">Цены</a>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Партнерам</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul class="mblock">
+                      <li>
+                        <a href="#">Партнерская программа</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификацированные агенства</a>
+                      </li>
+                    </ul>
+                    <ul class="mblock">
+                      <li>
+                        <div class="txt">Сертификация</div>
+                        <a href="#">Личный сертификат</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификат компании</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификат по Оптимизатору</a>
+                      </li>
+                    </ul>
+                    <ul class="mblock">
+                      <li>
+                        <div class="mblock__img">
+                          <img src="./static/img/sert-callt-img1.svg" />
+                        </div>
+                        <a href="#">Премия Calltouch Performance Awards 2019</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Академия</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Кейсы и статьи</a>
+                      </li>
+                      <li>
+                        <a href="#">Мероприятия</a>
+                      </li>
+                      <li>
+                        <a href="#">Видеоуроки</a>
+                      </li>
+                      <li>
+                        <a href="#">Вебинары</a>
+                      </li>
+                      <li>
+                        <a href="#">Справочный центр </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active"> О компании</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Пресса о нас</a>
+                      </li>
+                      <li>
+                        <a href="#">Вакансии</a>
+                      </li>
+                      <li>
+                        <a href="#">Контакты </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#"> Блог</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__bottom__auth">
+            <a href="#">Войти</a>
+            <a href="#">Подключиться</a>
+          </div>
+          <div class="header__top__contacts__numbers">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main content-->
+    <section class="present">
+      <div class="container">
+        <h2 class="present__title">Личный сертификат Calltouch</h2>
+        <div class="present__info">
+          <div class="present__imgcontainer">
+            <img src="./static/img/sert-icons/sert-award.svg">
+          </div>
+          <div class="present__subts">
+            <div class="subtitle">Сертификат Calltouch — это профессиональная аккредитация сотрудника.</div>
+            <div class="subtitle2">Он выдается специалистам, продемонстрировавшим базовые и глубокие навыки работы с сервисом. Сертификат свидетельствует о том, что вы – профессионал в области сквозной аналитики и коллтрекинга.</div>
+          </div>
+        </div>
+        <div class="present__line">
+          <div class="ltext">Следующая сертификация специалистов по сервису Calltouch</div>
+          <div class="ctext">25 июня 2019 г.</div>
+          <a class="rtext anchor" href="#sert-form">Получить сертификат</a>
+        </div>
+      </div>
+    </section>
+    <section class="sertlist2">
+      <div class="container">
+        <h3 class="sertlist2__title">Если у вашей организации еще нет сертификата</h3>
+        <div class="sertlist2__subtitle">Сертификат для организации выдается компании-партнеру, если выполнены обязательные условия:</div>
+        <div class="sertlist2__pseudolist">
+          <div class="sertlist2__item">
+            <div class="sertlist2__item__numberblock">1</div>
+            <div class="sertlist2__pseudolist__item"> Сумма активных проектов,
+              <br>подключенных к сервису
+              <br>Calltouch, превышает
+              <br>100 000 руб/мес.</div>
+          </div>
+          <div class="sertlist2__item">
+            <div class="sertlist2__item__numberblock">2</div>
+            <div class="sertlist2__pseudolist__item"> Наличие минимум
+              <br>одного кейса с
+              <br>использованием
+              <br>сервиса Calltouch</div>
+          </div>
+          <div class="sertlist2__item">
+            <div class="sertlist2__item__numberblock">3</div>
+            <div class="sertlist2__pseudolist__item"> Наличие минимум одного
+              <br>сертифицированного
+              <br>сотрудника с
+              <br>
+              <a href="/">Личным сертификатом </a>
+            </div>
+          </div>
+        </div>
+        <a class="infoitems__btn anchor" href="#sert-form">Получить сертификат </a>
+      </div>
+    </section>
+    <section class="receipt" id="sert-form">
+      <div class="container">
+        <h3 class="receipt__title">Личный сертификат</h3>
+        <div class="receipt__forms">
+          <div class="receipt__input">
+            <input type="text" required>
+            <label>Имя</label>
+          </div>
+          <div class="receipt__input">
+            <input type="text" required>
+            <label>Фамилия</label>
+          </div>
+          <div class="receipt__input">
+            <input type="text" required>
+            <label>Должность</label>
+          </div>
+          <div class="receipt__input">
+            <input type="text" required>
+            <label>Название компании</label>
+          </div>
+          <div class="receipt__input">
+            <input type="text" required>
+            <label>Сайт компании</label>
+          </div>
+          <div class="receipt__input">
+            <input type="email" required>
+            <label>Ваш e-mail</label>
+          </div>
+          <div class="receipt__input">
+            <input type="tel" required>
+            <label>Телефон</label>
+          </div>
+          <button class="receipt__btn">Получить сертификат</button>
+        </div>
+        <div class="receipt__text"> Нажимая на кнопку «Получить сертификат», вы даете свое согласие на
+          <a href="" target="_blank">обработку персональных данных </a>
+        </div>
+      </div>
+    </section>
+    <section class="sertinfo">
+      <div class="container">
+        <h4 class="sertinfo__title">Как проходит сертификация</h4>
+        <div class="sertinfo__rtitle">
+          <div class="sertinfo__imgcontainer">
+            <img src="./static/img/sert-icons/sert-award.svg">
+          </div>
+          <div class="rtext">Результат будет засчитан при 54 верных ответах</div>
+        </div>
+        <div class="sertinfo__maininfo">
+          <div class="sertinfo__item">
+            <div class="sertinfo__item__imgcontainer">
+              <img src="./static/img/callback-recording.svg">
+            </div>
+            <div class="sertinfo__itemtxt">Онлайн тест</div>
+          </div>
+          <div class="sertinfo__item">
+            <div class="sertinfo__item__imgcontainer">
+              <img src="./static/img/callback-ringgroups.svg">
+            </div>
+            <div class="sertinfo__itemtxt">1 правильный ответ в вопросе</div>
+          </div>
+          <div class="sertinfo__item">
+            <div class="sertinfo__item__imgcontainer">
+              <img src="./static/img/callback-operators.svg">
+            </div>
+            <div class="sertinfo__itemtxt">2 попытки в течении дня </div>
+          </div>
+          <div class="sertinfo__item">
+            <div class="sertinfo__item__imgcontainer">
+              <img src="./static/img/callback-recording.svg">
+            </div>
+            <div class="sertinfo__itemtxt">63 вопроса</div>
+          </div>
+          <div class="sertinfo__item">
+            <div class="sertinfo__item__imgcontainer">
+              <img src="./static/img/callback-recording.svg">
+            </div>
+            <div class="sertinfo__itemtxt">Тест доступен с 10:00 до 00:00 в день сертификации </div>
+          </div>
+          <div class="sertinfo__item">
+            <div class="sertinfo__item__imgcontainer">
+              <img src="./static/img/callback-recording.svg">
+            </div>
+            <div class="sertinfo__itemtxt">Время на попытку не ограничено</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="sertsubinfo">
+      <div class="container">
+        <h5 class="sertsubinfo__title">Еще немного полезной информации</h5>
+        <ul class="sertsubinfo__list">
+          <li class="sertsubinfo__list__item"> В течение нескольких дней мы пришлем на почту, указанную
+            <br>при регистрации, электронную версию сертификата. </li>
+          <li class="sertsubinfo__list__item">На последней странице теста вы увидите результат; </li>
+          <li class="sertsubinfo__list__item"> Бумажную версию мы отправим на адрес рекламного
+            <br>агентства, сотрудником которого является сдающий,
+            <br>
+            <b>в течение 2 недель.</b>
+          </li>
+          <li class="sertsubinfo__list__item"> Если обе попытки оказались неудачными, вы можете
+            <br>пересдать сертификацию в следующем месяце – дату вы
+            <br>увидите в верхней части страницы.</li>
+        </ul>
+      </div>
+    </section>
+    <section class="infoitems">
+      <div class="container">
+        <h6 class="infoitems__title">Как подготовиться к сертификации:</h6>
+        <div class="infoitems__blocks">
+          <div class="infoitems__item">
+            <div class="infoitems__img">
+              <img src="./static/img/sert-icons/prepare_1.svg">
+            </div>
+            <div class="infoitems__txt">Изучите раздел по новому личному кабинету в нашем справочном центр</div>
+          </div>
+          <div class="infoitems__item">
+            <div class="infoitems__img">
+              <img src="./static/img/sert-icons/prepare_2.svg">
+            </div>
+            <div class="infoitems__txt">Изучите раздел «Технологии» в блоге Calltouch </div>
+          </div>
+          <div class="infoitems__item">
+            <div class="infoitems__img">
+              <img src="./static/img/sert-icons/prepare_3.svg">
+            </div>
+            <div class="infoitems__txt">Посмотрите обучающие видео: как работать с личным кабинетом</div>
+          </div>
+          <div class="infoitems__item">
+            <div class="infoitems__img">
+              <img src="./static/img/sert-icons/prepare_4.svg">
+            </div>
+            <div class="infoitems__txt">Последние разработки на нашем youtube-канале</div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="but">
+      <div class="container">
+        <a class="anchor infoitems__btn" href="#sert-form">Получить сертификат </a>
+      </div>
+    </section>
+    <section class="contact">
+      <div class="container">
+        <h3 class="contact__title">Если у вас остались вопросы, звоните или пишите.</h3>
+        <div class="contact__info">
+          <div class="contact__imgcontainer">
+            <img src="./static/img/ava-karpova.png">
+          </div>
+          <div class="contact__rtext">
+            <div class="contact__toptxt">Юлия Карпова</div>
+            <div class="contact__centertxt">Руководитель агентского направления</div>
+            <div class="contact__bottomtxt">
+              <a href="/">+7 (495) 127 40 84 </a>
+              <a href="/">karpova@calltouch.net</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__top__logo" href="/"></a>
+          <div class="footer__top__contacts">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81</a>
+            <p>Россия, 123557, г.Москва, Пресненский вал 27с9</p>
+          </div>
+          <div class="footer__top__social">
+            <p>Присоединяйтесь к нам в социальных сетях</p>
+            <ul class="footer__top__social__icons">
+              <li>
+                <a class="footer__top__social__icons__fb" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__vk" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__ok" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__youtube" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="fotter__bottom">
+          <div class="footer__bottom__menu">
+            <div class="footer__bottom__menu__item">
+              <h3>О сервисе</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Возможности</a>
+                </li>
+                <li>
+                  <a href="#">Применение</a>
+                </li>
+                <li>
+                  <a href="#">Цены</a>
+                </li>
+                <li>
+                  <a href="#">Партнерам</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>Мероприятия</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Вебинары</a>
+                </li>
+                <li>
+                  <a href="#">Конференции</a>
+                </li>
+                <li>
+                  <a href="#">События</a>
+                </li>
+                <li>
+                  <a class="active" href="#">Callday</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>База знаний</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Интеграции</a>
+                </li>
+                <li>
+                  <a href="#">Настройка системы</a>
+                </li>
+                <li>
+                  <a href="#">Отчеты</a>
+                </li>
+                <li>
+                  <a href="#">Справочный центр</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>О компании</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Пресса о нас</a>
+                </li>
+                <li>
+                  <a href="#">Вакансии</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__cabinet">
+              <p>Попробуйте собственными руками</p>
+              <a href="#">Демо-кабинет</a>
+            </div>
+          </div>
+          <div class="footer__bottom__terms">
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Лицензионный договор</a>
+              </li>
+              <li>
+                <a href="#">Договор связи</a>
+              </li>
+            </ul>
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Политика в отношении обработки персональных данных</a>
+              </li>
+              <li>
+                <a href="#">Согласие на обработку персональных данных</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts-->
+    <script src="static/js/moment.js"></script>
+    <script src="static/js/popover.min.js"></script>
+    <script src="static/js/tooltip.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="static/js/index.js"></script>
+  </body>
+</html>

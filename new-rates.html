@@ -1,0 +1,824 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calltouch new-rates page</title>
+    <link href="static/css/index.css" rel="stylesheet">
+    <link rel="icon" href="static/favicon.ico">
+  </head>
+  <body>
+    <!-- SVG-->
+    <div class="svg-container" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-vintage-logo" viewBox="0 0 84.1 115.5">
+          <style>
+            .st0 {
+              fill: #000
+            }
+          </style>
+          <path d="M21.7 0H0l5.1 19.8h21.5z" />
+          <path d="M63.2 0L33.7 115.5h21L84.1 0z" />
+        </symbol>
+      </svg>
+    </div>
+    <!-- picture element HTML5 shiv-->
+    <script>
+      document.createElement('picture');
+    </script>
+    <!-- Header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__top__logo" href="#"></a>
+          <form class="header__top__form" method="#" action="#">
+            <input class="header__top__form__input" type="text" required="required" />
+            <span class="bar"></span>
+          </form>
+          <div class="header__top__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__top__contacts">
+            <button class="header__top__contacts__button">Позвонить</button>
+            <div class="header__top__contacts__numbers">
+              <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+              <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <nav class="header__menu">
+            <ul>
+              <li>
+                <a class="header__menu__link has-active mobile-active">Продукты</a>
+                <nav class="sub__menu products">
+                  <div class="sub__menu__block full">
+                    <h5> Технологии</h5>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Платформа</div>
+                          <div class="sub__menu__block__subtitle">Все данные в одном интерфейсе</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/predict.svg" alt="" />
+                          <div class="sub__menu__block__title">Предикт</div>
+                          <div class="sub__menu__block__subtitle">Анализ качества звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/calltracking.svg" alt="" />
+                          <div class="sub__menu__block__title">Коллтрекинг</div>
+                          <div class="sub__menu__block__subtitle">Определение источника звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Антифрод</div>
+                          <div class="sub__menu__block__subtitle">Защита от накрутки звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/optimizer.svg" alt="" />
+                          <div class="sub__menu__block__title">Оптимизатор</div>
+                          <div class="sub__menu__block__subtitle">AI управление рекламой</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/callback.svg" alt="" />
+                          <div class="sub__menu__block__title">Обратный звонок</div>
+                          <div class="sub__menu__block__subtitle">Виджет звонка с сайта</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Применение</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Сквозная аналитика</a>
+                      </li>
+                      <li>
+                        <a href="#">Контекстная реклама</a>
+                      </li>
+                      <li>
+                        <a href="#">Контроль качества</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенерация</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Интеграции</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Системы аналитики</a>
+                      </li>
+                      <li>
+                        <a href="#">Рекламные площадки</a>
+                      </li>
+                      <li>
+                        <a href="#">CRM</a>
+                      </li>
+                      <li>
+                        <a href="#">Оптимизаторы конекста</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенераторы</a>
+                      </li>
+                      <li>
+                        <a href="#">+50 интеграций Albato</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#">Цены</a>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Партнерам</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul class="mblock">
+                      <li>
+                        <a href="#">Партнерская программа</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификацированные агенства</a>
+                      </li>
+                    </ul>
+                    <ul class="mblock">
+                      <li>
+                        <div class="txt">Сертификация</div>
+                        <a href="#">Личный сертификат</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификат компании</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификат по Оптимизатору</a>
+                      </li>
+                    </ul>
+                    <ul class="mblock">
+                      <li>
+                        <div class="mblock__img">
+                          <img src="./static/img/sert-callt-img1.svg" />
+                        </div>
+                        <a href="#">Премия Calltouch Performance Awards 2019</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Академия</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Кейсы и статьи</a>
+                      </li>
+                      <li>
+                        <a href="#">Мероприятия</a>
+                      </li>
+                      <li>
+                        <a href="#">Видеоуроки</a>
+                      </li>
+                      <li>
+                        <a href="#">Вебинары</a>
+                      </li>
+                      <li>
+                        <a href="#">Справочный центр </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active"> О компании</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Пресса о нас</a>
+                      </li>
+                      <li>
+                        <a href="#">Вакансии</a>
+                      </li>
+                      <li>
+                        <a href="#">Контакты </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#"> Блог</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__bottom__auth">
+            <a href="#">Войти</a>
+            <a href="#">Подключиться</a>
+          </div>
+          <div class="header__top__contacts__numbers">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main content-->
+    <main class="content" data-page="new-rates">
+      <section class="new-rates">
+        <div class="container">
+          <h1 class="new-rates__title">Цены</h1>
+          <h3 class="new-rates__subtitle">Выберите подходящий тариф для вашего бизнеса</h3>
+          <div class="new-rates__items">
+            <div class="new-rates__tabs">
+              <div class="new-rates__tab active" data-tab-id="rate-tab1">«Стандарт»
+                <span>от 5 400 руб/мес</span>
+              </div>
+              <div class="new-rates__tab" data-tab-id="rate-tab2">«Старт +»
+                <span>от 990 руб/мес</span>
+              </div>
+            </div>
+            <div class="new-rates__item active" data-tab-content="rate-tab1">
+              <div class="new-rates__item--left">
+                <div class="new-rates__item__counters">
+                  <div class="new-rates__item__counters__item">
+                    <div class="new-rates__item__counters__wrapper">
+                      <div class="new-rates__item__counters__title">Сессии</div>
+                      <div class="tooltip-block">
+                        <div class="tooltip-block__quest-mark"></div>
+                        <div class="tooltip-block__info">Суточное количество посещений сайта с отслеживаемых динамическим коллтрекингом каналов. В рамках этой посещаемости Calltouch гарантирует минимальную погрешность. Данный показатель в Google Analytics называется "Сеансы" в отчете
+                          "Источники трафика" . В Яндекс.Метрике - "Визиты", в отчете "Источники, сводка</div>
+                      </div>
+                    </div>
+                    <div class="counter">
+                      <span class="counter__minus"></span>
+                      <input class="counter__field" type="number" placeholder="400" data-count="100" data-min="400" data-max="15000">
+                      <span class="counter__plus"></span>
+                    </div>
+                  </div>
+                  <div class="new-rates__item__counters__item">
+                    <div class="new-rates__item__counters__wrapper">
+                      <div class="new-rates__item__counters__title">Статические номера</div>
+                      <div class="tooltip-block">
+                        <div class="tooltip-block__quest-mark"></div>
+                        <div class="tooltip-block__info">Количество номеров, которые будут использоваться для отслеживания оффлайн-источников (буклеты, радио, ТВ и пр.), а также количество онлайн-источников, по которым Вам не важно отслеживание до пользовательского сеанса, достаточно
+                          понимания общего количества звонков по каналу, например, органический поиск Google и т.п.</div>
+                      </div>
+                    </div>
+                    <div class="counter">
+                      <span class="counter__minus"></span>
+                      <input class="counter__field" type="number" placeholder="0" data-min="0" data-count="1" data-max="100">
+                      <span class="counter__plus"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="new-rates__item__region">
+                  <div class="new-rates__item__region__title">Регион</div>
+                  <div class="radio">
+                    <input id="radio-1" name="radio" type="radio" checked="">
+                    <label class="radio-label" for="radio-1">Москва (499)</label>
+                  </div>
+                  <div class="radio">
+                    <input id="radio-2" name="radio" type="radio">
+                    <label class="radio-label" for="radio-2">Москва (495), Санкт-Петербург (812) и регионы</label>
+                    <span class="radio-content">Наличие региональных номеров необходимо уточнить у менеджера.</span>
+                  </div>
+                  <div class="radio">
+                    <input id="radio-3" name="radio" type="radio">
+                    <label class="radio-label" for="radio-3">Номера в коде (800)</label>
+                  </div>
+                </div>
+              </div>
+              <div class="new-rates__item--right">
+                <div class="new-rates__item__list-wrapper">
+                  <div class="new-rates__item__list-title rt-standart">Для среднего бизнеса</div>
+                  <ul class="new-rates__item__list">
+                    <li>Динамический и статический коллтрекинг</li>
+                    <li>Детализация до канала трафика</li>
+                    <li>Отслеживание заявок и целей на сайте</li>
+                    <li>Подробные отчеты, воронка продаж и ROI</li>
+                    <li>Интеграция с рекламными площадками и CRM</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="new-rates__item__price">
+                <div class="new-rates__item__price__count">5 400
+                  <span>рублей в месяц</span>
+                </div>
+                <a class="new-rates__item__price__connect" href="https://lkbeta.calltouch.ru/user/registration" target="_blank">Подключиться</a>
+              </div>
+              <div class="new-rates__item__footer">
+                <div class="new-rates__item__footer__title">Стоимость состоит из:</div>
+                <div class="new-rates__item__footer__consist">Программное обеспечение — 4 900 рублей, НДС не облагается</div>
+                <div class="new-rates__item__footer__consist">500 рублей, включая НДС</div>
+              </div>
+            </div>
+            <div class="new-rates__item" data-tab-content="rate-tab2">
+              <div class="new-rates__item--left">
+                <div class="new-rates__item__counters">
+                  <div class="new-rates__item__counters__item">
+                    <div class="new-rates__item__counters__wrapper">
+                      <div class="new-rates__item__counters__title">Сессии</div>
+                      <div class="tooltip-block">
+                        <div class="tooltip-block__quest-mark"></div>
+                        <div class="tooltip-block__info">Суточное количество посещений сайта с отслеживаемых динамическим коллтрекингом каналов. В рамках этой посещаемости Calltouch гарантирует минимальную погрешность. Данный показатель в Google Analytics называется "Сеансы" в отчете
+                          "Источники трафика" . В Яндекс.Метрике - "Визиты", в отчете "Источники, сводка</div>
+                      </div>
+                    </div>
+                    <div class="counter">
+                      <span class="counter__minus"></span>
+                      <input class="counter__field" type="number" placeholder="400" data-count="100" data-min="400" data-max="15000">
+                      <span class="counter__plus"></span>
+                    </div>
+                  </div>
+                  <div class="new-rates__item__counters__item">
+                    <div class="new-rates__item__counters__wrapper">
+                      <div class="new-rates__item__counters__title">Статические номера</div>
+                      <div class="tooltip-block">
+                        <div class="tooltip-block__quest-mark"></div>
+                        <div class="tooltip-block__info">Количество номеров, которые будут использоваться для отслеживания оффлайн-источников (буклеты, радио, ТВ и пр.), а также количество онлайн-источников, по которым Вам не важно отслеживание до пользовательского сеанса, достаточно
+                          понимания общего количества звонков по каналу, например, органический поиск Google и т.п.</div>
+                      </div>
+                    </div>
+                    <div class="counter">
+                      <span class="counter__minus"></span>
+                      <input class="counter__field" type="number" placeholder="0" data-min="0" data-count="1" data-max="100">
+                      <span class="counter__plus"></span>
+                    </div>
+                  </div>
+                </div>
+                <div class="new-rates__item__region">
+                  <div class="new-rates__item__region__title">Регион</div>
+                  <div class="radio">
+                    <input id="radio-tab1" name="radio" type="radio" checked="">
+                    <label class="radio-label" for="radio-tab1">Москва (499)</label>
+                  </div>
+                  <div class="radio">
+                    <input id="radio-tab2" name="radio" type="radio">
+                    <label class="radio-label" for="radio-tab2">Москва (495), Санкт-Петербург (812) и регионы</label>
+                    <span class="radio-content">Наличие региональных номеров необходимо уточнить у менеджера.</span>
+                  </div>
+                  <div class="radio">
+                    <input id="radio-tab3" name="radio" type="radio">
+                    <label class="radio-label" for="radio-tab3">Номера в коде (800)</label>
+                  </div>
+                </div>
+              </div>
+              <div class="new-rates__item--right">
+                <div class="new-rates__item__list-wrapper">
+                  <div class="new-rates__item__list-title rt-startplus">Для малого бизнеса</div>
+                  <ul class="new-rates__item__list">
+                    <li>Отслеживание заявок и целей на сайте</li>
+                    <li>Автоматический импорт расходов с рекламных площадок</li>
+                    <li>Интеграции с CRM</li>
+                    <li>Подробные отчеты, воронка продаж и ROI</li>
+                    <li>Умная заявка</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="new-rates__item__price">
+                <div class="new-rates__item__price__count">990
+                  <span>рублей в месяц</span>
+                </div>
+                <a class="new-rates__item__price__connect" href="https://lkbeta.calltouch.ru/user/registration#start" target="_blank">Подключиться</a>
+              </div>
+              <div class="new-rates__item__footer">
+                <div class="new-rates__item__footer__title">Стоимость состоит из:</div>
+                <div class="new-rates__item__footer__consist">Программное обеспечение — 990 рублей, НДС не облагается</div>
+                <div class="new-rates__item__footer__consist">Услуги связи — 0 рублей, включая НДС</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="new-rates-comparsion">
+        <div class="container">
+          <h3 class="new-rates-comparsion__title">Сравнение тарифов</h3>
+          <div class="new-rates-comparsion__wrapper">
+            <div class="new-rates-comparsion__items new-rates-comparsion__heading">
+              <div class="new-rates-comparsion__item new-rates-comparsion__item-blue">Функционал</div>
+              <div class="new-rates-comparsion__titles">
+                <div class="new-rates-comparsion__titles__item">Старт+</div>
+                <div class="new-rates-comparsion__titles__item">Стандарт</div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Отслеживание сессий</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Отслеживание событий: цели, отказы, страницы</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Отслеживание заявок с форм на сайте</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Умная заявка</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Статический коллтрекинг для оффлайн источников</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Статическая подмена номеров на сайте</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Динамический коллтрекинг</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-cross-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Запись звонков и прослушивание</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="new-rates-comparsion__wrapper">
+            <div class="new-rates-comparsion__items new-rates-comparsion__heading rc-without-titles">
+              <div class="new-rates-comparsion__item new-rates-comparsion__item-blue">Отчеты</div>
+              <div class="new-rates-comparsion__titles">
+                <div class="new-rates-comparsion__titles__item">Старт+</div>
+                <div class="new-rates-comparsion__titles__item">Стандарт</div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Дашборды с виджетами</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Отчет по всем источникам</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Отчет: данные рекламных площадок</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Сравнение периодов</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Сравнение сегментов</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-cross-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Отчет Яндекс.Директ</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-cross-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Отчет Google Adwords</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-cross-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Отчеты по сайтам донорам</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-cross-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Отчет по времени и дням недели</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Отчет по технологиям и устройствам</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Журнал звонков, заявок, лидов</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Определение пола у лидов</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-cross-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Экспорт отчетов в CSV, Excel</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Архив заказанных отчетов</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+          </div>
+          <div class="new-rates-comparsion__wrapper">
+            <div class="new-rates-comparsion__items new-rates-comparsion__heading rc-without-titles">
+              <div class="new-rates-comparsion__item new-rates-comparsion__item-blue">Настройки и интеграции</div>
+              <div class="new-rates-comparsion__titles">
+                <div class="new-rates-comparsion__titles__item">Старт+</div>
+                <div class="new-rates-comparsion__titles__item">Стандарт</div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Пользовательские столбцы</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Ручной ввод данных</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Тегирование звонков и заявок</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Сегменты</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-cross-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">API, Webhooks</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Блокировка по номеру</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Блокировка по IP</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Кросс-проектная аналитика</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-cross-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Интеграция с Google Analytics и Яндекс.Метрика</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-cross-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Интеграция с рекламными площадками</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Интеграция с CRM</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+            <div class="new-rates-comparsion__items">
+              <div class="new-rates-comparsion__item">Хранение записей разговоров больше 1 месяца</div>
+              <div class="new-rates-comparsion__check">
+                <div class="new-rates-comparsion__check-item new-rates-cross-icon"></div>
+                <div class="new-rates-comparsion__check-item new-rates-check-icon"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="new-rates-banner">
+        <div class="container">
+          <img class="new-rates-banner__img" src="./static/img/opt-capa-analytic.svg" alt="new-rates-banner-img">
+          <div class="new-rates-banner__items">
+            <div class="new-rates-banner__text">Готовы применить систему
+              <span>Calltouch</span>
+              <br>для роста эффективности вашего бизнеса?</div>
+            <a class="new-rates-banner__link" href="https://lk.calltouch.ru/registration" target="_blank">Попробовать</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__top__logo" href="/"></a>
+          <div class="footer__top__contacts">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81</a>
+            <p>Россия, 123557, г.Москва, Пресненский вал 27с9</p>
+          </div>
+          <div class="footer__top__social">
+            <p>Присоединяйтесь к нам в социальных сетях</p>
+            <ul class="footer__top__social__icons">
+              <li>
+                <a class="footer__top__social__icons__fb" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__vk" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__ok" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__youtube" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="fotter__bottom">
+          <div class="footer__bottom__menu">
+            <div class="footer__bottom__menu__item">
+              <h3>О сервисе</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Возможности</a>
+                </li>
+                <li>
+                  <a href="#">Применение</a>
+                </li>
+                <li>
+                  <a href="#">Цены</a>
+                </li>
+                <li>
+                  <a href="#">Партнерам</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>Мероприятия</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Вебинары</a>
+                </li>
+                <li>
+                  <a href="#">Конференции</a>
+                </li>
+                <li>
+                  <a href="#">События</a>
+                </li>
+                <li>
+                  <a class="active" href="#">Callday</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>База знаний</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Интеграции</a>
+                </li>
+                <li>
+                  <a href="#">Настройка системы</a>
+                </li>
+                <li>
+                  <a href="#">Отчеты</a>
+                </li>
+                <li>
+                  <a href="#">Справочный центр</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>О компании</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Пресса о нас</a>
+                </li>
+                <li>
+                  <a href="#">Вакансии</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__cabinet">
+              <p>Попробуйте собственными руками</p>
+              <a href="#">Демо-кабинет</a>
+            </div>
+          </div>
+          <div class="footer__bottom__terms">
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Лицензионный договор</a>
+              </li>
+              <li>
+                <a href="#">Договор связи</a>
+              </li>
+            </ul>
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Политика в отношении обработки персональных данных</a>
+              </li>
+              <li>
+                <a href="#">Согласие на обработку персональных данных</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts-->
+    <script src="static/js/moment.js"></script>
+    <script src="static/js/popover.min.js"></script>
+    <script src="static/js/tooltip.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="static/js/index.js"></script>
+  </body>
+</html>

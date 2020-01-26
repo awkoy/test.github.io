@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New predict page</title>
+    <link href="static/css/index.css" rel="stylesheet">
+    <link rel="icon" href="static/favicon.ico">
+  </head>
+  <body>
+    <!-- SVG-->
+    <div class="svg-container" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-vintage-logo" viewBox="0 0 84.1 115.5">
+          <style>
+            .st0 {
+              fill: #000
+            }
+          </style>
+          <path d="M21.7 0H0l5.1 19.8h21.5z" />
+          <path d="M63.2 0L33.7 115.5h21L84.1 0z" />
+        </symbol>
+      </svg>
+    </div>
+    <!-- picture element HTML5 shiv-->
+    <script>
+      document.createElement('picture');
+    </script>
+    <!-- Header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__top__logo" href="#"></a>
+          <form class="header__top__form" method="#" action="#">
+            <input class="header__top__form__input" type="text" required="required" />
+            <span class="bar"></span>
+          </form>
+          <div class="header__top__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__top__contacts">
+            <button class="header__top__contacts__button">Позвонить</button>
+            <div class="header__top__contacts__numbers">
+              <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+              <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <nav class="header__menu">
+            <ul>
+              <li>
+                <a class="header__menu__link has-active mobile-active">Продукты</a>
+                <nav class="sub__menu products">
+                  <div class="sub__menu__block full">
+                    <h5> Технологии</h5>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Платформа</div>
+                          <div class="sub__menu__block__subtitle">Все данные в одном интерфейсе</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/predict.svg" alt="" />
+                          <div class="sub__menu__block__title">Предикт</div>
+                          <div class="sub__menu__block__subtitle">Анализ качества звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/calltracking.svg" alt="" />
+                          <div class="sub__menu__block__title">Коллтрекинг</div>
+                          <div class="sub__menu__block__subtitle">Определение источника звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Антифрод</div>
+                          <div class="sub__menu__block__subtitle">Защита от накрутки звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/optimizer.svg" alt="" />
+                          <div class="sub__menu__block__title">Оптимизатор</div>
+                          <div class="sub__menu__block__subtitle">AI управление рекламой</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/callback.svg" alt="" />
+                          <div class="sub__menu__block__title">Обратный звонок</div>
+                          <div class="sub__menu__block__subtitle">Виджет звонка с сайта</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Применение</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Сквозная аналитика</a>
+                      </li>
+                      <li>
+                        <a href="#">Контекстная реклама</a>
+                      </li>
+                      <li>
+                        <a href="#">Контроль качества</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенерация</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Интеграции</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Системы аналитики</a>
+                      </li>
+                      <li>
+                        <a href="#">Рекламные площадки</a>
+                      </li>
+                      <li>
+                        <a href="#">CRM</a>
+                      </li>
+                      <li>
+                        <a href="#">Оптимизаторы конекста</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенераторы</a>
+                      </li>
+                      <li>
+                        <a href="#">+50 интеграций Albato</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#">Цены</a>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Партнерам</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul class="mblock">
+                      <li>
+                        <a href="#">Партнерская программа</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификацированные агенства</a>
+                      </li>
+                    </ul>
+                    <ul class="mblock">
+                      <li>
+                        <div class="txt">Сертификация</div>
+                        <a href="#">Личный сертификат</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификат компании</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификат по Оптимизатору</a>
+                      </li>
+                    </ul>
+                    <ul class="mblock">
+                      <li>
+                        <div class="mblock__img">
+                          <img src="./static/img/sert-callt-img1.svg" />
+                        </div>
+                        <a href="#">Премия Calltouch Performance Awards 2019</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Академия</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Кейсы и статьи</a>
+                      </li>
+                      <li>
+                        <a href="#">Мероприятия</a>
+                      </li>
+                      <li>
+                        <a href="#">Видеоуроки</a>
+                      </li>
+                      <li>
+                        <a href="#">Вебинары</a>
+                      </li>
+                      <li>
+                        <a href="#">Справочный центр </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active"> О компании</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Пресса о нас</a>
+                      </li>
+                      <li>
+                        <a href="#">Вакансии</a>
+                      </li>
+                      <li>
+                        <a href="#">Контакты </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#"> Блог</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__bottom__auth">
+            <a href="#">Войти</a>
+            <a href="#">Подключиться</a>
+          </div>
+          <div class="header__top__contacts__numbers">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main content-->
+    <main class="content" data-page="new-predict">
+      <section class="new-predict">
+        <div class="container">
+          <div class="new-predict__heading">
+            <img class="callback__heading__logo" src="./static/img/pp-logo.svg" alt="callback-logo">
+            <div class="new-predict__heading__text">
+              <h1 class="new-predict__heading__title">Предикт</h1>
+              <div class="new-predict__heading__message">Технология автоматического определения типа обращения</div>
+            </div>
+          </div>
+          <div class="new-predict__items">
+            <div class="new-predict__items__item">
+              <div class="new-predict__items__img-wrapper">
+                <img src="./static/img/np-analysis.svg">
+              </div>
+              <span>Точный анализ эффективности
+                <br> рекламных кампаний</span>
+            </div>
+            <div class="new-predict__items__item">
+              <div class="new-predict__items__img-wrapper">
+                <img src="./static/img/np-economy.svg">
+              </div>
+              <span>Экономия ресурсов колл-центра
+                <br> на разметку звонков</span>
+            </div>
+            <div class="new-predict__items__item">
+              <div class="new-predict__items__img-wrapper">
+                <img src="./static/img/np-clean.svg">
+              </div>
+              <span>Чистые и точные данные
+                <br> о количестве продаж</span>
+            </div>
+            <div class="new-predict__items__item">
+              <div class="new-predict__items__img-wrapper">
+                <img src="./static/img/np-control.svg">
+              </div>
+              <span>Контроль работы сотрудников
+                <br> отдела продаж и поддержки</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="new-predict__faq">
+        <div class="container">
+          <div class="new-predict__faq__wrapper">
+            <h2 class="new-predict__title np-white-title">Для чего Calltouch Predict?</h2>
+            <div class="new-predict__faq__text">Не все звонки являются целевым и приводят к продаже. Calltouch Predict анализирует разговор без участия человека, определяет тип и результат телефонного звонка, что позволяет анализировать эффективность рекламных каналов.</div>
+            <div class="np-faq__content-wrapper">
+              <div class="np-faq__wrapper">
+                <div class="np-faq__numbers">
+                  <div class="np-faq__numbers__item">
+                    <span>1</span>
+                  </div>
+                  <div class="np-faq__numbers__item">
+                    <span>2</span>
+                  </div>
+                  <div class="np-faq__numbers__item">
+                    <span>3</span>
+                  </div>
+                </div>
+                <div class="np-faq__items">
+                  <div class="np-faq__item">Автоматизируйте
+                    <br>процессы</div>
+                  <div class="np-faq__item">Экономьте время
+                    <br>на прослушивании
+                    <br> и анализе содержания
+                    <br> звонков</div>
+                  <div class="np-faq__item">Повышайте
+                    <br>продажи</div>
+                </div>
+              </div>
+              <div class="np-faq__message">Правильный подход к анализу эффективности рекламных каналов —
+                <span>ключ к повышению количества продаж.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="new-predict__definition">
+        <div class="container">
+          <h2 class="new-predict__title">Определение пола для звонков</h2>
+          <div class="new-predict__definition__message">Calltouch Предикт автоматически определяет, кто чаще звонит в конкретную компанию – женщины или мужчины. Точность определения составляет более 90%.</div>
+          <div class="new-predict__definition__wrapper">
+            <img class="new-predict__definition__img" src="./static/img/ct-allsources.png">
+            <ul class="new-predict__definition__list">
+              <li class="new-predict__definition__list-item">Результат по каждому звонку в течение часа;</li>
+              <li class="new-predict__definition__list-item">Бесплатно доступен для всех клиентов;</li>
+              <li class="new-predict__definition__list-item">Возможность использовать теги по полу для анализа данных в любых отчетах Calltouch;</li>
+              <li class="new-predict__definition__list-item">Вместе с тегами Предикта можно узнать не только кто вам чаще звонит, но и то, кто чаще покупает, и правильно таргетировать рекламные кампании.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="new-predict__questions">
+        <div class="container">
+          <h2 class="new-predict__title">Предикт ответит на вопросы:</h2>
+          <ul class="new-predict__questions__list">
+            <li class="new-predict__questions__list-item">В какой отдел позвонил клиент?</li>
+            <li class="new-predict__questions__list-item">Обращался ли клиент ранее?</li>
+            <li class="new-predict__questions__list-item">По какой услуге/продукту
+              <br>обратился клиент?</li>
+            <li class="new-predict__questions__list-item">Был ли негатив в разговоре
+              <br>оператора с клиентом?</li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__top__logo" href="/"></a>
+          <div class="footer__top__contacts">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81</a>
+            <p>Россия, 123557, г.Москва, Пресненский вал 27с9</p>
+          </div>
+          <div class="footer__top__social">
+            <p>Присоединяйтесь к нам в социальных сетях</p>
+            <ul class="footer__top__social__icons">
+              <li>
+                <a class="footer__top__social__icons__fb" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__vk" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__ok" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__youtube" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="fotter__bottom">
+          <div class="footer__bottom__menu">
+            <div class="footer__bottom__menu__item">
+              <h3>О сервисе</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Возможности</a>
+                </li>
+                <li>
+                  <a href="#">Применение</a>
+                </li>
+                <li>
+                  <a href="#">Цены</a>
+                </li>
+                <li>
+                  <a href="#">Партнерам</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>Мероприятия</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Вебинары</a>
+                </li>
+                <li>
+                  <a href="#">Конференции</a>
+                </li>
+                <li>
+                  <a href="#">События</a>
+                </li>
+                <li>
+                  <a class="active" href="#">Callday</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>База знаний</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Интеграции</a>
+                </li>
+                <li>
+                  <a href="#">Настройка системы</a>
+                </li>
+                <li>
+                  <a href="#">Отчеты</a>
+                </li>
+                <li>
+                  <a href="#">Справочный центр</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>О компании</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Пресса о нас</a>
+                </li>
+                <li>
+                  <a href="#">Вакансии</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__cabinet">
+              <p>Попробуйте собственными руками</p>
+              <a href="#">Демо-кабинет</a>
+            </div>
+          </div>
+          <div class="footer__bottom__terms">
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Лицензионный договор</a>
+              </li>
+              <li>
+                <a href="#">Договор связи</a>
+              </li>
+            </ul>
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Политика в отношении обработки персональных данных</a>
+              </li>
+              <li>
+                <a href="#">Согласие на обработку персональных данных</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts-->
+    <script src="static/js/moment.js"></script>
+    <script src="static/js/popover.min.js"></script>
+    <script src="static/js/tooltip.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="static/js/index.js"></script>
+  </body>
+</html>

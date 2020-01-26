@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optimizer page</title>
+    <link href="static/css/index.css" rel="stylesheet">
+    <link rel="icon" href="static/favicon.ico">
+  </head>
+  <body>
+    <!-- SVG-->
+    <div class="svg-container" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-vintage-logo" viewBox="0 0 84.1 115.5">
+          <style>
+            .st0 {
+              fill: #000
+            }
+          </style>
+          <path d="M21.7 0H0l5.1 19.8h21.5z" />
+          <path d="M63.2 0L33.7 115.5h21L84.1 0z" />
+        </symbol>
+      </svg>
+    </div>
+    <!-- picture element HTML5 shiv-->
+    <script>
+      document.createElement('picture');
+    </script>
+    <!-- Header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__top__logo" href="#"></a>
+          <form class="header__top__form" method="#" action="#">
+            <input class="header__top__form__input" type="text" required="required" />
+            <span class="bar"></span>
+          </form>
+          <div class="header__top__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__top__contacts">
+            <button class="header__top__contacts__button">Позвонить</button>
+            <div class="header__top__contacts__numbers">
+              <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+              <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <nav class="header__menu">
+            <ul>
+              <li>
+                <a class="header__menu__link has-active mobile-active">Продукты</a>
+                <nav class="sub__menu products">
+                  <div class="sub__menu__block full">
+                    <h5> Технологии</h5>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Платформа</div>
+                          <div class="sub__menu__block__subtitle">Все данные в одном интерфейсе</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/predict.svg" alt="" />
+                          <div class="sub__menu__block__title">Предикт</div>
+                          <div class="sub__menu__block__subtitle">Анализ качества звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/calltracking.svg" alt="" />
+                          <div class="sub__menu__block__title">Коллтрекинг</div>
+                          <div class="sub__menu__block__subtitle">Определение источника звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Антифрод</div>
+                          <div class="sub__menu__block__subtitle">Защита от накрутки звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/optimizer.svg" alt="" />
+                          <div class="sub__menu__block__title">Оптимизатор</div>
+                          <div class="sub__menu__block__subtitle">AI управление рекламой</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/callback.svg" alt="" />
+                          <div class="sub__menu__block__title">Обратный звонок</div>
+                          <div class="sub__menu__block__subtitle">Виджет звонка с сайта</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Применение</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Сквозная аналитика</a>
+                      </li>
+                      <li>
+                        <a href="#">Контекстная реклама</a>
+                      </li>
+                      <li>
+                        <a href="#">Контроль качества</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенерация</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Интеграции</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Системы аналитики</a>
+                      </li>
+                      <li>
+                        <a href="#">Рекламные площадки</a>
+                      </li>
+                      <li>
+                        <a href="#">CRM</a>
+                      </li>
+                      <li>
+                        <a href="#">Оптимизаторы конекста</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенераторы</a>
+                      </li>
+                      <li>
+                        <a href="#">+50 интеграций Albato</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#">Цены</a>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Партнерам</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul class="mblock">
+                      <li>
+                        <a href="#">Партнерская программа</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификацированные агенства</a>
+                      </li>
+                    </ul>
+                    <ul class="mblock">
+                      <li>
+                        <div class="txt">Сертификация</div>
+                        <a href="#">Личный сертификат</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификат компании</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификат по Оптимизатору</a>
+                      </li>
+                    </ul>
+                    <ul class="mblock">
+                      <li>
+                        <div class="mblock__img">
+                          <img src="./static/img/sert-callt-img1.svg" />
+                        </div>
+                        <a href="#">Премия Calltouch Performance Awards 2019</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Академия</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Кейсы и статьи</a>
+                      </li>
+                      <li>
+                        <a href="#">Мероприятия</a>
+                      </li>
+                      <li>
+                        <a href="#">Видеоуроки</a>
+                      </li>
+                      <li>
+                        <a href="#">Вебинары</a>
+                      </li>
+                      <li>
+                        <a href="#">Справочный центр </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active"> О компании</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Пресса о нас</a>
+                      </li>
+                      <li>
+                        <a href="#">Вакансии</a>
+                      </li>
+                      <li>
+                        <a href="#">Контакты </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#"> Блог</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__bottom__auth">
+            <a href="#">Войти</a>
+            <a href="#">Подключиться</a>
+          </div>
+          <div class="header__top__contacts__numbers">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main content-->
+    <main class="content" data-page="optimizer">
+      <div class="popup">
+        <div class="container">
+          <div class="popup__content">
+            <div class="popup__content__close">Закрыть</div>
+            <div class="popup__content__send">
+              <div class="popup__content__send__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="59" viewbox="0 0 64 59">
+                  <g fill="none" fill-rule="nonzero"></g>
+                  <path fill="#746A5C" d="M64 .714s0-.214 0 0c0-.214 0-.214 0 0V.286h-.213-.214-.213-.213-.214-.213-.213-.214l-51.2 30c-.213-.215-.426 0-.426.428 0 .429.426.857.64.857l15.573 5.143L32 52.357c0 .214.213.429.213.429.214.214.427.214.64.214h.427c.213 0 .213-.214.213-.214l8.534-10.715 11.733 4.5h.427c.213 0 .426 0 .426-.214.214-.214.427-.428.427-.643l8.533-45C64 .93 64 .93 64 .714zM53.333 11.857L34.347 37.571c0 .215-.214.215-.214.429l-1.493 9.643L29.013 36.5l24.32-24.643zm-18.56 36.429l1.28-8.572 4.267 1.715-5.547 6.857z"></path>
+                  <path fill="#1F282C" d="M1.92 45.929a1.028 1.028 0 0 0-1.493 0 1.039 1.039 0 0 0 0 1.5l1.92 1.928c.213.214.426.214.64.214.213 0 .64-.214.853-.428a1.039 1.039 0 0 0 0-1.5 5.044 5.044 0 0 1-1.92-1.714zM11.307 53.643a19.461 19.461 0 0 1-2.774-1.714c-.426-.429-1.066-.215-1.493.214-.427.428-.213 1.071.213 1.5 1.067.643 1.92 1.286 2.987 1.928.213 0 .427.215.427.215.426 0 .64-.215.853-.643.64-.643.427-1.286-.213-1.5zM24.747 56c-.427 0-.64.214-1.067.214-.64 0-1.067.643-.853 1.286 0 .429.64.857 1.066.857h.214c.426 0 .64-.214 1.066-.214.64-.214.854-.643.854-1.286-.214-.643-.64-1.071-1.28-.857zM18.987 56.214l-3.2-.643c-.64-.214-1.067.215-1.28.643-.214.643.213 1.072.64 1.286 1.066.429 2.346.643 3.413.857h.213c.427 0 1.067-.428 1.067-.857.213-.643-.213-1.286-.853-1.286zM29.867 53.857c-.64.429-1.494.857-2.347 1.072-.64.214-.853.857-.64 1.5.213.428.64.642 1.067.642h.426l2.56-1.285c.427-.215.64-.857.427-1.5-.427-.429-1.067-.643-1.493-.429z"></path>
+                </svg>
+              </div>
+              <div class="popup__content__send__info">
+                <h3>Ваши данные отправлены.</h3>
+                <p>Мы свяжемся с вами в ближайшее время. </p>
+              </div>
+            </div>
+            <div class="popup__main">
+              <div class="popup__content__title">
+                <h3>Готовы применить систему
+                  <div class="active">Calltouch</div>
+                  <br/>для роста эффективности вашего бизнеса? </h3>
+              </div>
+              <form class="popup__content__form">
+                <div class="form-group">
+                  <label class="popup__content__form__label">
+                    <span>Имя</span>
+                    <input class="inputsValidate name-f" type="text" />
+                  </label>
+                  <label class="popup__content__form__label error">
+                    <span>Контактный телефон</span>
+                    <input class="inputsValidate phone-f" type="tel" />
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="popup__content__form__label">
+                    <span>Электронная почта</span>
+                    <input class="inputsValidate mail-f" type="email" />
+                  </label>
+                  <div class="popup__content__form__label">
+                    <span>Сайт</span>
+                    <input class="inputsValidate site-f" type="text" />
+                  </div>
+                  <p class="iferror">Проверьте номер телефона, похоже, что по нему мы не сможем вам позвонить.</p>
+                </div>
+                <button class="popup__content__form__button">Отправить</button>
+              </form>
+              <div class="popup__content__personaldata">
+                <p>Нажимая на кнопку "Отправить", вы даёте своё согласие
+                  <a href="#">на обработку персональных данных</a>
+                </p>
+              </div>
+              <div class="popup__content__contacts call_phone_1_2">
+                <h3>Есть вопросы? Звоните</h3>
+                <a href="tel:+7 495 308-01-00">+7 495 308-01-00</a>
+                <a href="tel:8 800 222-13-81">8 800 222-13-81</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="optimizer-page">
+        <div class="container">
+          <div class="optimizer-page__about">
+            <div class="optimizer-page__heading">
+              <img class="optimizer-page__heading__logo" src="./static/img/cxt-optimizer.svg" alt="optimizer-logo">
+              <div class="optimizer-page__heading__text">
+                <h1 class="optimizer-page__heading__title">Оптимизатор контекстной рекламы</h1>
+                <h3 class="optimizer-page__heading__subtitle">Эффективный инструмент по автоматизации и оптимизации контекстной рекламы Яндекс.Директ и Google.Adwords.</h3>
+              </div>
+            </div>
+          </div>
+          <img class="optimizer-page__notebookimg" src="./static/img/opt-notebook-bg.svg" alt="opt-notebook-bg">
+          <div class="optimizer-page__text opt-firstscreen-text">Ручное управление контекстной рекламой — долгий и сложный процесс, который необходимо автоматизировать. Используйте машинное обучение для получения лучших результатов по контекстной рекламе.</div>
+          <div class="optimizer-page__text opt-firstscreen-text">Вы указываете стоимость привлечения нового клиента или суточный расход, а Оптимизатор прогнозирует и применяет ставки для достижения наилучшего результата по выбранным кампаниям.</div>
+          <h3 class="optimizer-page__message opt-firstscreen-message">Автоматизируйте рутину,
+            <br> уделите внимание более сложным задачам.</h3>
+          <div class="optimizer-page__items">
+            <div class="optimizer-page__items__item opt-pocket">Увеличение количества лидов и прибыли</div>
+            <div class="optimizer-page__items__item opt-moneybox">Экономия времени и бюджета</div>
+            <div class="optimizer-page__items__item opt-coin-hands">Снижение стоимости привлечения лида</div>
+            <div class="optimizer-page__items__item opt-reports">Удобные наглядные отчеты</div>
+          </div>
+        </div>
+      </section>
+      <section class="optimizer-page__banner">
+        <div class="container">
+          <div class="optimizer-page__banner__items">
+            <h3 class="optimizer-page__message banner-message">Бесплатно для клиентов Calltouch. Всегда.</h3>
+            <a class="optimizer-page__button popup__trigger top-blue-banner-btn"> Подключитьcя</a>
+          </div>
+        </div>
+      </section>
+      <section class="optimizer-page__how-it-works">
+        <div class="container">
+          <h2 class="optimizer-page__title">Как работает оптимизатор Calltouch</h2>
+          <h3 class="optimizer-page__message dark-message">Вы выбираете стратегию, а оптимизатор считает за вас:</h3>
+          <div class="optimizer-page__items-list methods-items">
+            <div class="optimizer-page__items-list__item opt-mouse-price">CPA (в рублях)
+              <div class="optimizer-page__items-list__item__text">Максимум конверсий
+                <br>для фиксированной средней цены.</div>
+            </div>
+            <div class="optimizer-page__items-list__item opt-bag-price">Бюджет (в рублях)
+              <div class="optimizer-page__items-list__item__text">Максимум конверсий для фиксированного
+                <br> среднесуточного бюджета на группу.</div>
+            </div>
+          </div>
+          <h3 class="optimizer-page__message dark-message">В основе ядра Оптимизатора конверсий Calltouch лежат два базовых алгоритма:</h3>
+          <div class="optimizer-page__logic__items">
+            <div class="optimizer-page__logic__item">
+              <div class="optimizer-page__logic__number">1</div>
+              <div class="optimizer-page__logic__title">Алгоритм расчета коэффициента конверсии</div>
+            </div>
+            <div class="optimizer-page__logic__item">
+              <div class="optimizer-page__logic__number">2</div>
+              <div class="optimizer-page__logic__title">Алгоритм расчета оптимальной ставки для выбранной стратегии оптимизации и установленных целевых KPI.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="optimizer-page__gene-section"></section>
+      <section class="optimizer-page__reasons">
+        <div class="container">
+          <div class="optimizer-page__reasons__items">
+            <div class="optimizer-page__text opt-firstscreen-text">Алгоритм расчета коэффициента конверсии (CR) по ключевой фразе способен прогнозировать CR даже для тех ключей, собственной статистики по которым недостаточно для того, чтобы произвести точные расчеты.</div>
+            <div class="optimizer-page__text opt-firstscreen-text">Этот эффект достигается за счет использования как структуры/иерархии рекламного аккаунта, так и семантического анализа ключевых запросов и их разделения на группы схожих – кластеры.</div>
+            <div class="optimizer-page__text opt-firstscreen-text">Проведенные эксперименты показали высокую точность прогнозирования именно за счет использования комбинации двух подходов к прогнозированию.</div>
+            <div class="optimizer-page__text opt-firstscreen-text">Для расчета оптимальной ставки по массиву фраз так, чтобы уложиться в требуемые ключевые показатели эффективности (KPI) используются классические подходы эконометрики и теории оптимизации, такие как решение задач на условный экстремум методами
+              множителей Лагранжа, интер- и экстраполяция и многие другие.</div>
+          </div>
+        </div>
+      </section>
+      <section class="optimizer-page__banner">
+        <div class="container">
+          <div class="optimizer-page__banner__items">
+            <h3 class="optimizer-page__message banner-message bm-without-logo">Полная интеграция и автоматическое управление ставками в Яндекс.Директ и Google.Adwords</h3>
+            <a class="optimizer-page__button popup__trigger">Подключитьcя</a>
+          </div>
+        </div>
+      </section>
+      <section class="optimizer-page__settings">
+        <div class="container">
+          <h2 class="optimizer-page__title">Уникальные настройки оптимизатора Calltouch</h2>
+          <div class="optimizer-page__settings__items swiper-container" id="optimizer-settings-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="optimizer-page__settings__item">
+                  <img class="optimizer-page__settings__img" src="./static/img/opt-target.svg" alt="optimizer-settings-target">
+                  <div class="optimizer-page__settings__title">Создавайте мультицели для оптимизации</div>
+                  <div class="optimizer-page__settings__text">Используйте только тот набор целей, который вам нужен. Добавляйте новоеи удаляйте лишнее.</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="optimizer-page__settings__item">
+                  <img class="optimizer-page__settings__img" src="./static/img/opt-calendar.svg" alt="optimizer-settings-calendar">
+                  <div class="optimizer-page__settings__title">Управляйте периодом для расчета ставок</div>
+                  <div class="optimizer-page__settings__text">Удаляйте недостоверные дни и добавляйте данные за период вплоть до 1 года. Кроме того, на добавленный период можно устанавливать вес, с которым мы будем доверять данной статистике.</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="optimizer-page__settings__item">
+                  <img class="optimizer-page__settings__img" src="./static/img/opt-phonegram.svg" alt="optimizer-settings-phonegram">
+                  <div class="optimizer-page__settings__title">Оптимизируйте рекламу в соответствии с тегами системы Calltouch Predict</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="optimizer-page__settings__item">
+                  <img class="optimizer-page__settings__img" src="./static/img/opt-callcheck.svg" alt="optimizer-settings-callcheck">
+                  <div class="optimizer-page__settings__title">Используйте только достоверные звонки от системы Calltouch Антифрод</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="optimizer-page__settings__item">
+                  <img class="optimizer-page__settings__img" src="./static/img/opt-optiprice.svg" alt="optimizer-settings-optiprice">
+                  <div class="optimizer-page__settings__title">Выбирайте удобный вид оптимизации</div>
+                  <div class="optimizer-page__settings__text">Максимум конверсий по заданной стоимости или максимум конверсий при ограниченном дневном бюджете</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="optimizer-page__settings__item">
+                  <img class="optimizer-page__settings__img" src="./static/img/opt-settings-back.svg" alt="optimizer-settings-back">
+                  <div class="optimizer-page__settings__title">Возвращайтесь к прежним настройкам в любое время</div>
+                  <div class="optimizer-page__settings__text">Все изменения фиксируются. Ограничивайте максимальную ставку.</div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="optimizer-page__capabilities">
+        <div class="container">
+          <h2 class="optimizer-page__title">Возможности Оптимизатора Calltouch</h2>
+          <div class="optimizer-page__capabilities__items">
+            <div class="optimizer-page__capabilities__item">
+              <h3 class="optimizer-page__capabilities__title">Умный алгоритм работы</h3>
+              <img class="optimizer-page__capabilities__img" src="./static/img/opt-capa-idea.svg" alt="opt-capabilities-idea">
+            </div>
+            <ul class="optimizer-page__capabilities__item-list">
+              <li>Ежедневно собирает и анализирует данные из Яндекс. Директ и Google AdWords</li>
+              <li>Отбирает самые продуктивные ключи и повышает на них ставки</li>
+              <li>Помещает эффективные ключи на самые высокие позиции</li>
+              <li>Снижает ставки на низкоэффективные ключи</li>
+              <li>Увеличивает количество конверсий</li>
+              <li>Уменьшает стоимость лида</li>
+            </ul>
+          </div>
+          <div class="optimizer-page__capabilities__items">
+            <ul class="optimizer-page__capabilities__item-list">
+              <li>Благодаря синхронизации с платформой динамического коллтрекинга Calltouch определяет источник каждого звонка и заявки с сайта до ключевой фразы</li>
+              <li>Учитывает статистику от 28 дней до 1 года</li>
+              <li>Учитывает типы устройств и сезонность спроса</li>
+              <li>Улучшает показатели и обучается за счет обновления данных из Яндекс. Директ и Google AdWords</li>
+            </ul>
+            <div class="optimizer-page__capabilities__item">
+              <h3 class="optimizer-page__capabilities__title">Полная аналитика и интеграция</h3>
+              <img class="optimizer-page__capabilities__img" src="./static/img/opt-capa-analytic.svg" alt="opt-capabilities-analytic">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="reports">
+        <div class="container">
+          <h2 class="reports__title">Удобные отчеты в одном интерфейсе</h2>
+          <div class="reports__column">
+            <div class="swiper-container" id="reports__quote">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="reports__quotes">
+                    <div class="reports__subtitle">Все источники</div>
+                    <div class="reports__text">Все каналы трафика и их эффективность в одном отчете.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reports__quotes">
+                    <div class="reports__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+                    <div class="reports__text">Смотрите затраты по каждой кампании и стоимость лида.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reports__quotes">
+                    <div class="reports__subtitle">Время и дни недели</div>
+                    <div class="reports__text">Оптимизируйте ставки в рекламе в зависимости от пиковых дней и часов.Планируйте нагрузку колл-центра.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reports__quotes">
+                    <div class="reports__subtitle">Сравнение периодов</div>
+                    <div class="reports__text">Выбирайте любые отрезки времени и сравнивайте периоды.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reports__quotes">
+                    <div class="reports__subtitle">Графики и диаграммы</div>
+                    <div class="reports__text">Простые, понятные и дружелюбные отчеты для быстрого и удобного анализа.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="reports__quotes">
+                    <div class="reports__subtitle">Журнал звонков и прослушивание</div>
+                    <div class="reports__text">Удобный плеер для прослушивания и тегирования звонков.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-container" id="reports__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img class="reports__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+                </div>
+                <div class="swiper-slide">
+                  <img class="reports__screen" src="./static/img/ct-ydirect.png" alt="calltracking-ydirect">
+                </div>
+                <div class="swiper-slide">
+                  <img class="reports__screen" src="./static/img/ct-heatmap.png" alt="calltracking-heatmap">
+                </div>
+                <div class="swiper-slide">
+                  <img class="reports__screen" src="./static/img/ct-periods.png" alt="calltracking-periods">
+                </div>
+                <div class="swiper-slide">
+                  <img class="reports__screen" src="./static/img/ct-diagrams.png" alt="calltracking-diagrams">
+                </div>
+                <div class="swiper-slide">
+                  <img class="reports__screen" src="./static/img/ct-callsjournal.png" alt="calltracking-callsjournal">
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev reports__prev"></div>
+            <div class="swiper-button-next reports__next"></div>
+            <div class="swiper-pagination reports-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="optimizer-page__black-banner">
+        <div class="container">
+          <div class="optimizer-page__black-banner__items">
+            <div class="optimizer-page__black-banner__item">
+              <div class="optimizer-page__black-banner__subtitle">Под управлением</div>
+              <div class="optimizer-page__black-banner__title bb-opt-title">оптимизатора Calltouch</div>
+            </div>
+            <div class="optimizer-page__black-banner__item">
+              <div class="optimizer-page__black-banner__title">более 200</div>
+              <div class="optimizer-page__black-banner__subtitle">рекламных аккаунтов</div>
+            </div>
+            <div class="optimizer-page__black-banner__item">
+              <div class="optimizer-page__black-banner__title">более 70 000 000</div>
+              <div class="optimizer-page__black-banner__subtitle">рублей в месяц</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="optimizer-page__statistics">
+        <div class="container">
+          <h2 class="optimizer-page__title">За 1 месяц в среднем
+            <span>Оптимизатор снизил СРА на 35,11%</span>
+          </h2>
+          <img class="optimizer-page__statistics__img" src="./static/img/opt-statistics-mouse.svg" alt="optimizer-statistics-mouse-image">
+          <div class="optimizer-page__statistics__items">
+            <div class="optimizer-page__statistics__item">
+              <div class="optimizer-page__statistics__title">33,45%</div>
+              <div class="optimizer-page__statistics__subtitle">Автомобили</div>
+            </div>
+            <div class="optimizer-page__statistics__item">
+              <div class="optimizer-page__statistics__title opt-half-op">20,80%</div>
+              <div class="optimizer-page__statistics__subtitle">Интернет-магазины</div>
+            </div>
+            <div class="optimizer-page__statistics__item">
+              <div class="optimizer-page__statistics__title opt-half-op">19,76%</div>
+              <div class="optimizer-page__statistics__subtitle">Недвижимость</div>
+            </div>
+            <div class="optimizer-page__statistics__item">
+              <div class="optimizer-page__statistics__title opt-thirdpart-op">26,98%</div>
+              <div class="optimizer-page__statistics__subtitle">Прочие</div>
+            </div>
+          </div>
+          <div class="optimizer-page__statistics__items">
+            <div class="optimizer-page__statistics__item">
+              <div class="optimizer-page__statistics__title opt-thirdpart-op">26,29%</div>
+              <div class="optimizer-page__statistics__subtitle">Красота и здоровье</div>
+            </div>
+            <div class="optimizer-page__statistics__item">
+              <div class="optimizer-page__statistics__title">38,28%</div>
+              <div class="optimizer-page__statistics__subtitle">Мебель/интерьер</div>
+            </div>
+            <div class="optimizer-page__statistics__item">
+              <div class="optimizer-page__statistics__title">33,45%</div>
+              <div class="optimizer-page__statistics__subtitle">Медицина и фармацевтика</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="cases">
+        <div class="container">
+          <div class="cases__heading">
+            <div class="cases__title">Кейсы</div>
+            <div class="cases__count">
+              <div id="cases__index">1</div> из
+              <div id="cases__count">2</div>
+            </div>
+          </div>
+          <div class="cases__items swiper-container" id="cases__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="cases__item" href="#">
+                  <div class="cases__item__industry">Крупный застройщик</div>
+                  <div class="cases__item__performers">А101 + ArrowMedia</div>
+                  <img class="cases__item__img cases-developer" src="./static/img/cases-developer.svg" alt="cases-developer-image">
+                  <div class="cases__item__title">28 дней спустя: снижение цены конверсии на 48%</div>
+                  <div class="cases__item__data">
+                    <div class="cases__item__percentage">48%</div>
+                    <div class="cases__item__result">Снижение цены обращения</div>
+                    <div class="cases__item__percentage">115%</div>
+                    <div class="cases__item__result">Рост конверсии</div>
+                    <div class="cases__item__percentage">68,5%</div>
+                    <div class="cases__item__result">Рост количества обращений</div>
+                  </div>
+                  <div class="cases__item__text">ГК «А101» (один из крупнейших застройщиков на рынке недвижимости) совместно с ArrowMedia протестировали Оптимизатор Calltouch на части рекламных кампаний в Яндекс.Директеи делится полученными результатами.</div>
+                  <div class="cases__item__linkwrapper">
+                    <div class="cases__item__link">Читать подробнее</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="cases__item" href="#">
+                  <div class="cases__item__industry">Индустрия фитнеса</div>
+                  <div class="cases__item__performers">Zebra Fitness&SPA + VBI</div>
+                  <img class="cases__item__img cases-fitness" src="./static/img/cases-fitness.svg" alt="cases-fitness-image">
+                  <div class="cases__item__title">Снижение стоимости конверсий с Оптимизатором Calltouch</div>
+                  <div class="cases__item__data">
+                    <div class="cases__item__percentage">41%</div>
+                    <div class="cases__item__result">Снижение цены обращения</div>
+                    <div class="cases__item__percentage">109%</div>
+                    <div class="cases__item__result">Рост конверсии</div>
+                    <div class="cases__item__percentage">27%</div>
+                    <div class="cases__item__result">Рост количества обращений</div>
+                  </div>
+                  <div class="cases__item__text">Основная проблема индустрии фитнеса – это сезонность. Лето, как и во многих других индустриях – это мертвый сезон. Целью тестирования было оживление продаж после низкого сезона.</div>
+                  <div class="cases__item__linkwrapper">
+                    <div class="cases__item__link">Читать подробнее</div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="cases__item" href="#">
+                  <div class="cases__item__industry">Медицинская клиника</div>
+                  <div class="cases__item__performers">Family Doctor + Ашманов и партнеры</div>
+                  <img class="cases__item__img cases-medicine" src="./static/img/cases-medicine.svg" alt="cases-medicine">
+                  <div class="cases__item__title">Оптимизация контекстной рекламы для медицинской клиники</div>
+                  <div class="cases__item__data">
+                    <div class="cases__item__percentage">22%</div>
+                    <div class="cases__item__result">Снижение CPA</div>
+                    <div class="cases__item__percentage">137%</div>
+                    <div class="cases__item__result">CR рост</div>
+                    <div class="cases__item__percentage">73%</div>
+                    <div class="cases__item__result">Рост количества конверсий</div>
+                  </div>
+                  <div class="cases__item__text">В 2017 году было проведено совместное тестирование Calltouch медицинской клиники «Семейный доктор». Цель тестирования — увеличение числа уникальных звонков, приходящих из рекламных кампаний Яндекс.Директ.</div>
+                  <div class="cases__item__linkwrapper">
+                    <div class="cases__item__link">Читать подробнее</div>
+                  </div>
+                </a>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="optimizer-page__partners">
+        <div class="container">
+          <h2 class="optimizer-page__title">Агентства, которые с нами работают:</h2>
+          <div class="optimizer-page__partners__items swiper-container" id="partners__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="optimizer-page__partners__item">
+                  <div class="optimizer-page__partners__img opt-am-logo"></div>
+                  <div class="optimizer-page__partners__wrapper">
+                    <div class="optimizer-page__partners__title">ArrowMedia</div>
+                    <div class="optimizer-page__partners__info small-award">
+                      <div class="optimizer-page__partners__count">84</div>
+                      <div class="optimizer-page__partners__text">сертифицированных сотрудника</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="optimizer-page__partners__item">
+                  <div class="optimizer-page__partners__img opt-rw-logo"></div>
+                  <div class="optimizer-page__partners__wrapper">
+                    <div class="optimizer-page__partners__title">Риалвеб</div>
+                    <div class="optimizer-page__partners__info">
+                      <div class="optimizer-page__partners__count">52</div>
+                      <div class="optimizer-page__partners__text">сертифицированных сотрудника</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="optimizer-page__partners__item">
+                  <div class="optimizer-page__partners__img opt-vbi-logo"></div>
+                  <div class="optimizer-page__partners__wrapper">
+                    <div class="optimizer-page__partners__title">Высокие Бизнес Идеи</div>
+                    <div class="optimizer-page__partners__info small-award">
+                      <div class="optimizer-page__partners__count">45</div>
+                      <div class="optimizer-page__partners__text">сертифицированных сотрудника</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="optimizer-page__partners__item">
+                  <div class="optimizer-page__partners__img opt-mg-logo"></div>
+                  <div class="optimizer-page__partners__wrapper">
+                    <div class="optimizer-page__partners__title">MediaGuru</div>
+                    <div class="optimizer-page__partners__info">
+                      <div class="optimizer-page__partners__count">32</div>
+                      <div class="optimizer-page__partners__text">сертифицированных сотрудника</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="optimizer-page__partners__item">
+                  <div class="optimizer-page__partners__img opt-cm-logo"></div>
+                  <div class="optimizer-page__partners__wrapper">
+                    <div class="optimizer-page__partners__title">Convertmonster</div>
+                    <div class="optimizer-page__partners__info">
+                      <div class="optimizer-page__partners__count">29</div>
+                      <div class="optimizer-page__partners__text">сертифицированных сотрудника</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="optimizer-page__partners__item">
+                  <div class="optimizer-page__partners__img opt-adv-logo"></div>
+                  <div class="optimizer-page__partners__wrapper">
+                    <div class="optimizer-page__partners__title">Adventum</div>
+                    <div class="optimizer-page__partners__info">
+                      <div class="optimizer-page__partners__count">27</div>
+                      <div class="optimizer-page__partners__text">сертифицированных сотрудника</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="optimizer-page__partners__item">
+                  <div class="optimizer-page__partners__img opt-optru-logo"></div>
+                  <div class="optimizer-page__partners__wrapper">
+                    <div class="optimizer-page__partners__title">Оптимизм.ру</div>
+                    <div class="optimizer-page__partners__info">
+                      <div class="optimizer-page__partners__count">20</div>
+                      <div class="optimizer-page__partners__text">сертифицированных сотрудника</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="optimizer-page__partners__item">
+                  <div class="optimizer-page__partners__img opt-tandem-logo"></div>
+                  <div class="optimizer-page__partners__wrapper">
+                    <div class="optimizer-page__partners__title">Тандем</div>
+                    <div class="optimizer-page__partners__info small-award">
+                      <div class="optimizer-page__partners__count">15</div>
+                      <div class="optimizer-page__partners__text">сертифицированных сотрудника</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+        </div>
+      </section>
+      <section class="reviews">
+        <div class="container">
+          <h2 class="reviews__title">Отзывы</h2>
+          <div class="swiper-container" id="reviews-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="reviews__content">
+                  <img class="reviews__content__img" src="./static/img/ava.png" alt="review-author-photo">
+                  <h3 class="reviews__content__title">Ксения Ревзина</h3>
+                  <div class="reviews__content__position">Аккаунт директор, VBI</div>
+                  <div class="reviews__content__text">Мы в VBI на своем опыте попробовали ряд полезных продуктов от Calltouch. Одним из таких стал Оптимизатор. Благодаря этому инструменту нам удалось добиться поставленных целей. Кроме того, автоматизация управления ставками экономит время,
+                    силы, точнее, чем человек, реагирует на изменения аукциона.</div>
+                  <div class="reviews__content__text">На ряде проектов агентства VBI Оптимизатор показывает отличные результаты, а также, является по сути единственной альтернативой набора правил по управлению ставками в Яндекс Директ для кампаний с маленьким объемом данных для оптимизации.</div>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="reviews__content">
+                  <img class="reviews__content__img" src="./static/img/ava.png" alt="review-author-photo">
+                  <h3 class="reviews__content__title">Ксения Ревзина 2</h3>
+                  <div class="reviews__content__position">Аккаунт директор, VBI</div>
+                  <div class="reviews__content__text">1 Мы в VBI на своем опыте попробовали ряд полезных продуктов от Calltouch. Одним из таких стал Оптимизатор. Благодаря этому инструменту нам удалось добиться поставленных целей. Кроме того, автоматизация управления ставками экономит время,
+                    силы, точнее, чем человек, реагирует на изменения аукциона.</div>
+                  <div class="reviews__content__text">2 На ряде проектов агентства VBI Оптимизатор показывает отличные результаты, а также, является по сути единственной альтернативой набора правил по управлению ставками в Яндекс Директ для кампаний с маленьким объемом данных для оптимизации.</div>
+                  <div
+                    class="reviews__content__text">3 На ряде проектов агентства VBI Оптимизатор показывает отличные результаты, а также, является по сути единственной альтернативой набора правил по управлению ставками в Яндекс Директ для кампаний с маленьким объемом данных для оптимизации.</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews__content">
+                <img class="reviews__content__img" src="./static/img/ava.png" alt="review-author-photo">
+                <h3 class="reviews__content__title">Ксения Ревзина 3</h3>
+                <div class="reviews__content__position">Аккаунт директор, VBI</div>
+                <div class="reviews__content__text">Мы в VBI на своем опыте попробовали ряд полезных продуктов от Calltouch. Одним из таких стал Оптимизатор. Благодаря этому инструменту нам удалось добиться поставленных целей. Кроме того, автоматизация управления ставками экономит время,
+                  силы, точнее, чем человек, реагирует на изменения аукциона.</div>
+                <div class="reviews__content__text">На ряде проектов агентства VBI Оптимизатор показывает отличные результаты, а также, является по сути единственной альтернативой набора правил по управлению ставками в Яндекс Директ для кампаний с маленьким объемом данных для оптимизации.</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews__content">
+                <img class="reviews__content__img" src="./static/img/ava.png" alt="review-author-photo">
+                <h3 class="reviews__content__title">Ксения Ревзина 4</h3>
+                <div class="reviews__content__position">Аккаунт директор, VBI</div>
+                <div class="reviews__content__text">Мы в VBI на своем опыте попробовали ряд полезных продуктов от Calltouch. Одним из таких стал Оптимизатор. Благодаря этому инструменту нам удалось добиться поставленных целей. Кроме того, автоматизация управления ставками экономит время,
+                  силы, точнее, чем человек, реагирует на изменения аукциона.</div>
+                <div class="reviews__content__text">На ряде проектов агентства VBI Оптимизатор показывает отличные результаты, а также, является по сути единственной альтернативой набора правил по управлению ставками в Яндекс Директ для кампаний с маленьким объемом данных для оптимизации.</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews__content">
+                <img class="reviews__content__img" src="./static/img/ava.png" alt="review-author-photo">
+                <h3 class="reviews__content__title">Ксения Ревзина 5</h3>
+                <div class="reviews__content__position">Аккаунт директор, VBI</div>
+                <div class="reviews__content__text">Мы в VBI на своем опыте попробовали ряд полезных продуктов от Calltouch. Одним из таких стал Оптимизатор. Благодаря этому инструменту нам удалось добиться поставленных целей. Кроме того, автоматизация управления ставками экономит время,
+                  силы, точнее, чем человек, реагирует на изменения аукциона.</div>
+                <div class="reviews__content__text">На ряде проектов агентства VBI Оптимизатор показывает отличные результаты, а также, является по сути единственной альтернативой набора правил по управлению ставками в Яндекс Директ для кампаний с маленьким объемом данных для оптимизации.</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews__content">
+                <img class="reviews__content__img" src="./static/img/ava.png" alt="review-author-photo">
+                <h3 class="reviews__content__title">Ксения Ревзина 6</h3>
+                <div class="reviews__content__position">Аккаунт директор, VBI</div>
+                <div class="reviews__content__text">Мы в VBI на своем опыте попробовали ряд полезных продуктов от Calltouch. Одним из таких стал Оптимизатор. Благодаря этому инструменту нам удалось добиться поставленных целей. Кроме того, автоматизация управления ставками экономит время,
+                  силы, точнее, чем человек, реагирует на изменения аукциона.</div>
+                <div class="reviews__content__text">На ряде проектов агентства VBI Оптимизатор показывает отличные результаты, а также, является по сути единственной альтернативой набора правил по управлению ставками в Яндекс Директ для кампаний с маленьким объемом данных для оптимизации.</div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="reviews__content">
+                <img class="reviews__content__img" src="./static/img/ava.png" alt="review-author-photo">
+                <h3 class="reviews__content__title">Ксения Ревзина 7</h3>
+                <div class="reviews__content__position">Аккаунт директор, VBI</div>
+                <div class="reviews__content__text">Мы в VBI на своем опыте попробовали ряд полезных продуктов от Calltouch. Одним из таких стал Оптимизатор. Благодаря этому инструменту нам удалось добиться поставленных целей. Кроме того, автоматизация управления ставками экономит время,
+                  силы, точнее, чем человек, реагирует на изменения аукциона.</div>
+                <div class="reviews__content__text">На ряде проектов агентства VBI Оптимизатор показывает отличные результаты, а также, является по сути единственной альтернативой набора правил по управлению ставками в Яндекс Директ для кампаний с маленьким объемом данных для оптимизации.</div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev reviews__prev"></div>
+          <div class="swiper-button-next reviews__next"></div>
+        </div>
+        <div class="swiper-pagination reviews__pagination"></div>
+        </div>
+      </section>
+      <section class="faq">
+        <div class="container">
+          <div class="accordion" id="container-main">
+            <h2 class="optimizer-page__title">Что еще полезно знать об оптимизаторе Calltouch</h2>
+            <div class="accordion-container">
+              <h3 class="accordion-title">По какому принципу определяются продуктивные ключи?</h3>
+              <div class="accordion-content">
+                <div class="accordion-content__text">Для определения эффективности ключей анализируются такие показатели, как: расход, клики, коэффициент конверсии, количество конверсий и их стоимость</div>
+                <div class="accordion-content__text">В зависимости от стратегии оптимизации выбирается специальная метрика, которая позволяет оценить эффективность ключа в разрезе данной стратегии оптимизации и установленных KPI.</div>
+                <div class="accordion-content__text">После вычисления данной метрики для каждого ключа полученное значение сравнивается с пороговым,таким образом ключи делятся на группыпо их эффективности.</div>
+              </div>
+            </div>
+            <div class="accordion-container">
+              <h3 class="accordion-title">С какого момента считается, что ключи становятся продуктивными? Сколько должно быть конверсий?</h3>
+              <div class="accordion-content">
+                <div class="accordion-content__text">Для определения эффективности ключей анализируются такие показатели, как: расход, клики, коэффициент конверсии, количество конверсий и их стоимость</div>
+                <div class="accordion-content__text">В зависимости от стратегии оптимизации выбирается специальная метрика, которая позволяет оценить эффективность ключа в разрезе данной стратегии оптимизации и установленных KPI.</div>
+                <div class="accordion-content__text">После вычисления данной метрики для каждого ключа полученное значение сравнивается с пороговым,таким образом ключи делятся на группыпо их эффективности.</div>
+              </div>
+            </div>
+            <div class="accordion-container">
+              <h3 class="accordion-title">Если у меня нет накопленной статистики, что делать?</h3>
+              <div class="accordion-content">
+                <div class="accordion-content__text">Для определения эффективности ключей анализируются такие показатели, как: расход, клики, коэффициент конверсии, количество конверсий и их стоимость</div>
+                <div class="accordion-content__text">В зависимости от стратегии оптимизации выбирается специальная метрика, которая позволяет оценить эффективность ключа в разрезе данной стратегии оптимизации и установленных KPI.</div>
+                <div class="accordion-content__text">После вычисления данной метрики для каждого ключа полученное значение сравнивается с пороговым,таким образом ключи делятся на группыпо их эффективности.</div>
+              </div>
+            </div>
+            <div class="accordion-container">
+              <h3 class="accordion-title">Можно ли выбирать кампании, на которых будет работать Оптимизатор?</h3>
+              <div class="accordion-content">
+                <div class="accordion-content__text">Для определения эффективности ключей анализируются такие показатели, как: расход, клики, коэффициент конверсии, количество конверсий и их стоимость</div>
+                <div class="accordion-content__text">В зависимости от стратегии оптимизации выбирается специальная метрика, которая позволяет оценить эффективность ключа в разрезе данной стратегии оптимизации и установленных KPI.</div>
+                <div class="accordion-content__text">После вычисления данной метрики для каждого ключа полученное значение сравнивается с пороговым,таким образом ключи делятся на группыпо их эффективности.</div>
+              </div>
+            </div>
+            <div class="accordion-container">
+              <h3 class="accordion-title">Что происходит с теми ключами, по которым статистика долгое время не набирается?</h3>
+              <div class="accordion-content">
+                <div class="accordion-content__text">Для определения эффективности ключей анализируются такие показатели, как: расход, клики, коэффициент конверсии, количество конверсий и их стоимость</div>
+                <div class="accordion-content__text">В зависимости от стратегии оптимизации выбирается специальная метрика, которая позволяет оценить эффективность ключа в разрезе данной стратегии оптимизации и установленных KPI.</div>
+                <div class="accordion-content__text">После вычисления данной метрики для каждого ключа полученное значение сравнивается с пороговым,таким образом ключи делятся на группыпо их эффективности.</div>
+              </div>
+            </div>
+            <div class="accordion-container">
+              <h3 class="accordion-title">Как часто Оптимизатор меняет ставки?</h3>
+              <div class="accordion-content">
+                <div class="accordion-content__text">Для определения эффективности ключей анализируются такие показатели, как: расход, клики, коэффициент конверсии, количество конверсий и их стоимость</div>
+                <div class="accordion-content__text">В зависимости от стратегии оптимизации выбирается специальная метрика, которая позволяет оценить эффективность ключа в разрезе данной стратегии оптимизации и установленных KPI.</div>
+                <div class="accordion-content__text">После вычисления данной метрики для каждого ключа полученное значение сравнивается с пороговым,таким образом ключи делятся на группыпо их эффективности.</div>
+              </div>
+            </div>
+            <div class="accordion-container">
+              <h3 class="accordion-title">Какие есть стратегии оптимизации?</h3>
+              <div class="accordion-content">
+                <div class="accordion-content__text">Для определения эффективности ключей анализируются такие показатели, как: расход, клики, коэффициент конверсии, количество конверсий и их стоимость</div>
+                <div class="accordion-content__text">В зависимости от стратегии оптимизации выбирается специальная метрика, которая позволяет оценить эффективность ключа в разрезе данной стратегии оптимизации и установленных KPI.</div>
+                <div class="accordion-content__text">После вычисления данной метрики для каждого ключа полученное значение сравнивается с пороговым,таким образом ключи делятся на группыпо их эффективности.</div>
+              </div>
+            </div>
+            <div class="accordion-container">
+              <h3 class="accordion-title">Для каких кампаний оптимизатор не подходит?</h3>
+              <div class="accordion-content">
+                <div class="accordion-content__text">Для определения эффективности ключей анализируются такие показатели, как: расход, клики, коэффициент конверсии, количество конверсий и их стоимость</div>
+                <div class="accordion-content__text">В зависимости от стратегии оптимизации выбирается специальная метрика, которая позволяет оценить эффективность ключа в разрезе данной стратегии оптимизации и установленных KPI.</div>
+                <div class="accordion-content__text">После вычисления данной метрики для каждого ключа полученное значение сравнивается с пороговым,таким образом ключи делятся на группыпо их эффективности.</div>
+              </div>
+            </div>
+            <div class="accordion-container">
+              <h3 class="accordion-title">Что следует сделать перед запуском оптимизатора?</h3>
+              <div class="accordion-content">
+                <div class="accordion-content__text">Для определения эффективности ключей анализируются такие показатели, как: расход, клики, коэффициент конверсии, количество конверсий и их стоимость</div>
+                <div class="accordion-content__text">В зависимости от стратегии оптимизации выбирается специальная метрика, которая позволяет оценить эффективность ключа в разрезе данной стратегии оптимизации и установленных KPI.</div>
+                <div class="accordion-content__text">После вычисления данной метрики для каждого ключа полученное значение сравнивается с пороговым,таким образом ключи делятся на группыпо их эффективности.</div>
+              </div>
+            </div>
+            <div class="accordion-container">
+              <h3 class="accordion-title">Что может выступать целью оптимизации?</h3>
+              <div class="accordion-content">
+                <div class="accordion-content__text">Для определения эффективности ключей анализируются такие показатели, как: расход, клики, коэффициент конверсии, количество конверсий и их стоимость</div>
+                <div class="accordion-content__text">В зависимости от стратегии оптимизации выбирается специальная метрика, которая позволяет оценить эффективность ключа в разрезе данной стратегии оптимизации и установленных KPI.</div>
+                <div class="accordion-content__text">После вычисления данной метрики для каждого ключа полученное значение сравнивается с пороговым,таким образом ключи делятся на группыпо их эффективности.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="geo">
+        <div class="container">
+          <div class="geo__title">Calltouch в цифрах</div>
+          <div class="geo__items">
+            <div class="geo__item">
+              <img class="geo__item__img opt-globe" src="./static/img/opt-globe.svg" alt="geo-globe-image">
+              <div class="geo__item__title">Работаем в 110 городах России и 15 странах</div>
+            </div>
+            <div class="geo__item">
+              <img class="geo__item__img opt-archery" src="./static/img/opt-archery.svg" alt="geo-archery-image">
+              <div class="geo__item__title">96% точности определения источника звонка</div>
+            </div>
+          </div>
+          <div class="geo__items">
+            <div class="geo__item">
+              <img class="geo__item__img opt-handshake" src="./static/img/opt-handshake.svg" alt="geo-handshake-image">
+              <div class="geo__item__title">В числе наших клиентов более 12 500 компаний</div>
+            </div>
+            <div class="geo__item">
+              <img class="geo__item__img opt-integration" src="./static/img/opt-integration.svg" alt="geo-integration-image">
+              <div class="geo__item__title">Интеграция с 50+ различными сервисами</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="new-geo">
+        <div class="container">
+          <div class="new-geo__items">
+            <div class="new-geo__items__item">
+              <div class="new-geo__items__item__title new-geo-title-110 new-geo-title-110-blue">110</div>
+              <div class="new-geo__items__item__subtitle">городов России
+                <br/>и 15 стран</div>
+            </div>
+            <div class="new-geo__items__item">
+              <div class="new-geo__items__item__title new-geo-title-15 new-geo-title-15-blue">15 000</div>
+              <div class="new-geo__items__item__subtitle">компаний
+                <br/>в числе наших клиентов</div>
+            </div>
+            <div class="new-geo__items__item">
+              <div class="new-geo__items__item__title new-geo-title-50 new-geo-title-50-blue">50+</div>
+              <div class="new-geo__items__item__subtitle">интеграций
+                <br/>с сервисами и CRM</div>
+            </div>
+            <div class="new-geo__items__item">
+              <div class="new-geo__items__item__title new-geo-title-96 new-geo-title-96-blue">96%</div>
+              <div class="new-geo__items__item__subtitle">точность определения
+                <br/>источника звонка</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="new-geo new-geo-blue">
+        <div class="container">
+          <div class="new-geo__items">
+            <div class="new-geo__items__item">
+              <div class="new-geo__items__item__title new-geo-title-110 new-geo-title-110-blue">110</div>
+              <div class="new-geo__items__item__subtitle">городов России
+                <br/>и 15 стран</div>
+            </div>
+            <div class="new-geo__items__item">
+              <div class="new-geo__items__item__title new-geo-title-15 new-geo-title-15-blue">15 000</div>
+              <div class="new-geo__items__item__subtitle">компаний
+                <br/>в числе наших клиентов</div>
+            </div>
+            <div class="new-geo__items__item">
+              <div class="new-geo__items__item__title new-geo-title-50 new-geo-title-50-blue">50+</div>
+              <div class="new-geo__items__item__subtitle">интеграций
+                <br/>с сервисами и CRM</div>
+            </div>
+            <div class="new-geo__items__item">
+              <div class="new-geo__items__item__title new-geo-title-96 new-geo-title-96-blue">96%</div>
+              <div class="new-geo__items__item__subtitle">точность определения
+                <br/>источника звонка</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__top__logo" href="/"></a>
+          <div class="footer__top__contacts">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81</a>
+            <p>Россия, 123557, г.Москва, Пресненский вал 27с9</p>
+          </div>
+          <div class="footer__top__social">
+            <p>Присоединяйтесь к нам в социальных сетях</p>
+            <ul class="footer__top__social__icons">
+              <li>
+                <a class="footer__top__social__icons__fb" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__vk" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__ok" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__youtube" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="fotter__bottom">
+          <div class="footer__bottom__menu">
+            <div class="footer__bottom__menu__item">
+              <h3>О сервисе</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Возможности</a>
+                </li>
+                <li>
+                  <a href="#">Применение</a>
+                </li>
+                <li>
+                  <a href="#">Цены</a>
+                </li>
+                <li>
+                  <a href="#">Партнерам</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>Мероприятия</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Вебинары</a>
+                </li>
+                <li>
+                  <a href="#">Конференции</a>
+                </li>
+                <li>
+                  <a href="#">События</a>
+                </li>
+                <li>
+                  <a class="active" href="#">Callday</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>База знаний</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Интеграции</a>
+                </li>
+                <li>
+                  <a href="#">Настройка системы</a>
+                </li>
+                <li>
+                  <a href="#">Отчеты</a>
+                </li>
+                <li>
+                  <a href="#">Справочный центр</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>О компании</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Пресса о нас</a>
+                </li>
+                <li>
+                  <a href="#">Вакансии</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__cabinet">
+              <p>Попробуйте собственными руками</p>
+              <a href="#">Демо-кабинет</a>
+            </div>
+          </div>
+          <div class="footer__bottom__terms">
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Лицензионный договор</a>
+              </li>
+              <li>
+                <a href="#">Договор связи</a>
+              </li>
+            </ul>
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Политика в отношении обработки персональных данных</a>
+              </li>
+              <li>
+                <a href="#">Согласие на обработку персональных данных</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts-->
+    <script src="static/js/moment.js"></script>
+    <script src="static/js/popover.min.js"></script>
+    <script src="static/js/tooltip.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="static/js/index.js"></script>
+  </body>
+</html>

@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timetable page</title>
+    <link href="static/css/index.css" rel="stylesheet">
+    <link rel="icon" href="static/favicon.ico">
+  </head>
+  <body>
+    <!-- SVG-->
+    <div class="svg-container" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-vintage-logo" viewBox="0 0 84.1 115.5">
+          <style>
+            .st0 {
+              fill: #000
+            }
+          </style>
+          <path d="M21.7 0H0l5.1 19.8h21.5z" />
+          <path d="M63.2 0L33.7 115.5h21L84.1 0z" />
+        </symbol>
+      </svg>
+    </div>
+    <!-- picture element HTML5 shiv-->
+    <script>
+      document.createElement('picture');
+    </script>
+    <!-- Header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__top__logo" href="#"></a>
+          <form class="header__top__form" method="#" action="#">
+            <input class="header__top__form__input" type="text" required="required" />
+            <span class="bar"></span>
+          </form>
+          <div class="header__top__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__top__contacts">
+            <button class="header__top__contacts__button">Позвонить</button>
+            <div class="header__top__contacts__numbers">
+              <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+              <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <nav class="header__menu">
+            <ul>
+              <li>
+                <a class="header__menu__link has-active mobile-active">Продукты</a>
+                <nav class="sub__menu products">
+                  <div class="sub__menu__block full">
+                    <h5> Технологии</h5>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Платформа</div>
+                          <div class="sub__menu__block__subtitle">Все данные в одном интерфейсе</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/predict.svg" alt="" />
+                          <div class="sub__menu__block__title">Предикт</div>
+                          <div class="sub__menu__block__subtitle">Анализ качества звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/calltracking.svg" alt="" />
+                          <div class="sub__menu__block__title">Коллтрекинг</div>
+                          <div class="sub__menu__block__subtitle">Определение источника звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Антифрод</div>
+                          <div class="sub__menu__block__subtitle">Защита от накрутки звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/optimizer.svg" alt="" />
+                          <div class="sub__menu__block__title">Оптимизатор</div>
+                          <div class="sub__menu__block__subtitle">AI управление рекламой</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/callback.svg" alt="" />
+                          <div class="sub__menu__block__title">Обратный звонок</div>
+                          <div class="sub__menu__block__subtitle">Виджет звонка с сайта</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Применение</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Сквозная аналитика</a>
+                      </li>
+                      <li>
+                        <a href="#">Контекстная реклама</a>
+                      </li>
+                      <li>
+                        <a href="#">Контроль качества</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенерация</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Интеграции</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Системы аналитики</a>
+                      </li>
+                      <li>
+                        <a href="#">Рекламные площадки</a>
+                      </li>
+                      <li>
+                        <a href="#">CRM</a>
+                      </li>
+                      <li>
+                        <a href="#">Оптимизаторы конекста</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенераторы</a>
+                      </li>
+                      <li>
+                        <a href="#">+50 интеграций Albato</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#">Цены</a>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Партнерам</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul class="mblock">
+                      <li>
+                        <a href="#">Партнерская программа</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификацированные агенства</a>
+                      </li>
+                    </ul>
+                    <ul class="mblock">
+                      <li>
+                        <div class="txt">Сертификация</div>
+                        <a href="#">Личный сертификат</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификат компании</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификат по Оптимизатору</a>
+                      </li>
+                    </ul>
+                    <ul class="mblock">
+                      <li>
+                        <div class="mblock__img">
+                          <img src="./static/img/sert-callt-img1.svg" />
+                        </div>
+                        <a href="#">Премия Calltouch Performance Awards 2019</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Академия</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Кейсы и статьи</a>
+                      </li>
+                      <li>
+                        <a href="#">Мероприятия</a>
+                      </li>
+                      <li>
+                        <a href="#">Видеоуроки</a>
+                      </li>
+                      <li>
+                        <a href="#">Вебинары</a>
+                      </li>
+                      <li>
+                        <a href="#">Справочный центр </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active"> О компании</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Пресса о нас</a>
+                      </li>
+                      <li>
+                        <a href="#">Вакансии</a>
+                      </li>
+                      <li>
+                        <a href="#">Контакты </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#"> Блог</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__bottom__auth">
+            <a href="#">Войти</a>
+            <a href="#">Подключиться</a>
+          </div>
+          <div class="header__top__contacts__numbers">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main content-->
+    <main class="content" data-page="timetable">
+      <section class="timetable">
+        <div class="container">
+          <div class="timetable__title">Четверг, 29.02.2019</div>
+          <div class="timetable__items">
+            <div class="timetable__item inactive">
+              <div class="timetable__item__title">Как создавать контент которым хочется поделиться</div>
+              <div class="timetable__item__footer">
+                <div class="timetable__item__info">
+                  <div class="timetable__item__date closed">Закрыто</div>
+                  <div class="timetable__item__place">Нижний Сусальный переулок д.5 корп 8</div>
+                  <div class="timetable__item__type offline">Offline</div>
+                </div>
+                <a class="timetable__item__link" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="timetable__item active">
+              <div class="timetable__item__title">Вернуть и реконсервировать маркетинг</div>
+              <div class="timetable__item__footer">
+                <div class="timetable__item__info">
+                  <div class="timetable__item__date opened">14:30</div>
+                  <div class="timetable__item__place">Достоевского д.15 корп 11</div>
+                  <div class="timetable__item__type online">Online</div>
+                </div>
+                <a class="timetable__item__link" href="#">Подробнее</a>
+              </div>
+            </div>
+            <div class="timetable__item active">
+              <div class="timetable__item__title">Все о Calltouch</div>
+              <div class="timetable__item__footer">
+                <div class="timetable__item__info">
+                  <div class="timetable__item__date opened">17:30</div>
+                  <div class="timetable__item__place">Нижний Сусальный переулок д.5 корп 8</div>
+                  <div class="timetable__item__type callday">Callday</div>
+                </div>
+                <a class="timetable__item__link" href="#">Подробнее</a>
+              </div>
+            </div>
+          </div>
+          <div class="timetable__time">Время московское</div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__top__logo" href="/"></a>
+          <div class="footer__top__contacts">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81</a>
+            <p>Россия, 123557, г.Москва, Пресненский вал 27с9</p>
+          </div>
+          <div class="footer__top__social">
+            <p>Присоединяйтесь к нам в социальных сетях</p>
+            <ul class="footer__top__social__icons">
+              <li>
+                <a class="footer__top__social__icons__fb" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__vk" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__ok" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__youtube" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="fotter__bottom">
+          <div class="footer__bottom__menu">
+            <div class="footer__bottom__menu__item">
+              <h3>О сервисе</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Возможности</a>
+                </li>
+                <li>
+                  <a href="#">Применение</a>
+                </li>
+                <li>
+                  <a href="#">Цены</a>
+                </li>
+                <li>
+                  <a href="#">Партнерам</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>Мероприятия</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Вебинары</a>
+                </li>
+                <li>
+                  <a href="#">Конференции</a>
+                </li>
+                <li>
+                  <a href="#">События</a>
+                </li>
+                <li>
+                  <a class="active" href="#">Callday</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>База знаний</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Интеграции</a>
+                </li>
+                <li>
+                  <a href="#">Настройка системы</a>
+                </li>
+                <li>
+                  <a href="#">Отчеты</a>
+                </li>
+                <li>
+                  <a href="#">Справочный центр</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>О компании</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Пресса о нас</a>
+                </li>
+                <li>
+                  <a href="#">Вакансии</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__cabinet">
+              <p>Попробуйте собственными руками</p>
+              <a href="#">Демо-кабинет</a>
+            </div>
+          </div>
+          <div class="footer__bottom__terms">
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Лицензионный договор</a>
+              </li>
+              <li>
+                <a href="#">Договор связи</a>
+              </li>
+            </ul>
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Политика в отношении обработки персональных данных</a>
+              </li>
+              <li>
+                <a href="#">Согласие на обработку персональных данных</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts-->
+    <script src="static/js/moment.js"></script>
+    <script src="static/js/popover.min.js"></script>
+    <script src="static/js/tooltip.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="static/js/index.js"></script>
+  </body>
+</html>

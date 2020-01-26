@@ -1,0 +1,1030 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Callback page</title>
+    <link href="static/css/index.css" rel="stylesheet">
+    <link rel="icon" href="static/favicon.ico">
+  </head>
+  <body>
+    <!-- SVG-->
+    <div class="svg-container" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-vintage-logo" viewBox="0 0 84.1 115.5">
+          <style>
+            .st0 {
+              fill: #000
+            }
+          </style>
+          <path d="M21.7 0H0l5.1 19.8h21.5z" />
+          <path d="M63.2 0L33.7 115.5h21L84.1 0z" />
+        </symbol>
+      </svg>
+    </div>
+    <!-- picture element HTML5 shiv-->
+    <script>
+      document.createElement('picture');
+    </script>
+    <!-- Header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__top__logo" href="#"></a>
+          <form class="header__top__form" method="#" action="#">
+            <input class="header__top__form__input" type="text" required="required" />
+            <span class="bar"></span>
+          </form>
+          <div class="header__top__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__top__contacts">
+            <button class="header__top__contacts__button">Позвонить</button>
+            <div class="header__top__contacts__numbers">
+              <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+              <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <nav class="header__menu">
+            <ul>
+              <li>
+                <a class="header__menu__link has-active mobile-active">Продукты</a>
+                <nav class="sub__menu products">
+                  <div class="sub__menu__block full">
+                    <h5> Технологии</h5>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Платформа</div>
+                          <div class="sub__menu__block__subtitle">Все данные в одном интерфейсе</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/predict.svg" alt="" />
+                          <div class="sub__menu__block__title">Предикт</div>
+                          <div class="sub__menu__block__subtitle">Анализ качества звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/calltracking.svg" alt="" />
+                          <div class="sub__menu__block__title">Коллтрекинг</div>
+                          <div class="sub__menu__block__subtitle">Определение источника звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Антифрод</div>
+                          <div class="sub__menu__block__subtitle">Защита от накрутки звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/optimizer.svg" alt="" />
+                          <div class="sub__menu__block__title">Оптимизатор</div>
+                          <div class="sub__menu__block__subtitle">AI управление рекламой</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/callback.svg" alt="" />
+                          <div class="sub__menu__block__title">Обратный звонок</div>
+                          <div class="sub__menu__block__subtitle">Виджет звонка с сайта</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Применение</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Сквозная аналитика</a>
+                      </li>
+                      <li>
+                        <a href="#">Контекстная реклама</a>
+                      </li>
+                      <li>
+                        <a href="#">Контроль качества</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенерация</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Интеграции</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Системы аналитики</a>
+                      </li>
+                      <li>
+                        <a href="#">Рекламные площадки</a>
+                      </li>
+                      <li>
+                        <a href="#">CRM</a>
+                      </li>
+                      <li>
+                        <a href="#">Оптимизаторы конекста</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенераторы</a>
+                      </li>
+                      <li>
+                        <a href="#">+50 интеграций Albato</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#">Цены</a>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Партнерам</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Партнерам</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертифицированные агенства</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификация</a>
+                      </li>
+                      <li>
+                        <a href="#">Обучение </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Академия</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Кейсы и статьи</a>
+                      </li>
+                      <li>
+                        <a href="#">Мероприятия</a>
+                      </li>
+                      <li>
+                        <a href="#">Видеоуроки</a>
+                      </li>
+                      <li>
+                        <a href="#">Вебинары</a>
+                      </li>
+                      <li>
+                        <a href="#">Справочный центр </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active"> О компании</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Пресса о нас</a>
+                      </li>
+                      <li>
+                        <a href="#">Вакансии</a>
+                      </li>
+                      <li>
+                        <a href="#">Контакты </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#"> Блог</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__bottom__auth">
+            <a href="#">Войти</a>
+            <a href="#">Подключиться</a>
+          </div>
+          <div class="header__top__contacts__numbers">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main content-->
+    <main class="content" data-page="callback">
+      <section class="callback">
+        <div class="container">
+          <div class="callback__about">
+            <div class="callback__heading">
+              <img class="callback__heading__logo" src="./static/img/callback-cblogo.svg" alt="callback-logo">
+              <div class="callback__heading__text">
+                <h1 class="callback__heading__title">Обратный звонок
+                  <div class="cb-heading-hidetext">- Callback CallTouch</div>
+                </h1>
+                <div class="callback__heading__message">Технология соединения клиента с вашей компанией.</div>
+                <div class="callback__heading__subtitle">Окно обратного звонка Calltouch появляется именно в тот момент, когда посетитель сайта хочет совершить звонок.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="callback__pluses">
+        <div class="container">
+          <h2 class="callback__title">Преимущества Calltouch Callback</h2>
+          <div class="callback__pluses__banner">
+            <div class="callback__pluses__banner__title">50 минут в подарок каждому новому клиенту</div>
+            <a class="callback__default-button cb-desk-button" href="https://lkbeta.calltouch.ru/user/registration" target="_blank">Подключитьcя</a>
+          </div>
+          <div class="callback__pluses__items">
+            <div class="callback__pluses__item cb-billing">Честный биллинг</div>
+            <div class="callback__pluses__item cb-price">Всего от 5 рублей за минуту</div>
+            <div class="callback__pluses__item cb-conversion">Повышает конверсию на 30%</div>
+            <div class="callback__pluses__item cb-2clicks">Установка в 2 клика</div>
+            <a class="callback__default-button cb-mobile-button" href="https://lkbeta.calltouch.ru/user/registration" target="_blank">Подключитьcя</a>
+          </div>
+        </div>
+      </section>
+      <section class="callback__reasons">
+        <div class="container">
+          <h2 class="callback__title">Почему именно обратный звонок Calltouch</h2>
+          <div class="callback__reasons__items">
+            <div class="callback__reasons__item cb-recording">
+              <div class="callback__reasons__item__title">Запись и тегирование звонков</div>
+              <div class="callback__reasons__item__text">Все обратные звонки Calltouch записываются. Прослушивайте и помечайте звонки отдельным тегом.</div>
+            </div>
+            <div class="callback__reasons__item cb-ringgroups">
+              <div class="callback__reasons__item__title">Ринг-группы</div>
+              <div class="callback__reasons__item__text">Звонок клиента не потеряется, даже если все операторы заняты. Использование сразу нескольких номеров позволяет равномерно распределить нагрузку между операторами колл-центра.</div>
+            </div>
+            <div class="callback__reasons__item cb-clientform">
+              <div class="callback__reasons__item__title">Сбор заявок с клиентских форм и лидов в Facebook</div>
+              <div class="callback__reasons__item__text">На любую форму с полем телефона можно настроить вызов обратного звонка.</div>
+            </div>
+            <div class="callback__reasons__item cb-operators">
+              <div class="callback__reasons__item__title">Голосовое оповещение для операторов</div>
+              <div class="callback__reasons__item__text">Оператор колл-центра будет оповещен о том, что это обратный звонок.</div>
+            </div>
+            <div class="callback__reasons__item cb-noworkday">
+              <div class="callback__reasons__item__title">Сбор заявок в нерабочее время</div>
+              <div class="callback__reasons__item__text">Ни один звонок не будет упущен. СallBack Calltouch свяжет вас с клиентом, как только начнется рабочий день</div>
+            </div>
+            <div class="callback__reasons__item cb-dtmf">
+              <div class="callback__reasons__item__title">Поддержка DTMF</div>
+              <div class="callback__reasons__item__text">Отправка вызова клиенту только при ответе оператора колл-центра. Рекомендуется для всех клиентов с IVR (голосовое меню) или голосовым приветствием.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="callback__price">
+        <div class="container">
+          <h2 class="callback__title">Стоимость связи через виджет обратного звонка</h2>
+          <div class="callback__price__subtitle">Больше минут, меньше цена. Не экономьте на минутах. Экономьте бюджет.
+            <br>Стоимость минуты связи зависит от подключенного
+            <a class="callback__price__link" href="https://www.calltouch.ru/pricing/" target="_blank">тарифа</a>и приобретенного пакета.</div>
+          <table class="callback__price__table">
+            <tr class="callback__price__table__row">
+              <td></td>
+              <td>
+                <div class="callback__price__table__heading">Cтарт +</div>
+              </td>
+              <td>
+                <div class="callback__price__table__heading">Cтандарт</div>
+              </td>
+            </tr>
+            <tr class="callback__price__table__row">
+              <td class="callback__price__table__title">до 499
+                <span>минут</span>
+              </td>
+              <td class="callback__price__table__title">10
+                <span>рублей / минута</span>
+              </td>
+              <td class="callback__price__table__title cb-table-ltitle">10
+                <span>рублей / минута</span>
+              </td>
+            </tr>
+            <tr class="callback__price__table__row">
+              <td class="callback__price__table__title">до 1 999
+                <span>минут</span>
+              </td>
+              <td class="callback__price__table__title">9
+                <span>рублей / минута</span>
+              </td>
+              <td class="callback__price__table__title cb-table-ltitle">9
+                <span>рублей / минута</span>
+              </td>
+            </tr>
+            <tr class="callback__price__table__row">
+              <td class="callback__price__table__title">до 3 999
+                <span>минут</span>
+              </td>
+              <td class="callback__price__table__title">8
+                <span>рублей / минута</span>
+              </td>
+              <td class="callback__price__table__title cb-table-ltitle">8
+                <span>рублей / минута</span>
+              </td>
+            </tr>
+            <tr class="callback__price__table__row">
+              <td class="callback__price__table__title">свыше 4 000
+                <span>минут</span>
+              </td>
+              <td class="callback__price__table__title">7
+                <span>рублей / минута</span>
+              </td>
+              <td class="callback__price__table__title cb-table-ltitle">5
+                <span>рублей / минута</span>
+              </td>
+            </tr>
+            <tr class="callback__price__table__row">
+              <td></td>
+              <td>
+                <a class="callback__default-button cb-table-button" href="https://lkbeta.calltouch.ru/user/registration" target="_blank">Подключитьcя</a>
+              </td>
+              <td>
+                <a class="callback__default-button cb-table-button" href="https://lkbeta.calltouch.ru/user/registration" target="_blank">Подключитьcя</a>
+              </td>
+            </tr>
+          </table>
+          <div class="callback__price__tabs">
+            <div class="callback__price__tabs-wrapper">
+              <div class="callback__price__tabs-tab active" data-mtab="cb-mtab-1">Старт +</div>
+              <div class="callback__price__tabs-tab" data-mtab="cb-mtab-2">Стандарт</div>
+            </div>
+            <div class="callback__price__tabs-content">
+              <div class="callback__price__tabs-items active" id="cb-mtab-1">
+                <div class="callback__price__tabs-row">
+                  <div class="callback__price__tabs-item cb-price-minutes">до 499
+                    <span>минут</span>
+                  </div>
+                  <div class="callback__price__tabs-item cb-price-count">
+                    <span>10</span>
+                    <span>рублей
+                      <br>/ минута</span>
+                  </div>
+                </div>
+                <div class="callback__price__tabs-row">
+                  <div class="callback__price__tabs-item cb-price-minutes">до 1999
+                    <span>минут</span>
+                  </div>
+                  <div class="callback__price__tabs-item cb-price-count">
+                    <span>9</span>
+                    <span>рублей
+                      <br>/ минута</span>
+                  </div>
+                </div>
+                <div class="callback__price__tabs-row">
+                  <div class="callback__price__tabs-item cb-price-minutes">до 3999
+                    <span>минут</span>
+                  </div>
+                  <div class="callback__price__tabs-item cb-price-count">
+                    <span>8</span>
+                    <span>рублей
+                      <br>/ минута</span>
+                  </div>
+                </div>
+                <div class="callback__price__tabs-row">
+                  <div class="callback__price__tabs-item cb-price-minutes">свыше 4000
+                    <span>минут</span>
+                  </div>
+                  <div class="callback__price__tabs-item cb-price-count">
+                    <span>7</span>
+                    <span>рублей
+                      <br>/ минута</span>
+                  </div>
+                </div>
+                <div class="callback__price__tabs-row">
+                  <a class="callback__default-button cb-pricetabs-btn" href="https://lkbeta.calltouch.ru/user/registration" target="_blank">Подключиться</a>
+                </div>
+              </div>
+              <div class="callback__price__tabs-items" id="cb-mtab-2">
+                <div class="callback__price__tabs-row">
+                  <div class="callback__price__tabs-item cb-price-minutes">до 499
+                    <span>минут</span>
+                  </div>
+                  <div class="callback__price__tabs-item cb-price-count">
+                    <span>10</span>
+                    <span>рублей
+                      <br>/ минута</span>
+                  </div>
+                </div>
+                <div class="callback__price__tabs-row">
+                  <div class="callback__price__tabs-item cb-price-minutes">до 1999
+                    <span>минут</span>
+                  </div>
+                  <div class="callback__price__tabs-item cb-price-count">
+                    <span>9</span>
+                    <span>рублей
+                      <br>/ минута</span>
+                  </div>
+                </div>
+                <div class="callback__price__tabs-row">
+                  <div class="callback__price__tabs-item cb-price-minutes">до 3999
+                    <span>минут</span>
+                  </div>
+                  <div class="callback__price__tabs-item cb-price-count">
+                    <span>8</span>
+                    <span>рублей
+                      <br>/ минута</span>
+                  </div>
+                </div>
+                <div class="callback__price__tabs-row">
+                  <div class="callback__price__tabs-item cb-price-minutes">свыше 4000
+                    <span>минут</span>
+                  </div>
+                  <div class="callback__price__tabs-item cb-price-count">
+                    <span>5</span>
+                    <span>рублей
+                      <br>/ минута</span>
+                  </div>
+                </div>
+                <div class="callback__price__tabs-row">
+                  <a class="callback__default-button cb-pricetabs-btn" href="https://lkbeta.calltouch.ru/user/registration" target="_blank">Подключиться</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="callback__price__faq">
+          <div class="container">
+            <h2 class="callback__title cb-white-title">Как подключить?</h2>
+            <div class="cb-faq__wrapper">
+              <div class="cb-faq__numbers">
+                <div class="cb-faq__numbers__item">
+                  <span>1</span>
+                </div>
+                <div class="cb-faq__numbers__item">
+                  <span>2</span>
+                </div>
+                <div class="cb-faq__numbers__item">
+                  <span>3</span>
+                </div>
+                <div class="cb-faq__numbers__item">
+                  <span>4</span>
+                </div>
+              </div>
+              <div class="cb-faq__items">
+                <div class="cb-faq__item">Войдите в ваш
+                  <br>
+                  <a class="cb-faq__link" href="https://lkbeta.calltouch.ru/user/login">личный кабинет</a>
+                  <br>или
+                  <a class="cb-faq__link" href="https://lkbeta.calltouch.ru/user/registration">зарегистрируйтесь</a>
+                </div>
+                <div class="cb-faq__item">Перейдите во
+                  <br>вкладку продукты -
+                  <br>Обратный звонок</div>
+                <div class="cb-faq__item">Создайте
+                  <br>и настройте
+                  <br>виджет</div>
+                <div class="cb-faq__item">Используйте 50
+                  <br>бесплатных минут
+                  <br>для новых клиентов
+                  <br>или пополните баланс.</div>
+              </div>
+            </div>
+            <div class="callback__price__faq__offer">
+              <div class="callback__price__faq__title">Получайте на
+                <span>30%</span>больше лидов с коллбеком от Calltouch</div>
+              <a class="callback__default-button cb-price-btn" href="https://lkbeta.calltouch.ru/user/registration" target="_blank">Зарегистрироваться</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="callback__settings">
+        <div class="container">
+          <div class="callback__settings__wrapper">
+            <div class="callback__settings__tabs">
+              <div class="callback__settings__tab active" data-tab="cb-tab-1">Внешний вид</div>
+              <div class="callback__settings__tab" data-tab="cb-tab-2">Настройки</div>
+              <div class="callback__settings__tab" data-tab="cb-tab-3">Виджеты</div>
+            </div>
+            <div class="callback__settings__content">
+              <div class="callback__settings__item active" id="cb-tab-1">
+                <div class="callback__settings__item__img">
+                  <img src="./static/img/cb-settings-img.png">
+                </div>
+                <div class="callback__settings__item__list-wrapper">
+                  <div class="callback__settings__item__title">Кастомизируйте внешний вид</div>
+                  <ul class="callback__settings__item__list">
+                    <li>Адаптируйте форму колбэка под ваш сайт: загружайте логотип, подложку или меняйте фон с помощью цветовой палитры</li>
+                    <li>Меняйте стили, используйте иллюстрации</li>
+                    <li>Настраивайте вид формы коллбэка для показов в нерабочее время</li>
+                    <li>Используйте мотивирующие тексты для увеличения конверсии в звонок</li>
+                    <li>Используйте мотивирующие тексты для увеличения конверсии в звонок</li>
+                    <li>Используйте мотивирующие тексты для увеличения конверсии в звонок</li>
+                    <li>Используйте мотивирующие тексты для увеличения конверсии в звонок</li>
+                    <li>Используйте мотивирующие тексты для увеличения конверсии в звонок</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="callback__settings__item" id="cb-tab-2">
+                <div class="callback__settings__item__img">
+                  <img src="./static/img/cb-settings-img.png">
+                </div>
+                <div class="callback__settings__item__list-wrapper">
+                  <div class="callback__settings__item__title">Настройте что-то там</div>
+                  <ul class="callback__settings__item__list">
+                    <li>Адаптируйте форму колбэка под ваш сайт: загружайте логотип, подложку или меняйте фон с помощью цветовой палитры</li>
+                    <li>Меняйте стили, используйте иллюстрации</li>
+                    <li>Настраивайте вид формы коллбэка для показов в нерабочее время</li>
+                    <li>Используйте мотивирующие тексты для увеличения конверсии в звонок</li>
+                  </ul>
+                </div>
+              </div>
+              <div class="callback__settings__item" id="cb-tab-3">
+                <div class="callback__settings__item__img">
+                  <img src="./static/img/cb-settings-img.png">
+                </div>
+                <div class="callback__settings__item__list-wrapper">
+                  <div class="callback__settings__item__title">Подключите виджеты</div>
+                  <ul class="callback__settings__item__list">
+                    <li>Адаптируйте форму колбэка под ваш сайт: загружайте логотип, подложку или меняйте фон с помощью цветовой палитры</li>
+                    <li>Меняйте стили, используйте иллюстрации</li>
+                    <li>Настраивайте вид формы коллбэка для показов в нерабочее время</li>
+                    <li>Используйте мотивирующие тексты для увеличения конверсии в звонок</li>
+                    <li>Используйте мотивирующие тексты для увеличения конверсии в звонок</li>
+                    <li>Используйте мотивирующие тексты для увеличения конверсии в звонок</li>
+                    <li>Используйте мотивирующие тексты для увеличения конверсии в звонок</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="callback__examples">
+        <div class="container">
+          <h2 class="callback__title cb-white-title">Примеры кастомизированных виджетов</h2>
+          <div class="callback__examples__wrapper">
+            <div class="callback__examples__items swiper-container" id="callback__examples__slider">
+              <div class="swiper-wrapper">
+                <div class="callback__examples__item swiper-slide">
+                  <!-- link to the big preview image-->
+                  <a class="glightbox" href="./static/img/cb-example-img.png">
+                    <!-- small default img-->
+                    <img src="./static/img/cb-example-img.png">
+                  </a>
+                </div>
+                <div class="callback__examples__item swiper-slide">
+                  <a class="glightbox" href="./static/img/cb-example-img.png">
+                    <img src="./static/img/cb-example-img.png">
+                  </a>
+                </div>
+                <div class="callback__examples__item swiper-slide">
+                  <a class="glightbox" href="./static/img/cb-example-img.png">
+                    <img src="./static/img/cb-example-img.png">
+                  </a>
+                </div>
+                <div class="callback__examples__item swiper-slide">
+                  <a class="glightbox" href="./static/img/cb-example-img.png">
+                    <img src="./static/img/cb-example-img.png">
+                  </a>
+                </div>
+                <div class="callback__examples__item swiper-slide">
+                  <a class="glightbox" href="./static/img/cb-example-img.png">
+                    <img src="./static/img/cb-example-img.png">
+                  </a>
+                </div>
+                <div class="callback__examples__item swiper-slide">
+                  <a class="glightbox" href="./static/img/cb-example-img.png">
+                    <img src="./static/img/cb-example-img.png">
+                  </a>
+                </div>
+                <div class="callback__examples__item swiper-slide">
+                  <a class="glightbox" href="./static/img/cb-example-img.png">
+                    <img src="./static/img/cb-example-img.png">
+                  </a>
+                </div>
+                <div class="callback__examples__item swiper-slide">
+                  <a class="glightbox" href="./static/img/cb-example-img.png">
+                    <img src="./static/img/cb-example-img.png">
+                  </a>
+                </div>
+                <div class="callback__examples__item swiper-slide">
+                  <a class="glightbox" href="./static/img/cb-example-img.png">
+                    <img src="./static/img/cb-example-img.png">
+                  </a>
+                </div>
+                <div class="callback__examples__item swiper-slide">
+                  <a class="glightbox" href="./static/img/cb-example-img.png">
+                    <img src="./static/img/cb-example-img.png">
+                  </a>
+                </div>
+                <div class="callback__examples__item swiper-slide">
+                  <a class="glightbox" href="./static/img/cb-example-img.png">
+                    <img src="./static/img/cb-example-img.png">
+                  </a>
+                </div>
+                <div class="callback__examples__item swiper-slide">
+                  <a class="glightbox" href="./static/img/cb-example-img.png">
+                    <img src="./static/img/cb-example-img.png">
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev callback__examples__prev"></div>
+            <div class="swiper-button-next callback__examples__next"></div>
+            <div class="swiper-pagination callback__examples__pagination"></div>
+            <div class="callback__examples__mobile-wrapper">
+              <div class="swiper-button-prev cb-examples-mobile-prev"></div>
+              <div class="swiper-pagination cb-examples-mobile-pagination"></div>
+              <div class="swiper-button-next cb-examples-mobile-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="callback-test">
+        <div class="container">
+          <h2 class="callback-test__title">Более 30 показателей для анализа эффективности в удобном интерфейсе</h2>
+          <div class="callback-test__column">
+            <div class="swiper-container" id="callback-test__quote">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="callback-test__quotes">
+                    <div class="callback-test__subtitle">Все источники 1</div>
+                    <div class="callback-test__text">Все каналы трафика и эффективность в одном отчете</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__quotes">
+                    <div class="callback-test__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+                    <div class="callback-test__text">Смотрите затраты по каждой кампании и стоимость лида.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__quotes">
+                    <div class="callback-test__subtitle">Время и дни недели</div>
+                    <div class="callback-test__text">Оптимизируйте ставки в рекламе в зависимости от пиковых дней и часов.Планируйте нагрузку колл-центра.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__quotes">
+                    <div class="callback-test__subtitle">Сравнение периодов</div>
+                    <div class="callback-test__text">Выбирайте любые отрезки времени и сравнивайте периоды.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__quotes">
+                    <div class="callback-test__subtitle">Графики и диаграммы</div>
+                    <div class="callback-test__text">Простые, понятные и дружелюбные отчеты для быстрого и удобного анализа.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__quotes">
+                    <div class="callback-test__subtitle">Журнал звонков и прослушивание</div>
+                    <div class="callback-test__text">Удобный плеер для прослушивания и тегирования звонков.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__quotes">
+                    <div class="callback-test__subtitle">Все источники 1</div>
+                    <div class="callback-test__text">Все каналы трафика и эффективность в одном отчете</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__quotes">
+                    <div class="callback-test__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+                    <div class="callback-test__text">Смотрите затраты по каждой кампании и стоимость лида.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__quotes">
+                    <div class="callback-test__subtitle">Время и дни недели</div>
+                    <div class="callback-test__text">Оптимизируйте ставки в рекламе в зависимости от пиковых дней и часов.Планируйте нагрузку колл-центра.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__quotes">
+                    <div class="callback-test__subtitle">Сравнение периодов</div>
+                    <div class="callback-test__text">Выбирайте любые отрезки времени и сравнивайте периоды.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__quotes">
+                    <div class="callback-test__subtitle">Графики и диаграммы</div>
+                    <div class="callback-test__text">Простые, понятные и дружелюбные отчеты для быстрого и удобного анализа.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__quotes">
+                    <div class="callback-test__subtitle">Журнал звонков и прослушивание</div>
+                    <div class="callback-test__text">Удобный плеер для прослушивания и тегирования звонков.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- fullscreen slider-->
+            <div class="swiper-container" id="callback-test__slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="callback-test__img-wrapper">
+                    <img class="callback-test__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__img-wrapper">
+                    <img class="callback-test__screen" src="./static/img/ct-ydirect.png" alt="calltracking-ydirect">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__img-wrapper">
+                    <img class="callback-test__screen" src="./static/img/ct-heatmap.png" alt="calltracking-heatmap">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__img-wrapper">
+                    <img class="callback-test__screen" src="./static/img/ct-periods.png" alt="calltracking-periods">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__img-wrapper">
+                    <img class="callback-test__screen" src="./static/img/ct-diagrams.png" alt="calltracking-diagrams">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__img-wrapper">
+                    <img class="callback-test__screen" src="./static/img/ct-callsjournal.png" alt="calltracking-callsjournal">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__img-wrapper">
+                    <img class="callback-test__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__img-wrapper">
+                    <img class="callback-test__screen" src="./static/img/ct-ydirect.png" alt="calltracking-ydirect">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__img-wrapper">
+                    <img class="callback-test__screen" src="./static/img/ct-heatmap.png" alt="calltracking-heatmap">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__img-wrapper">
+                    <img class="callback-test__screen" src="./static/img/ct-periods.png" alt="calltracking-periods">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__img-wrapper">
+                    <img class="callback-test__screen" src="./static/img/ct-diagrams.png" alt="calltracking-diagrams">
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="callback-test__img-wrapper">
+                    <img class="callback-test__screen" src="./static/img/ct-callsjournal.png" alt="calltracking-callsjournal">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-prev callback-test__prev"></div>
+            <div class="swiper-button-next callback-test__next"></div>
+            <div class="swiper-pagination callback-test__pagination"></div>
+            <div class="callback-test__mobile-wrapper">
+              <div class="swiper-button-prev cb-test-mobile-prev"></div>
+              <div class="swiper-pagination cb-test-mobile-pagination"></div>
+              <div class="swiper-button-next cb-test-mobile-next"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="full-slider">
+        <div class="full-slider__close"></div>
+        <div class="swiper-container" id="callback-full__slider">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="callback-test__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+              <div class="callback-test__text">Смотрите затраты по каждой кампании и стоимость лида.</div>
+              <div class="callback-test__img-wrapper">
+                <img class="callback-test__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="callback-test__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+              <div class="callback-test__text">Смотрите затраты по каждой кампании и стоимость лида.</div>
+              <div class="callback-test__img-wrapper">
+                <img class="callback-test__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="callback-test__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+              <div class="callback-test__text">Смотрите затраты по каждой кампании и стоимость лида.</div>
+              <div class="callback-test__img-wrapper">
+                <img class="callback-test__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="callback-test__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+              <div class="callback-test__text">Смотрите затраты по каждой кампании и стоимость лида.</div>
+              <div class="callback-test__img-wrapper">
+                <img class="callback-test__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="callback-test__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+              <div class="callback-test__text">Смотрите затраты по каждой кампании и стоимость лида.</div>
+              <div class="callback-test__img-wrapper">
+                <img class="callback-test__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="callback-test__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+              <div class="callback-test__text">Смотрите затраты по каждой кампании и стоимость лида.</div>
+              <div class="callback-test__img-wrapper">
+                <img class="callback-test__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="callback-test__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+              <div class="callback-test__text">Смотрите затраты по каждой кампании и стоимость лида.</div>
+              <div class="callback-test__img-wrapper">
+                <img class="callback-test__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="callback-test__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+              <div class="callback-test__text">Смотрите затраты по каждой кампании и стоимость лида.</div>
+              <div class="callback-test__img-wrapper">
+                <img class="callback-test__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="callback-test__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+              <div class="callback-test__text">Смотрите затраты по каждой кампании и стоимость лида.</div>
+              <div class="callback-test__img-wrapper">
+                <img class="callback-test__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="callback-test__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+              <div class="callback-test__text">Смотрите затраты по каждой кампании и стоимость лида.</div>
+              <div class="callback-test__img-wrapper">
+                <img class="callback-test__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="callback-test__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+              <div class="callback-test__text">Смотрите затраты по каждой кампании и стоимость лида.</div>
+              <div class="callback-test__img-wrapper">
+                <img class="callback-test__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div class="callback-test__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+              <div class="callback-test__text">Смотрите затраты по каждой кампании и стоимость лида.</div>
+              <div class="callback-test__img-wrapper">
+                <img class="callback-test__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination full-nav"></div>
+        <div class="swiper-button-prev full-prev"></div>
+        <div class="swiper-button-next full-next"></div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__top__logo" href="/"></a>
+          <div class="footer__top__contacts">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81</a>
+            <p>Россия, 123557, г.Москва, Пресненский вал 27с9</p>
+          </div>
+          <div class="footer__top__social">
+            <p>Присоединяйтесь к нам в социальных сетях</p>
+            <ul class="footer__top__social__icons">
+              <li>
+                <a class="footer__top__social__icons__fb" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__vk" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__ok" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__youtube" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="fotter__bottom">
+          <div class="footer__bottom__menu">
+            <div class="footer__bottom__menu__item">
+              <h3>О сервисе</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Возможности</a>
+                </li>
+                <li>
+                  <a href="#">Применение</a>
+                </li>
+                <li>
+                  <a href="#">Цены</a>
+                </li>
+                <li>
+                  <a href="#">Партнерам</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>Мероприятия</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Вебинары</a>
+                </li>
+                <li>
+                  <a href="#">Конференции</a>
+                </li>
+                <li>
+                  <a href="#">События</a>
+                </li>
+                <li>
+                  <a class="active" href="#">Callday</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>База знаний</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Интеграции</a>
+                </li>
+                <li>
+                  <a href="#">Настройка системы</a>
+                </li>
+                <li>
+                  <a href="#">Отчеты</a>
+                </li>
+                <li>
+                  <a href="#">Справочный центр</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>О компании</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Пресса о нас</a>
+                </li>
+                <li>
+                  <a href="#">Вакансии</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__cabinet">
+              <p>Попробуйте собственными руками</p>
+              <a href="#">Демо-кабинет</a>
+            </div>
+          </div>
+          <div class="footer__bottom__terms">
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Лицензионный договор</a>
+              </li>
+              <li>
+                <a href="#">Договор связи</a>
+              </li>
+            </ul>
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Политика в отношении обработки персональных данных</a>
+              </li>
+              <li>
+                <a href="#">Согласие на обработку персональных данных</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts-->
+    <script src="static/js/moment.js"></script>
+    <script src="static/js/popover.min.js"></script>
+    <script src="static/js/tooltip.min.js"></script>
+    <script src="static/js/index.js"></script>
+  </body>
+</html>

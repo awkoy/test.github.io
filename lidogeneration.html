@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sert-callt</title>
+    <link href="static/css/index.css" rel="stylesheet">
+    <link rel="icon" href="static/favicon.ico">
+  </head>
+  <body>
+    <!-- SVG-->
+    <div class="svg-container" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-vintage-logo" viewBox="0 0 84.1 115.5">
+          <style>
+            .st0 {
+              fill: #000
+            }
+          </style>
+          <path d="M21.7 0H0l5.1 19.8h21.5z" />
+          <path d="M63.2 0L33.7 115.5h21L84.1 0z" />
+        </symbol>
+      </svg>
+    </div>
+    <!-- picture element HTML5 shiv-->
+    <script>
+      document.createElement('picture');
+    </script>
+    <!-- Header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__top__logo" href="#"></a>
+          <form class="header__top__form" method="#" action="#">
+            <input class="header__top__form__input" type="text" required="required" />
+            <span class="bar"></span>
+          </form>
+          <div class="header__top__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__top__contacts">
+            <button class="header__top__contacts__button">Позвонить</button>
+            <div class="header__top__contacts__numbers">
+              <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+              <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <nav class="header__menu">
+            <ul>
+              <li>
+                <a class="header__menu__link has-active mobile-active">Продукты</a>
+                <nav class="sub__menu products">
+                  <div class="sub__menu__block full">
+                    <h5> Технологии</h5>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Платформа</div>
+                          <div class="sub__menu__block__subtitle">Все данные в одном интерфейсе</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/predict.svg" alt="" />
+                          <div class="sub__menu__block__title">Предикт</div>
+                          <div class="sub__menu__block__subtitle">Анализ качества звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/calltracking.svg" alt="" />
+                          <div class="sub__menu__block__title">Коллтрекинг</div>
+                          <div class="sub__menu__block__subtitle">Определение источника звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Антифрод</div>
+                          <div class="sub__menu__block__subtitle">Защита от накрутки звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/optimizer.svg" alt="" />
+                          <div class="sub__menu__block__title">Оптимизатор</div>
+                          <div class="sub__menu__block__subtitle">AI управление рекламой</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/callback.svg" alt="" />
+                          <div class="sub__menu__block__title">Обратный звонок</div>
+                          <div class="sub__menu__block__subtitle">Виджет звонка с сайта</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Применение</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Сквозная аналитика</a>
+                      </li>
+                      <li>
+                        <a href="#">Контекстная реклама</a>
+                      </li>
+                      <li>
+                        <a href="#">Контроль качества</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенерация</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Интеграции</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Системы аналитики</a>
+                      </li>
+                      <li>
+                        <a href="#">Рекламные площадки</a>
+                      </li>
+                      <li>
+                        <a href="#">CRM</a>
+                      </li>
+                      <li>
+                        <a href="#">Оптимизаторы конекста</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенераторы</a>
+                      </li>
+                      <li>
+                        <a href="#">+50 интеграций Albato</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#">Цены</a>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Партнерам</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul class="mblock">
+                      <li>
+                        <a href="#">Партнерская программа</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификацированные агенства</a>
+                      </li>
+                    </ul>
+                    <ul class="mblock">
+                      <li>
+                        <div class="txt">Сертификация</div>
+                        <a href="#">Личный сертификат</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификат компании</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификат по Оптимизатору</a>
+                      </li>
+                    </ul>
+                    <ul class="mblock">
+                      <li>
+                        <div class="mblock__img">
+                          <img src="./static/img/sert-callt-img1.svg" />
+                        </div>
+                        <a href="#">Премия Calltouch Performance Awards 2019</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Академия</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Кейсы и статьи</a>
+                      </li>
+                      <li>
+                        <a href="#">Мероприятия</a>
+                      </li>
+                      <li>
+                        <a href="#">Видеоуроки</a>
+                      </li>
+                      <li>
+                        <a href="#">Вебинары</a>
+                      </li>
+                      <li>
+                        <a href="#">Справочный центр </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active"> О компании</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Пресса о нас</a>
+                      </li>
+                      <li>
+                        <a href="#">Вакансии</a>
+                      </li>
+                      <li>
+                        <a href="#">Контакты </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#"> Блог</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__bottom__auth">
+            <a href="#">Войти</a>
+            <a href="#">Подключиться</a>
+          </div>
+          <div class="header__top__contacts__numbers">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main content-->
+    <section class="vidgets">
+      <div class="container">
+        <h2 class="vidgets__title">Виджеты Calltouch для увеличения конверсии сайта и роста продаж</h2>
+        <div class="vidgets__info">
+          <div class="vidgets__info__item">
+            <div class="vidgets__info__imgcontainer">
+              <img src="./static/img/conversion.svg">
+            </div>
+            <div class="vidgets__info__text"> Повышайте
+              <br>конверсию</div>
+          </div>
+          <div class="vidgets__info__item">
+            <div class="vidgets__info__imgcontainer">
+              <img src="./static/img/automation.svg">
+            </div>
+            <div class="vidgets__info__text"> Автоматизируйте
+              <br>процессы</div>
+          </div>
+          <div class="vidgets__info__item">
+            <div class="vidgets__info__imgcontainer">
+              <img src="./static/img/sales.svg">
+            </div>
+            <div class="vidgets__info__text"> Увеличивайте
+              <br>продажи</div>
+          </div>
+        </div>
+        <div class="vidgets__links">
+          <a class="active vidgets__link" data-hide="all">Все</a>
+          <a class="vidgets__link" data-hide="block1">Обратный звонок</a>
+          <a class="vidgets__link" data-hide="block2">CallToVisit</a>
+          <a class="vidgets__link" data-hide="block3">Сбор заявок во вне рабочее время</a>
+          <a class="vidgets__link" data-hide="block4">Мультикнопка</a>
+          <a class="vidgets__link" data-hide="block5">Прозвон пропущенных звонков</a>
+          <a class="vidgets__link" data-hide="block6">Умная заявка</a>
+          <a class="vidgets__link" data-hide="block7">Отчеты по виджетам</a>
+        </div>
+      </div>
+    </section>
+    <section class="recall" data-hide-block="block1">
+      <div class="container">
+        <h2 class="recall__title">Обратный звонок для сайта</h2>
+        <div class="recall__conversion">
+          <div class="recall__imgcontainer">
+            <img src="./static/img/calltouch-callback.svg">
+          </div>
+          <div class="recall__conversion__content">
+            <div class="recall__subtitle"> Повысит конверсию в звонок на 30% </div>
+            <div class="recall__maintext">Обратный звонок – это виджет с формой для заполнения. Клиент просто оставляет свой номер телефона и не тратит время на дозвон и прослушивание приветствия – скрипт тут же звонит оператору, а только потом клиенту. Соединение происходит меньше,
+              чем за 30 секунд. Адаптируйте дизайн под ваш сайт, настраивайте условия показа, добавляйте акции в окно обратного звонка. Он станет неотъемлемой частью вашего сайта.</div>
+            <div class="recall__subtext">Адаптируйте дизайн под ваш сайт, настраивайте условия показа, добавляйте акции в окно обратного звонка. Он станет неотъемлемой частью вашего сайта.</div>
+          </div>
+        </div>
+        <div class="recall__present">
+          <div class="recall__present__top">
+            <div class="recall__present__imgcont">
+              <img src="./static/img/group-2.svg">
+            </div>
+            <div class="recall__present__ctext">50 минут в подарок каждому новому клиенту</div>
+            <a class="recall__present__btn" href="https://my.calltouch.ru/user/registration" target="_blank">Подключить</a>
+          </div>
+          <ul class="recall__list">
+            <li class="recall__list__item">Всего от 5 рублей за минуту</li>
+            <li class="recall__list__item">Установка в 2 клика</li>
+            <li class="recall__list__item">Адаптивен и с гибкими настройками</li>
+            <li class="recall__list__item">Голосовое оповещение для операторов</li>
+            <li class="recall__list__item">Сбор заявок во внерабочее время</li>
+            <li class="recall__list__item">Автообзвон заявок с форм на вашем сайте и лидов в Facebook</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="ctvinfo">
+      <div class="container">
+        <div class="ctvinfo__item reverse" data-hide-block="block2">
+          <div class="ctvinfo__imgcont">
+            <img src="./static/img/device.png">
+          </div>
+          <div class="ctvinfo__content">
+            <h2 class="ctvinfo__title">CallToVisit</h2>
+            <div class="ctvinfo__subtitle"> Теперь ни один звонок не останется пропущенным.</div>
+            <div class="ctvinfo__maintext">CallToVisit - это сервис, который позволяет повысить конверсию в целевой визит.
+              <br>
+              <br>На сайте появляется виджет, который предлагает клиенту подвезти его до вашей компании совершенно бесплатно для него. Виджет легко создать и настроить прямо из кабинета Calltouch. </div>
+            <a class="ctvinfo__btn" href="https://my.calltouch.ru/user/registration"
+              target="_blank">Подключить</a>
+          </div>
+          <div class="ctvinfo__why">
+            <div class="ctvinfo__half">
+              <div class="ctvinfo__subtitle">Зачем использовать Calltouch?</div>
+              <ul class="ctvinfo__list">
+                <li class="ctvinfo__list__item">Не нужны дополнительные скрипты;</li>
+                <li class="ctvinfo__list__item">Все виджеты в одном стиле;</li>
+                <li class="ctvinfo__list__item">Подробные отчеты в вашем личном кабинете.</li>
+              </ul>
+            </div>
+            <div class="ctvinfo__half">
+              <div class="ctvinfo__subtitle">Вам нужен виджет, если: </div>
+              <ul class="ctvinfo__list">
+                <li class="ctvinfo__list__item">На сайте много посетителей, но низкая конверсия в продажу;</li>
+                <li class="ctvinfo__list__item">Сложно добраться до точек продаж;</li>
+                <li class="ctvinfo__list__item">Повторные продажи текущим клиентам.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="ctvinfo__item reverse" data-hide-block="block3">
+          <div class="ctvinfo__imgcont">
+            <img src="./static/img/device-2.png">
+          </div>
+          <div class="ctvinfo__content">
+            <h2 class="ctvinfo__title">Сбор заявок во внерабочее время</h2>
+            <div class="ctvinfo__maintext">Собирайте заявки во внерабочее время с помощью виджета. Персонализируйте форму, используйте специальные предложения, изображения и тексты для повышения ее эффективности. </div>
+            <div class="ctvinfo__subtext">Собирайте контакты в любое время</div>
+            <a class="ctvinfo__btn" href="https://my.calltouch.ru/user/registration" target="_blank">Подключить</a>
+          </div>
+        </div>
+        <div class="ctvinfo__item" data-hide-block="block4">
+          <div class="ctvinfo__imgcont">
+            <img src="./static/img/device-3.png">
+          </div>
+          <div class="ctvinfo__content">
+            <h2 class="ctvinfo__title">Мультикнопка</h2>
+            <div class="ctvinfo__subtitle">Больше мессенджеров – больше возможностей продаж</div>
+            <div class="ctvinfo__maintext"> Клиенты любят, когда у них есть выбор действий.
+              <br>Вы можете добавить разные виджеты для одной кнопки: обратный звонок, умную заявку, ссылки на мессенджеры и социальные сети: Facebook, VK, чате Telegram или WhatsApp и другие.</div>
+            <a class="ctvinfo__btn" href="https://my.calltouch.ru/user/registration"
+              target="_blank">Подключить</a>
+          </div>
+        </div>
+        <div class="ctvinfo__item reverse" data-hide-block="block5">
+          <div class="ctvinfo__imgcont">
+            <img src="./static/img/group-17.png">
+          </div>
+          <div class="ctvinfo__content">
+            <h2 class="ctvinfo__title">Виджет прозвона пропущенных звонков</h2>
+            <div class="ctvinfo__maintext">
+              <p>В зависимости от индустрии привлечение одного звонка стоит от
+                <b>1 734 до 20 650 рублей. </b>В среднем число пропущенных звонков составляет
+                <b>5-7%.</b>
+              </p>
+              <p>Если ваши менеджеры пропускают звонки, то вы тратите деньги впустую.</p>
+              <p> Виджет прозвона пропущенных «запоминает» неотвеченный звонок и перезванивает клиенту через коллбек. Функционал работает только с пропущенными вызовами, исключая запросы на обратный звонок.</p>
+            </div>
+            <a class="ctvinfo__btn" href="https://my.calltouch.ru/user/registration" target="_blank">Подключить</a>
+          </div>
+        </div>
+        <div class="ctvinfo__item" data-hide-block="block6">
+          <div class="ctvinfo__imgcont">
+            <img src="./static/img/device-4.png">
+          </div>
+          <div class="ctvinfo__content">
+            <h2 class="ctvinfo__title">«Умная заявка» </h2>
+            <div class="ctvinfo__subtitle">Для клиентов, которые не любят звонить</div>
+            <div class="ctvinfo__maintext"> Calltouch анализирует поведение пользователей на вашем сайте и показывает форму виджета только тогда, когда это нужно.
+              <br>Виджет заявки отображается только тем пользователям, которые скорее всего не совершат звонок, и, наоборот, не раздражает тех пользователей, которые и так станут Вашими клиентами, совершив какое-либо обращение.</div>
+            <a class="ctvinfo__btn"
+              href="https://my.calltouch.ru/user/registration" target="_blank">Подключить</a>
+          </div>
+        </div>
+        <div class="ctvinfo__item reverse" data-hide-block="block7">
+          <div class="ctvinfo__imgcont">
+            <img src="./static/img/group-18.png">
+          </div>
+          <div class="ctvinfo__content">
+            <h2 class="ctvinfo__title">Отчеты по виджетам </h2>
+            <div class="ctvinfo__subtitle">Анализируйте данные, а Calltouch их соберет за вас</div>
+            <div class="ctvinfo__maintext">Вся статистика по эффективности виджетов собирается в личном кабинете Calltouch в виде удобных графиков и отчетов. Вы получаете подробную информацию о пользователе и звонке, воронку продаж от входа на сайт и до сделки. Анализируйте данные
+              о конверсии, источниках обращений и эффективности работы форм. </div>
+            <a class="ctvinfo__btn" href="https://my.calltouch.ru/user/registration" target="_blank">Подключить</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="effective">
+      <div class="container">
+        <div class="effective__title"> Сделайте свой маркетинг
+          <br>эффективным, автоматизированным и
+          <br>прозрачным вместе с Calltouch. </div>
+        <img class="effective__logo" src="./static/img/effective.svg">
+      </div>
+    </section>
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__top__logo" href="/"></a>
+          <div class="footer__top__contacts">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81</a>
+            <p>Россия, 123557, г.Москва, Пресненский вал 27с9</p>
+          </div>
+          <div class="footer__top__social">
+            <p>Присоединяйтесь к нам в социальных сетях</p>
+            <ul class="footer__top__social__icons">
+              <li>
+                <a class="footer__top__social__icons__fb" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__vk" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__ok" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__youtube" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="fotter__bottom">
+          <div class="footer__bottom__menu">
+            <div class="footer__bottom__menu__item">
+              <h3>О сервисе</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Возможности</a>
+                </li>
+                <li>
+                  <a href="#">Применение</a>
+                </li>
+                <li>
+                  <a href="#">Цены</a>
+                </li>
+                <li>
+                  <a href="#">Партнерам</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>Мероприятия</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Вебинары</a>
+                </li>
+                <li>
+                  <a href="#">Конференции</a>
+                </li>
+                <li>
+                  <a href="#">События</a>
+                </li>
+                <li>
+                  <a class="active" href="#">Callday</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>База знаний</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Интеграции</a>
+                </li>
+                <li>
+                  <a href="#">Настройка системы</a>
+                </li>
+                <li>
+                  <a href="#">Отчеты</a>
+                </li>
+                <li>
+                  <a href="#">Справочный центр</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>О компании</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Пресса о нас</a>
+                </li>
+                <li>
+                  <a href="#">Вакансии</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__cabinet">
+              <p>Попробуйте собственными руками</p>
+              <a href="#">Демо-кабинет</a>
+            </div>
+          </div>
+          <div class="footer__bottom__terms">
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Лицензионный договор</a>
+              </li>
+              <li>
+                <a href="#">Договор связи</a>
+              </li>
+            </ul>
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Политика в отношении обработки персональных данных</a>
+              </li>
+              <li>
+                <a href="#">Согласие на обработку персональных данных</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts-->
+    <script src="static/js/moment.js"></script>
+    <script src="static/js/popover.min.js"></script>
+    <script src="static/js/tooltip.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="static/js/index.js"></script>
+  </body>
+</html>

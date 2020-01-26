@@ -1,0 +1,909 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta name="format-detection" content="telephone=no">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calltracking page</title>
+    <link href="static/css/index.css" rel="stylesheet">
+    <link rel="icon" href="static/favicon.ico">
+  </head>
+  <body>
+    <!-- SVG-->
+    <div class="svg-container" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+      <svg xmlns="http://www.w3.org/2000/svg">
+        <symbol id="icon-vintage-logo" viewBox="0 0 84.1 115.5">
+          <style>
+            .st0 {
+              fill: #000
+            }
+          </style>
+          <path d="M21.7 0H0l5.1 19.8h21.5z" />
+          <path d="M63.2 0L33.7 115.5h21L84.1 0z" />
+        </symbol>
+      </svg>
+    </div>
+    <!-- picture element HTML5 shiv-->
+    <script>
+      document.createElement('picture');
+    </script>
+    <!-- Header-->
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <a class="header__top__logo" href="#"></a>
+          <form class="header__top__form" method="#" action="#">
+            <input class="header__top__form__input" type="text" required="required" />
+            <span class="bar"></span>
+          </form>
+          <div class="header__top__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="header__top__contacts">
+            <button class="header__top__contacts__button">Позвонить</button>
+            <div class="header__top__contacts__numbers">
+              <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+              <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+            </div>
+          </div>
+        </div>
+        <div class="header__bottom">
+          <nav class="header__menu">
+            <ul>
+              <li>
+                <a class="header__menu__link has-active mobile-active">Продукты</a>
+                <nav class="sub__menu products">
+                  <div class="sub__menu__block full">
+                    <h5> Технологии</h5>
+                    <ul>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Платформа</div>
+                          <div class="sub__menu__block__subtitle">Все данные в одном интерфейсе</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/predict.svg" alt="" />
+                          <div class="sub__menu__block__title">Предикт</div>
+                          <div class="sub__menu__block__subtitle">Анализ качества звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/calltracking.svg" alt="" />
+                          <div class="sub__menu__block__title">Коллтрекинг</div>
+                          <div class="sub__menu__block__subtitle">Определение источника звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/antifraud.svg" alt="" />
+                          <div class="sub__menu__block__title">Антифрод</div>
+                          <div class="sub__menu__block__subtitle">Защита от накрутки звонков</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/optimizer.svg" alt="" />
+                          <div class="sub__menu__block__title">Оптимизатор</div>
+                          <div class="sub__menu__block__subtitle">AI управление рекламой</div>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="#">
+                          <img src="./static/img/callback.svg" alt="" />
+                          <div class="sub__menu__block__title">Обратный звонок</div>
+                          <div class="sub__menu__block__subtitle">Виджет звонка с сайта</div>
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Применение</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Сквозная аналитика</a>
+                      </li>
+                      <li>
+                        <a href="#">Контекстная реклама</a>
+                      </li>
+                      <li>
+                        <a href="#">Контроль качества</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенерация</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="sub__menu__block">
+                    <h5> Интеграции</h5>
+                    <ul>
+                      <li>
+                        <a href="#">Системы аналитики</a>
+                      </li>
+                      <li>
+                        <a href="#">Рекламные площадки</a>
+                      </li>
+                      <li>
+                        <a href="#">CRM</a>
+                      </li>
+                      <li>
+                        <a href="#">Оптимизаторы конекста</a>
+                      </li>
+                      <li>
+                        <a href="#">Лидогенераторы</a>
+                      </li>
+                      <li>
+                        <a href="#">+50 интеграций Albato</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#">Цены</a>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Партнерам</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul class="mblock">
+                      <li>
+                        <a href="#">Партнерская программа</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификацированные агенства</a>
+                      </li>
+                    </ul>
+                    <ul class="mblock">
+                      <li>
+                        <div class="txt">Сертификация</div>
+                        <a href="#">Личный сертификат</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификат компании</a>
+                      </li>
+                      <li>
+                        <a href="#">Сертификат по Оптимизатору</a>
+                      </li>
+                    </ul>
+                    <ul class="mblock">
+                      <li>
+                        <div class="mblock__img">
+                          <img src="./static/img/sert-callt-img1.svg" />
+                        </div>
+                        <a href="#">Премия Calltouch Performance Awards 2019</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active">Академия</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Кейсы и статьи</a>
+                      </li>
+                      <li>
+                        <a href="#">Мероприятия</a>
+                      </li>
+                      <li>
+                        <a href="#">Видеоуроки</a>
+                      </li>
+                      <li>
+                        <a href="#">Вебинары</a>
+                      </li>
+                      <li>
+                        <a href="#">Справочный центр </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link has-active"> О компании</a>
+                <nav class="sub__menu">
+                  <div class="sub__menu__block">
+                    <ul>
+                      <li>
+                        <a href="#">Пресса о нас</a>
+                      </li>
+                      <li>
+                        <a href="#">Вакансии</a>
+                      </li>
+                      <li>
+                        <a href="#">Контакты </a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+              </li>
+              <li>
+                <a class="header__menu__link" href="#"> Блог</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="header__bottom__auth">
+            <a href="#">Войти</a>
+            <a href="#">Подключиться</a>
+          </div>
+          <div class="header__top__contacts__numbers">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81 </a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Main content-->
+    <main class="content" data-page="calltracking">
+      <div class="popup">
+        <div class="container">
+          <div class="popup__content">
+            <div class="popup__content__close">Закрыть</div>
+            <div class="popup__content__send">
+              <div class="popup__content__send__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="59" viewbox="0 0 64 59">
+                  <g fill="none" fill-rule="nonzero"></g>
+                  <path fill="#746A5C" d="M64 .714s0-.214 0 0c0-.214 0-.214 0 0V.286h-.213-.214-.213-.213-.214-.213-.213-.214l-51.2 30c-.213-.215-.426 0-.426.428 0 .429.426.857.64.857l15.573 5.143L32 52.357c0 .214.213.429.213.429.214.214.427.214.64.214h.427c.213 0 .213-.214.213-.214l8.534-10.715 11.733 4.5h.427c.213 0 .426 0 .426-.214.214-.214.427-.428.427-.643l8.533-45C64 .93 64 .93 64 .714zM53.333 11.857L34.347 37.571c0 .215-.214.215-.214.429l-1.493 9.643L29.013 36.5l24.32-24.643zm-18.56 36.429l1.28-8.572 4.267 1.715-5.547 6.857z"></path>
+                  <path fill="#1F282C" d="M1.92 45.929a1.028 1.028 0 0 0-1.493 0 1.039 1.039 0 0 0 0 1.5l1.92 1.928c.213.214.426.214.64.214.213 0 .64-.214.853-.428a1.039 1.039 0 0 0 0-1.5 5.044 5.044 0 0 1-1.92-1.714zM11.307 53.643a19.461 19.461 0 0 1-2.774-1.714c-.426-.429-1.066-.215-1.493.214-.427.428-.213 1.071.213 1.5 1.067.643 1.92 1.286 2.987 1.928.213 0 .427.215.427.215.426 0 .64-.215.853-.643.64-.643.427-1.286-.213-1.5zM24.747 56c-.427 0-.64.214-1.067.214-.64 0-1.067.643-.853 1.286 0 .429.64.857 1.066.857h.214c.426 0 .64-.214 1.066-.214.64-.214.854-.643.854-1.286-.214-.643-.64-1.071-1.28-.857zM18.987 56.214l-3.2-.643c-.64-.214-1.067.215-1.28.643-.214.643.213 1.072.64 1.286 1.066.429 2.346.643 3.413.857h.213c.427 0 1.067-.428 1.067-.857.213-.643-.213-1.286-.853-1.286zM29.867 53.857c-.64.429-1.494.857-2.347 1.072-.64.214-.853.857-.64 1.5.213.428.64.642 1.067.642h.426l2.56-1.285c.427-.215.64-.857.427-1.5-.427-.429-1.067-.643-1.493-.429z"></path>
+                </svg>
+              </div>
+              <div class="popup__content__send__info">
+                <h3>Ваши данные отправлены.</h3>
+                <p>Мы свяжемся с вами в ближайшее время. </p>
+              </div>
+            </div>
+            <div class="popup__main">
+              <div class="popup__content__title">
+                <h3>Готовы применить систему
+                  <div class="active">Calltouch</div>
+                  <br/>для роста эффективности вашего бизнеса? </h3>
+              </div>
+              <form class="popup__content__form">
+                <div class="form-group">
+                  <label class="popup__content__form__label">
+                    <span>Имя</span>
+                    <input class="inputsValidate name-f" type="text" />
+                  </label>
+                  <label class="popup__content__form__label error">
+                    <span>Контактный телефон</span>
+                    <input class="inputsValidate phone-f" type="tel" />
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="popup__content__form__label">
+                    <span>Электронная почта</span>
+                    <input class="inputsValidate mail-f" type="email" />
+                  </label>
+                  <div class="popup__content__form__label">
+                    <span>Сайт</span>
+                    <input class="inputsValidate site-f" type="text" />
+                  </div>
+                  <p class="iferror">Проверьте номер телефона, похоже, что по нему мы не сможем вам позвонить.</p>
+                </div>
+                <button class="popup__content__form__button">Отправить</button>
+              </form>
+              <div class="popup__content__personaldata">
+                <p>Нажимая на кнопку "Отправить", вы даёте своё согласие
+                  <a href="#">на обработку персональных данных</a>
+                </p>
+              </div>
+              <div class="popup__content__contacts call_phone_1_2">
+                <h3>Есть вопросы? Звоните</h3>
+                <a href="tel:+7 495 308-01-00">+7 495 308-01-00</a>
+                <a href="tel:8 800 222-13-81">8 800 222-13-81</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <section class="calltracking">
+        <div class="container">
+          <div class="calltracking__about">
+            <div class="calltracking__heading">
+              <img class="calltracking__heading__logo" src="./static/img/calltracking-logo.svg" alt="calltracking-logo">
+              <div class="calltracking__heading__text">
+                <div class="calltracking__heading__title">Коллтрекинг
+                  <span>англ. call tracking</span>
+                </div>
+                <div class="calltracking__heading__subtitle">Технология определения рекламных источников, с которых приходят звонки клиентов.</div>
+              </div>
+            </div>
+            <div class="calltracking__message">Более 70% клиентов предпочитают звонить. Calltouch покажет,
+              <br>какая реклама приносит звонки, а какая только тратит бюджет.</div>
+            <div class="calltracking__items">
+              <div class="calltracking__items__item">
+                <img class="calltracking__items__img" src="./static/img/ct-chart.svg" alt="calltracking-chart">
+                <div class="calltracking__items__text">Отслеживайте звонки
+                  <br> с рекламы и других каналов</div>
+              </div>
+              <div class="calltracking__items__item">
+                <img class="calltracking__items__img" src="./static/img/ct-settings.svg" alt="calltracking-settings">
+                <div class="calltracking__items__text">Оптимизируйте рекламу
+                  <br>на основе данных о звонках</div>
+              </div>
+              <div class="calltracking__items__item">
+                <img class="calltracking__items__img" src="./static/img/ct-dispatcher.svg" alt="calltracking-dispatcher">
+                <div class="calltracking__items__text">Контролируйте и планируйте
+                  <br>работу колл-центра</div>
+              </div>
+            </div>
+            <a class="calltracking__connect popup__trigger" href="#">Подключить коллтрекинг</a>
+            <a class="calltracking__calculate" href="https://www.calltouch.ru/pricing/">Рассчитать</a>
+          </div>
+        </div>
+      </section>
+      <section class="calltracking__types">
+        <div class="container">
+          <div class="calltracking__types__title">Точный комплексный коллтрекинг</div>
+          <div class="calltracking__types__text">Два метода коллтрекинга охватывают все звонки, которые прежде невозможно было отследить и посчитать.
+            <br> Основа технологии — это пул телефонных номеров, который выделяется исключительно для вашей компании.</div>
+          <div class="calltracking__types__text">За каждым посетителем на все время сессии и на Freeze Time закрепляется уникальным номер,
+            <br> что позволяет безошибочно привязать параметры клиента к звонку.</div>
+          <div class="calltracking__types__items">
+            <div class="calltracking__types__items__item">
+              <img class="calltracking__types__items__img" src="./static/img/ct-network.svg" alt="calltracking-network">
+              <div class="calltracking__types__items__title">Динамический коллтрекинг</div>
+              <a class="calltracking__types__items__link" href="https://www.calltouch.ru/product/dinamicheskij-calltracking/">Узнайте больше</a>
+              <div class="calltracking__types__items__text">Каждый посетитель сайта видит свой уникальный телефонный номер, который фиксируется при звонке вместе с данными о посещении и источнике перехода.</div>
+            </div>
+            <div class="calltracking__types__items__item">
+              <img class="calltracking__types__items__img" src="./static/img/ct-bind.svg" alt="calltracking-binding">
+              <div class="calltracking__types__items__title">Статический коллтрекинг</div>
+              <a class="calltracking__types__items__link" href="https://www.calltouch.ru/product/staticheskij-calltracking/">Узнайте больше</a>
+              <div class="calltracking__types__items__text">Привязка одного номера телефона
+                <br> к одному рекламному источнику.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="calltracking__pluses">
+        <div class="container">
+          <div class="calltracking__pluses__title">— это calltracking</div>
+          <div class="calltracking__pluses__items">
+            <div class="calltracking__pluses__items__item">
+              <img class="calltracking__pluses__items__img" src="./static/img/ct-1place.svg" alt="calltracking-1place">
+              <div class="calltracking__pluses__items__text">Мы первые на российском рынке представили динамический коллтрекинг, и более 5 лет совершенствуем технологию.</div>
+            </div>
+            <div class="calltracking__pluses__items__item">
+              <img class="calltracking__pluses__items__img" src="./static/img/ct-accuracy.svg" alt="calltracking-accuracy">
+              <div class="calltracking__pluses__items__text">Идеальный алгоритм подмены номеров позволяет гарантировать точность определения источника звонка выше 96%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="calltracking__reasons">
+        <div class="container">
+          <div class="calltracking__reasons__title">Преимущества колл трекинга Calltouch</div>
+          <div class="calltracking__reasons__subtitle">Собирая данные через Calltouch, вы действуете в соответствии
+            <br> с Федеральным законом «О персональных данных»</div>
+          <div class="calltracking__reasons__wrapper">
+            <div class="calltracking__reasons__items">
+              <div class="calltracking__reasons__item">
+                <img class="calltracking__reasons__item__img" src="./static/img/ct-target.svg" alt="calltracking-target">
+                <div class="calltracking__reasons__item__title">Точный динамический и статический коллтрекинг</div>
+                <div class="calltracking__reasons__item__text">Если свыше 4% звонков не будут определены до конкретного посетителя сайта, мы за свой счет добавим номера.</div>
+              </div>
+              <div class="calltracking__reasons__item">
+                <img class="calltracking__reasons__item__img" src="./static/img/ct-phone.svg" alt="calltracking-phone">
+                <div class="calltracking__reasons__item__title">Тегирование звонков</div>
+                <div class="calltracking__reasons__item__text">Возможность тегирования звонков для совершенной и детальной отчетности. Автоматическое тегирование сомнительных звонков, тегирование по кнопке менеджера или голосового меню.</div>
+              </div>
+              <div class="calltracking__reasons__item">
+                <img class="calltracking__reasons__item__img" src="./static/img/ct-board.svg" alt="calltracking-board">
+                <div class="calltracking__reasons__item__title">Подробные отчеты</div>
+                <div class="calltracking__reasons__item__text">Более 30 показателей в отчетах. Удобная фильтрация и возможность делать срезы по любому показателю, сравнивать периоды и строить графики.</div>
+              </div>
+            </div>
+            <div class="calltracking__reasons__items">
+              <div class="calltracking__reasons__item">
+                <img class="calltracking__reasons__item__img" src="./static/img/ct-key.svg" alt="calltracking-key">
+                <div class="calltracking__reasons__item__title">Определение источника звонка до ключевого слова</div>
+                <div class="calltracking__reasons__item__text">Вся необходимая информация о звонке: источник, первичный звонок или повторный, гео, устройство, браузер и прочее.</div>
+              </div>
+              <div class="calltracking__reasons__item">
+                <img class="calltracking__reasons__item__img" src="./static/img/ct-record.svg" alt="calltracking-record">
+                <div class="calltracking__reasons__item__title">Запись и прослушивание звонков</div>
+                <div class="calltracking__reasons__item__text">Запись любого звонка с удобной функцией прослушивания, с пропуском голосового меню, ускорением и перемоткой.</div>
+              </div>
+              <div class="calltracking__reasons__item">
+                <img class="calltracking__reasons__item__img" src="./static/img/ct-cable.svg" alt="calltracking-cable">
+                <div class="calltracking__reasons__item__title">Простые интеграции и API</div>
+                <div class="calltracking__reasons__item__text">Получение и передача данных в большинство используемых сервисов и CRM. Открытое API для кастомных интеграций.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="calltracking__telephony">
+        <div class="container">
+          <div class="calltracking__telephony__title">Только чистые телефонные номера</div>
+          <a class="calltracking__telephony__link" href="#">Лицензия оператора</a>
+          <div class="calltracking__telephony__text">Когда вы работаете с Calltouch, вы получаете в аренду пул уникальных телефонных номеров от нашего партнера, лицензированного оператора связи «Телемир». Номера надежно очищаются от прошлого опыта использования в течение 6 месяцев и выделяются
+            в пул, предназначенный только для вас.</div>
+          <div class="calltracking__telephony__list-title">Возможности телефонии</div>
+          <ul>
+            <li>SIP-телефония</li>
+            <li>Запись и прослушивание звонков</li>
+            <li>Параллельная и последовательная переадресация</li>
+            <li>Тегирование звонков</li>
+            <li>Голосовая почта</li>
+            <li>Настройка приветствия и голосового меню</li>
+          </ul>
+          <div class="calltracking__telephony__message">Вы можете подключать и любые собственные номера или арендовать у другого оператора связи.</div>
+          <a class="calltracking__connect popup__trigger">Подключить коллтрекинг</a>
+        </div>
+      </section>
+      <section class="calltracking__reports">
+        <div class="container">
+          <div class="calltracking__reports__title">Удобные отчеты в одном интерфейсе</div>
+          <div class="calltracking__reports__column">
+            <div class="calltracking__reports__wrapper">
+              <div class="swiper-container" id="calltracking__reports__slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img class="calltracking__reports__screen" src="./static/img/ct-allsources.png" alt="calltracking-sources">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="calltracking__reports__screen" src="./static/img/ct-ydirect.png" alt="calltracking-ydirect">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="calltracking__reports__screen" src="./static/img/ct-heatmap.png" alt="calltracking-heatmap">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="calltracking__reports__screen" src="./static/img/ct-periods.png" alt="calltracking-periods">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="calltracking__reports__screen" src="./static/img/ct-diagrams.png" alt="calltracking-diagrams">
+                  </div>
+                  <div class="swiper-slide">
+                    <img class="calltracking__reports__screen" src="./static/img/ct-callsjournal.png" alt="calltracking-callsjournal">
+                  </div>
+                </div>
+              </div>
+              <div class="calltracking__reports__prev swiper-button-prev"></div>
+              <div class="calltracking__reports__next swiper-button-next"></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-container" id="calltracking__reports__quote">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="calltracking__reports__quotes">
+                    <div class="calltracking__reports__subtitle">Все источники</div>
+                    <div class="calltracking__reports__text">Все каналы трафика и их эффективность в одном отчете.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="calltracking__reports__quotes">
+                    <div class="calltracking__reports__subtitle">Яндекс.Директ и Гугл.Адвордс</div>
+                    <div class="calltracking__reports__text">Смотрите затраты по каждой кампании и стоимость лида</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="calltracking__reports__quotes">
+                    <div class="calltracking__reports__subtitle">Время и дни недели</div>
+                    <div class="calltracking__reports__text">Оптимизируйте ставки в рекламе в зависимости от пиковых дней и часов.Планируйте нагрузку колл-центра.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="calltracking__reports__quotes">
+                    <div class="calltracking__reports__subtitle">Сравнение периодов</div>
+                    <div class="calltracking__reports__text">Выбирайте любые отрезки времени и сравнивайте периоды</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="calltracking__reports__quotes">
+                    <div class="calltracking__reports__subtitle">Графики и диаграммы</div>
+                    <div class="calltracking__reports__text">Простые, понятные и дружелюбные отчеты для быстрого и удобного анализа</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="calltracking__reports__quotes">
+                    <div class="calltracking__reports__subtitle">Журнал звонков и прослушивание</div>
+                    <div class="calltracking__reports__text">Удобный плеер для прослушивания и тегирования звонков.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="calltracking__cases">
+        <div class="container">
+          <div class="calltracking__cases__heading">
+            <div class="calltracking__cases__title">Кейсы</div>
+            <div class="calltracking__cases__count">
+              <div id="brands__index">1</div> из
+              <div id="brands__count">2</div>
+            </div>
+          </div>
+          <div class="calltracking__cases__items swiper-container" id="calltracking__cases__slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <a class="calltracking__cases__item" href="#">
+                  <div class="calltracking__cases__item__task">Опыт успешного внедрения</div>
+                  <img class="calltracking__cases__item__img hoff" src="./static/img/ct-hoff.png" alt="calltracking-hoff">
+                  <div class="calltracking__cases__item__title">Hoff</div>
+                  <div class="calltracking__cases__item__subtitle">гипермаркет мебели
+                    <br>и товаров для дома</div>
+                  <div class="calltracking__cases__item__text">Есть сферы интернет-торговли, в которых большая часть потенциальных покупателей предпочитает общаться о предстоящей покупке по телефону.</div>
+                  <div class="calltracking__cases__item__text">О том, как узнать, кто эти люди и превратить их в клиентов, предлагаем рассмотреть на примере кейса гипермаркетов.</div>
+                  <div class="calltracking__cases__item__linkwrapper">
+                    <div class="calltracking__cases__item__link">Посмотрите кейс подробнее</div>
+                    <div class="dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="calltracking__cases__item" href="#">
+                  <div class="calltracking__cases__item__task">Повышение конверсии</div>
+                  <img class="calltracking__cases__item__img rolf" src="./static/img/ct-rolf.png" alt="calltracking-rolf">
+                  <div class="calltracking__cases__item__title">Рольф</div>
+                  <div class="calltracking__cases__item__subtitle">дилерская автомобильная
+                    <br>группа</div>
+                  <div class="calltracking__cases__item__text">Как узнать, какие запросы и направления интересны с точки зрения стоимости контакта, а в какие вкладывать бюджеты — пустое занятие.</div>
+                  <div class="calltracking__cases__item__text">Пример качественного кейса по снижению стоимости контактов и увеличению их количества для диллерской группы.</div>
+                  <div class="calltracking__cases__item__linkwrapper">
+                    <div class="calltracking__cases__item__link">Посмотрите кейс подробнее</div>
+                    <div class="dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+              <div class="swiper-slide">
+                <a class="calltracking__cases__item" href="#">
+                  <div class="calltracking__cases__item__task">Повышение количества обращений</div>
+                  <img class="calltracking__cases__item__img magwai" src="./static/img/ct-magwai.png" alt="calltracking-magwai">
+                  <div class="calltracking__cases__item__title">Магвай</div>
+                  <div class="calltracking__cases__item__subtitle">агентство интернет-
+                    <br>маркетинга</div>
+                  <div class="calltracking__cases__item__text">Кейс от агентства о том, как обеспечить поток заявок квартиры с помощью SEO, контекстной рекламы и коллтрекинга для клиента в сфере недвижимости.</div>
+                  <div class="calltracking__cases__item__linkwrapper">
+                    <div class="calltracking__cases__item__link">Посмотрите кейс подробнее</div>
+                    <div class="dots">
+                      <span></span>
+                      <span></span>
+                      <span></span>
+                    </div>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="calltracking__geo">
+        <div class="container">
+          <div class="calltracking__geo__title">Calltouch в цифрах</div>
+          <div class="calltracking__geo__items">
+            <div class="calltracking__geo__item">
+              <img class="calltracking__geo__item__img globe" src="./static/img/ct-globe.svg" alt="calltracking-globe">
+              <div class="calltracking__geo__item__title">Работаем в 110 городах России и 15 странах</div>
+            </div>
+            <div class="calltracking__geo__item">
+              <img class="calltracking__geo__item__img archery" src="./static/img/ct-archery.svg" alt="calltracking-archery">
+              <div class="calltracking__geo__item__title">96% точности определения источника звонка</div>
+            </div>
+          </div>
+          <div class="calltracking__geo__items">
+            <div class="calltracking__geo__item">
+              <img class="calltracking__geo__item__img handshake" src="./static/img/ct-handshake.svg" alt="calltracking-handshake">
+              <div class="calltracking__geo__item__title">В числе наших клиентов более 12 500 компаний</div>
+            </div>
+            <div class="calltracking__geo__item">
+              <img class="calltracking__geo__item__img gnetwork" src="./static/img/ct-gnetwork.svg" alt="calltracking-gnetwork">
+              <div class="calltracking__geo__item__title">Интеграция с 50+ различными сервисами</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="calltracking__ecosystem">
+        <div class="container">
+          <div class="calltracking__ecosystem__title">Маркетинговые продукты Calltouch</div>
+          <div class="calltracking__ecosystem__subtitle">Наши продукты помогают вашему бизнесу оптимизировать расходы на маркетинг.</div>
+          <div class="calltracking__ecosystem__items">
+            <ul>
+              <li>
+                <a class="calltracking__ecosystem__item" href="#">
+                  <svg class="calltracking__ecosystem__item__img platform" xmlns="http://www.w3.org/2000/svg" width="48" height="51" viewbox="0 0 48 51">
+                    <g fill="none" fill-rule="nonzero">
+                      <path class="pd-top" fill="#1F282C" d="M6.51 6.25L24 23.592 41.49 6.25A27.453 27.453 0 0 0 24 0 27.453 27.453 0 0 0 6.51 6.25z"></path>
+                      <path class="pd-bottom" fill="#1EB0CD" d="M42.688 42.126a23.575 23.575 0 0 0 5.173-12.376H30.208l12.48 12.376zm5.173-17.476a23.583 23.583 0 0 0-5.173-12.377L30.208 24.65h17.653zM0 27.2C0 40.344 10.745 51 24 51c5.7 0 10.935-1.975 15.051-5.267l-33.74-33.46A23.574 23.574 0 0 0 0 27.2z"></path>
+                    </g>
+                  </svg>
+                  <!--img(src="./static/img/ct-platform1.svg" alt="platform").calltracking__ecosystem__item__img.platform-->
+                  <div class="calltracking__ecosystem__item__wrapper">
+                    <div class="calltracking__ecosystem__item__title">Платформа</div>
+                    <div class="calltracking__ecosystem__item__subtitle">Все данные и отчеты в одном интерфейсе</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="calltracking__ecosystem__item" href="#">
+                  <svg class="calltracking__ecosystem__item__img calltracking" xmlns="http://www.w3.org/2000/svg" width="48" height="51" viewbox="0 0 48 51">
+                    <g fill="none" fill-rule="nonzero">
+                      <path class="pd-right" fill="#1EB0CD" d="M31.714 4.663v5.48c6.562 2.93 11.143 9.47 11.143 17.057 0 10.311-8.459 18.7-18.857 18.7-8.615 0-15.893-5.76-18.139-13.6H.558C2.913 42.992 12.512 51 24 51c13.255 0 24-10.656 24-23.8 0-10.467-6.817-19.35-16.286-22.537zM24 35.7a8.575 8.575 0 0 1-6.84-3.4h-5.864c2.04 4.977 6.961 8.5 12.704 8.5 7.562 0 13.714-6.101 13.714-13.6 0-4.663-2.38-8.785-6-11.236v7.556a8.374 8.374 0 0 1 .857 3.68c0 4.687-3.845 8.5-8.571 8.5z"></path>
+                      <path class="pd-left" fill="#1F282C" d="M21.429 0v3.538C9.4 4.815 0 14.936 0 27.2h15.429c0-3.799 2.526-7.023 6-8.108V27.2A2.56 2.56 0 0 0 24 29.75a2.56 2.56 0 0 0 2.571-2.55V0H21.43z"></path>
+                    </g>
+                  </svg>
+                  <!--img(src="./static/img/ct-calltracking.svg" alt="calltracking").calltracking__ecosystem__item__img.calltracking-->
+                  <div class="calltracking__ecosystem__item__wrapper">
+                    <div class="calltracking__ecosystem__item__title">Коллтрекинг</div>
+                    <div class="calltracking__ecosystem__item__subtitle">Определение источника входящих звонков</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="calltracking__ecosystem__item" href="#">
+                  <svg class="calltracking__ecosystem__item__img callback" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewbox="0 0 48 48">
+                    <g fill="none" fill-rule="nonzero">
+                      <path class="pd-left-bottom" fill="#1F282C" d="M21.552 41L6.999 26.45l7.907-7.907-9.597-9.595C-2.3 18.37-1.729 32.213 7.03 40.97c8.759 8.757 22.6 9.33 32.025 1.72l-9.596-9.597-7.906 7.907z"></path>
+                      <path class="pd-right-top" fill="#1EB0CD" d="M40.97 7.03C32.213-1.73 18.372-2.3 8.947 5.31l9.597 9.596 7.906-7.907L41 21.55l-7.906 7.906 9.596 9.596c7.61-9.423 7.038-23.265-1.72-32.024z"></path>
+                      <path class="pd-center" fill="#1EB0CD" d="M31.939 24h-6.224v-9.652L16.063 24h6.224v9.652z"></path>
+                    </g>
+                  </svg>
+                  <!--img(src="./static/img/ct-callback.svg" alt="callback").calltracking__ecosystem__item__img.callback-->
+                  <div class="calltracking__ecosystem__item__wrapper">
+                    <div class="calltracking__ecosystem__item__title">Обратный звонок</div>
+                    <div class="calltracking__ecosystem__item__subtitle">Виджет обратного звонка на ваш сайт</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a class="calltracking__ecosystem__item" href="#">
+                  <svg class="calltracking__ecosystem__item__img predict" xmlns="http://www.w3.org/2000/svg" width="48" height="54" viewbox="0 0 48 54">
+                    <g fill="none" fill-rule="nonzero">
+                      <path class="pd-left" fill="#1F282C" d="M41.263 53.969c0-3.728-3.016-6.75-6.737-6.75H12.632c-3.72 0-6.737 3.022-6.737 6.75h35.368z"></path>
+                      <path class="pd-right" fill="#1EB0CD" d="M23.592.031C10.57.031.013 10.608.013 23.656c0 7.523 3.526 14.206 8.995 18.532h29.17c5.468-4.326 8.994-11.009 8.994-18.532 0-13.048-10.558-23.625-23.58-23.625zm-7.414 31.521l-2.122 5.07-2.123-5.07-5.059-2.126 5.06-2.126 2.122-5.07 2.122 5.07 5.06 2.126-5.06 2.126zM33.69 20.307l-2.838 6.778-2.836-6.778-6.765-2.843 6.765-2.843 2.836-6.778 2.838 6.778 6.765 2.843-6.765 2.843z"></path>
+                    </g>
+                  </svg>
+                  <!--img(src="./static/img/ct-predict.svg" alt="predict").calltracking__ecosystem__item__img.predict-->
+                  <div class="calltracking__ecosystem__item__wrapper">
+                    <div class="calltracking__ecosystem__item__title">Предикт</div>
+                    <div class="calltracking__ecosystem__item__subtitle">Автоматический анализ качества звонков</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="calltracking__ecosystem__item" href="#">
+                  <svg class="calltracking__ecosystem__item__img optimizer" xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewbox="0 0 48 48">
+                    <g fill="none" fill-rule="nonzero">
+                      <path class="pd-top" fill="#1F282C" d="M21.75 11.25V0h4.5v11.25h-4.5zm13.5 0V4.5h-4.5v6.75h4.5zm-18 0v-4.5h-4.5v4.5h4.5zM0 20.25h4.5v13.5H0zM43.5 20.25H48v13.5h-4.5z"></path>
+                      <path class="pd-bottom" fill="#1EB0CD" d="M7.5 15.75v24.233C11.345 44.861 17.304 48 24 48s12.655-3.138 16.5-8.017V15.75h-33zM15.75 30a3 3 0 1 1 0-6 3 3 0 1 1 0 6zm12.75 8.25h-9v-4.5h9v4.5zm6-9H30v-4.5h4.5v4.5z"></path>
+                    </g>
+                  </svg>
+                  <!--img(src="./static/img/ct-optimizer.svg" alt="optimizer").calltracking__ecosystem__item__img.optimizer-->
+                  <div class="calltracking__ecosystem__item__wrapper">
+                    <div class="calltracking__ecosystem__item__title">Оптимизатор</div>
+                    <div class="calltracking__ecosystem__item__subtitle">Автоматическое управление контекстной рекламой</div>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a class="calltracking__ecosystem__item" href="#">
+                  <svg class="calltracking__ecosystem__item__img antifraud" xmlns="http://www.w3.org/2000/svg" width="48" height="56" viewbox="0 0 48 56">
+                    <g fill="none" fill-rule="nonzero">
+                      <path class="pd-bottom" fill="#1EB0CD" d="M24 13.785c-13.255 0-24 10.8-24 24.123 0 4.602 1.283 8.901 3.507 12.56l20.507 5.523 20.473-5.514A24.107 24.107 0 0 0 48 37.907c0-13.322-10.745-24.122-24-24.122zM9.429 45.662v-7.14l11.856 7.14H9.429zm29.142 0H26.268l12.303-7.14v7.14z"></path>
+                      <path class="pd-top" fill="#1F282C" d="M0 .829l10.095 10.147L0 21.122V.83zm48 0l-9.996 10.047L48 20.922V.829z"></path>
+                    </g>
+                  </svg>
+                  <!--img(src="./static/img/ct-antifraud.svg" alt="antifraud").calltracking__ecosystem__item__img.antifraud-->
+                  <div class="calltracking__ecosystem__item__wrapper">
+                    <div class="calltracking__ecosystem__item__title">Антифрод</div>
+                    <div class="calltracking__ecosystem__item__subtitle">Автоматическое защита от накрутки звонков</div>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="popup">
+        <div class="container">
+          <div class="popup__content">
+            <div class="popup__content__close">Закрыть</div>
+            <div class="popup__content__send">
+              <div class="popup__content__send__img">
+                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="59" viewbox="0 0 64 59">
+                  <g fill="none" fill-rule="nonzero"></g>
+                  <path fill="#746A5C" d="M64 .714s0-.214 0 0c0-.214 0-.214 0 0V.286h-.213-.214-.213-.213-.214-.213-.213-.214l-51.2 30c-.213-.215-.426 0-.426.428 0 .429.426.857.64.857l15.573 5.143L32 52.357c0 .214.213.429.213.429.214.214.427.214.64.214h.427c.213 0 .213-.214.213-.214l8.534-10.715 11.733 4.5h.427c.213 0 .426 0 .426-.214.214-.214.427-.428.427-.643l8.533-45C64 .93 64 .93 64 .714zM53.333 11.857L34.347 37.571c0 .215-.214.215-.214.429l-1.493 9.643L29.013 36.5l24.32-24.643zm-18.56 36.429l1.28-8.572 4.267 1.715-5.547 6.857z"></path>
+                  <path fill="#1F282C" d="M1.92 45.929a1.028 1.028 0 0 0-1.493 0 1.039 1.039 0 0 0 0 1.5l1.92 1.928c.213.214.426.214.64.214.213 0 .64-.214.853-.428a1.039 1.039 0 0 0 0-1.5 5.044 5.044 0 0 1-1.92-1.714zM11.307 53.643a19.461 19.461 0 0 1-2.774-1.714c-.426-.429-1.066-.215-1.493.214-.427.428-.213 1.071.213 1.5 1.067.643 1.92 1.286 2.987 1.928.213 0 .427.215.427.215.426 0 .64-.215.853-.643.64-.643.427-1.286-.213-1.5zM24.747 56c-.427 0-.64.214-1.067.214-.64 0-1.067.643-.853 1.286 0 .429.64.857 1.066.857h.214c.426 0 .64-.214 1.066-.214.64-.214.854-.643.854-1.286-.214-.643-.64-1.071-1.28-.857zM18.987 56.214l-3.2-.643c-.64-.214-1.067.215-1.28.643-.214.643.213 1.072.64 1.286 1.066.429 2.346.643 3.413.857h.213c.427 0 1.067-.428 1.067-.857.213-.643-.213-1.286-.853-1.286zM29.867 53.857c-.64.429-1.494.857-2.347 1.072-.64.214-.853.857-.64 1.5.213.428.64.642 1.067.642h.426l2.56-1.285c.427-.215.64-.857.427-1.5-.427-.429-1.067-.643-1.493-.429z"></path>
+                </svg>
+              </div>
+              <div class="popup__content__send__info">
+                <h3>Ваши данные отправлены.</h3>
+                <p>Мы свяжемся с вами в ближайшее время.</p>
+              </div>
+            </div>
+            <div class="popup__main">
+              <div class="popup__content__title">
+                <h3>Готовы применить систему
+                  <div class="active">Calltouch</div>
+                  <br>для роста эффективности вашего бизнеса?</h3>
+              </div>
+              <form class="popup__content__form">
+                <div class="form-group">
+                  <label class="popup__content__form__label">
+                    <span>Имя</span>
+                    <input class="inputsValidate name-f" type="text">
+                  </label>
+                  <label class="popup__content__form__label error">
+                    <span>Контактный телефон</span>
+                    <input class="inputsValidate phone-f" type="tel">
+                  </label>
+                </div>
+                <div class="form-group">
+                  <label class="popup__content__form__label">
+                    <span>Электронная почта</span>
+                    <input class="inputsValidate mail-f" type="email">
+                  </label>
+                  <div class="popup__content__form__label">
+                    <span>Сайт</span>
+                    <input class="inputsValidate site-f" type="text">
+                  </div>
+                  <p class="iferror">Проверьте номер телефона, похоже, что по нему мы не сможем вам позвонить.</p>
+                </div>
+                <button class="popup__content__form__button">Отправить</button>
+              </form>
+              <div class="popup__content__personaldata">
+                <p>Нажимая на кнопку "Отправить", вы даёте своё согласие
+                  <a href="#">на обработку персональных данных</a>
+                </p>
+              </div>
+              <div class="popup__content__contacts call_phone_1_2">
+                <h3>Есть вопросы? Звоните</h3>
+                <a href="tel:+7 495 308-01-00">+7 495 308-01-00</a>
+                <a href="tel:8 800 222-13-81">8 800 222-13-81</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer-->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__top">
+          <a class="footer__top__logo" href="/"></a>
+          <div class="footer__top__contacts">
+            <a href="tel:+7 495 308 01 00">+7 495 308 01 00</a>
+            <a href="tel:8 800 222 13 81">8 800 222 13 81</a>
+            <p>Россия, 123557, г.Москва, Пресненский вал 27с9</p>
+          </div>
+          <div class="footer__top__social">
+            <p>Присоединяйтесь к нам в социальных сетях</p>
+            <ul class="footer__top__social__icons">
+              <li>
+                <a class="footer__top__social__icons__fb" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__vk" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__ok" href="#"></a>
+              </li>
+              <li>
+                <a class="footer__top__social__icons__youtube" href="#"></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="fotter__bottom">
+          <div class="footer__bottom__menu">
+            <div class="footer__bottom__menu__item">
+              <h3>О сервисе</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Возможности</a>
+                </li>
+                <li>
+                  <a href="#">Применение</a>
+                </li>
+                <li>
+                  <a href="#">Цены</a>
+                </li>
+                <li>
+                  <a href="#">Партнерам</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>Мероприятия</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Вебинары</a>
+                </li>
+                <li>
+                  <a href="#">Конференции</a>
+                </li>
+                <li>
+                  <a href="#">События</a>
+                </li>
+                <li>
+                  <a class="active" href="#">Callday</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>База знаний</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Интеграции</a>
+                </li>
+                <li>
+                  <a href="#">Настройка системы</a>
+                </li>
+                <li>
+                  <a href="#">Отчеты</a>
+                </li>
+                <li>
+                  <a href="#">Справочный центр</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__item">
+              <h3>О компании</h3>
+              <ul class="footer__bottom__menu__item__list">
+                <li>
+                  <a href="#">Пресса о нас</a>
+                </li>
+                <li>
+                  <a href="#">Вакансии</a>
+                </li>
+                <li>
+                  <a href="#">Контакты</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__bottom__menu__cabinet">
+              <p>Попробуйте собственными руками</p>
+              <a href="#">Демо-кабинет</a>
+            </div>
+          </div>
+          <div class="footer__bottom__terms">
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Лицензионный договор</a>
+              </li>
+              <li>
+                <a href="#">Договор связи</a>
+              </li>
+            </ul>
+            <ul class="footer__bottom__terms__item">
+              <li>
+                <a href="#">Политика в отношении обработки персональных данных</a>
+              </li>
+              <li>
+                <a href="#">Согласие на обработку персональных данных</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Scripts-->
+    <script src="static/js/moment.js"></script>
+    <script src="static/js/popover.min.js"></script>
+    <script src="static/js/tooltip.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/debug.addIndicators.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/plugins/animation.gsap.min.js"></script>
+    <script src="static/js/index.js"></script>
+  </body>
+</html>

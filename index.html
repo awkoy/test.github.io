@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <meta charset="UTF-8">
+  <title>Calltouch</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,300" rel="stylesheet" type="text/css">
+  <style>
+    * {
+      font-family: 'Roboto', sans-serif;
+      padding: 0;
+      margin: 0;
+    }
+
+    svg {
+      display: inline-block;
+      vertical-align: middle;
+    }
+
+    header {
+      text-align: center;
+      height: 96px;
+      border-bottom: 2px #ededed solid;
+    }
+
+    header svg {
+      height: 100%;
+    }
+
+    footer {
+      font-size: 12px;
+      color: #a5a5a8;
+      padding: 45px;
+    }
+
+    .content {
+      border-top: 2px #fff solid;
+      padding: 45px;
+      background: #ededed;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .title {
+      font-size: 36px;
+      font-weight: 300;
+      line-height: 65px;
+      border-bottom: 1px #fff solid;
+    }
+
+    .pager {
+      width: 50%;
+    }
+
+    .page {
+      display: block;
+      overflow: hidden;
+      text-decoration: none;
+      margin-top: 30px;
+    }
+
+    .page .number {
+      float: left;
+      font-size: 13px;
+      color: #a5a5a8;
+    }
+
+    .page .name {
+      padding-left: 30px;
+      font-size: 14px;
+      color: #28292a;
+      margin-bottom: 5px;
+    }
+
+    .page .description {
+      padding-left: 30px;
+      font-size: 12px;
+      color: #636363;
+    }
+
+    .click {
+      font-size: 12px;
+      color: #636363;
+      border: 2px solid #fff;
+      padding: 5px 10px;
+      display: inline-block;
+      margin-left: 30px;
+      margin-top: 10px;
+    }
+
+    .page:hover,
+    .page:hover .number,
+    .page:hover .name,
+    .page:hover .description {
+      color: #a5a5a8;
+    }
+
+    .window {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      right: 40px;
+      top: 50%;
+      transform: translateY(-50%) translateX(25%) scale(0.5);
+    }
+
+    .click:after {
+      content: 'показать';
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+      border: 4px #fff solid;
+      background: #fff;
+    }
+  </style>
+  <script>
+    var pager = [
+      ['home.html', '01', 'Home', 'Home page'],
+      ['calltracking.html', '02', 'Calltracking', 'Calltracking page'],
+      ['albato.html', '03', 'Albato', 'Albato page'],
+      ['analytics.html', '04', 'Analytics', 'Analytics page'],
+      ['dynamic-calltracking.html', '05', 'Dynamic calltracking', 'Dynamic calltracking page'],
+      ['static-calltracking.html', '06', 'Static calltracking', 'Static calltracking page'],
+      ['what-is-calltracking.html', '07', 'What is calltracking', 'What is calltracking page'],
+      ['context-tools.html', '08', 'Context-tools', 'Context-tools page'],
+      ['page404.html', '09', 'Page 404', 'Page 404'],
+      ['page500.html', '10', 'Page 500', 'Page 500'],
+      ['predict.html', '11', 'Predict', 'Predict page'],
+      ['antifraud.html', '12', 'Antifraud', 'Antifraud page'],
+      ['underway.html', '13', 'Underway page', 'Underway page'],
+      ['optimizer.html', '14', 'Optimizer page', 'Optimizer page'],
+      ['checklists.html', '15', 'Checklists page', 'Checklists page'],
+      ['checklist.html', '16', 'Checklist Items page', 'Checklist Items page'],
+      ['checklist-product.html', '16', 'Checklist Product page', 'Checklist Product page'],
+      ['checklist-email.html', '16', 'Checklist email-letter page', 'Checklist email-letter page'],
+      ['prices-table.html', '16', 'Calltouch prices table', 'Calltouch prices table'],
+      ['rates.html', '16', 'Calltouch rates page', 'Calltouch rates page'],
+      ['callback.html', '17', 'Callback page', 'Callback page'],
+      ['about.html', '18', 'About page', 'About page'],
+      ['new-rates.html', '19', 'Calltouch new-rates page', 'Calltouch new-rates page'],
+      ['new-analytics.html', '20', 'Calltouch new-analytics page', 'Calltouch new-analytics page'],
+      ['test-start.html', '21', 'Test start page', 'Test start page'],
+      ['test-process.html', '22', 'Test process page', 'Test process page'],
+      ['test-finish.html', '23', 'Test finish page', 'Test finish page'],
+      ['new-predict.html', '24', 'New predict page', 'New predict page'],
+      ['event-page.html', '25', 'Event page', 'Event page'],
+      ['timetable.html', '26', 'Timetable page', 'Timetable page'],
+      ['about-mm.html', '27', 'About-mm page', 'About-mm page'],
+      ['calendar.html', '28', 'Calendar', 'Calendar page'],
+      ['event-page-wbg.html', '29', 'Event page wbg', 'Event page wbg']
+    ];
+  </script>
+  <header></header>
+  <div class="content">
+    <div class="title">Calltouch markup</div>
+    <div class="pager"></div>
+  </div>
+  <div class="window">
+    <iframe src="" width="468" height="60" align="left">Ваш браузер не поддерживает плавающие фреймы!</iframe>
+  </div>
+  <footer></footer>
+  <script src="http://code.jquery.com/jquery-2.1.4.min.js"></script>
+  <script>
+    $(document).ready(function()
+    {
+      var links = '';
+      for (var i = 0, length = pager.length; i < length; i++)
+      {
+        links += '<a class="page" href="' + pager[i][0] + '"><div class="number">' + pager[i][1] + '</div><div class="name">' + pager[i][2] + '</div><div class="description">' + pager[i][3] + '</div><div class="click"></div> </a>';
+      }
+      $('.pager').append(links);
+      $('.page .click').click(function()
+      {
+        url = $(this).parent().attr('href');
+        $('iframe').attr('src', url);
+        return false
+      });
+    });
+  </script>
+</html>
