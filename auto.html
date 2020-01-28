@@ -245,7 +245,7 @@
     <main class="content" data-page="auto">
       <section class="auto-intro">
         <div class="container">
-          <div class="auto-intro__img"></div>
+          <img class="auto-intro__img" src="./static/img/auto/intro.svg">
           <h1 class="auto-intro__title">
             <b>Calltouch</b>для автомобильной индустрии</h1>
           <div class="auto-intro__subtitle">Система сквозной аналитики, коллтрекинга и управления маркетингом</div>
@@ -288,8 +288,8 @@
             </div>
           </div>
           <div class="auto-intro__actions">
-            <a class="auto-intro__btn auto-intro__connect" href="">Подключиться</a>
-            <a class="auto-intro__btn auto-intro__get" href="">Рассчитать</a>
+            <a class="auto-intro__btn auto-intro__connect" href="https://my.calltouch.ru/user/registration">Подключиться</a>
+            <a class="auto-intro__btn auto-intro__get anchor" href="#calculate">Рассчитать</a>
           </div>
         </div>
       </section>
@@ -299,58 +299,60 @@
         </div>
         <div class="auto-products__list swiper-container" id="auto-intro-slider">
           <div class="swiper-wrapper">
-            <div class="auto-products__item swiper-slide">
+            <a class="auto-products__item swiper-slide" href="#">
               <div class="auto-products__icon">
                 <img src="./static/img/auto/platform-128.svg">
               </div>
               <div class="auto-products__name">Сквозная аналитика</div>
               <div class="auto-products__description">Все данные и отчеты в одном интерфейсы</div>
               <div class="auto-products__price">от 990 ₽</div>
-            </div>
-            <div class="auto-products__item swiper-slide">
+            </a>
+            <a class="auto-products__item swiper-slide" href="#">
               <div class="auto-products__icon">
                 <img src="./static/img/auto/calltracking-128.svg">
               </div>
               <div class="auto-products__name">Коллтрекинг</div>
               <div class="auto-products__description">Определение источника входящих звонков</div>
-            </div>
-            <div class="auto-products__item swiper-slide">
+            </a>
+            <a class="auto-products__item swiper-slide" href="#">
               <div class="auto-products__icon">
                 <img src="./static/img/auto/callback-128.svg">
               </div>
               <div class="auto-products__name">Обратный звонок</div>
               <div class="auto-products__description">Виджет обратного звонка на ваш сайт</div>
-            </div>
-            <div class="auto-products__item swiper-slide">
+            </a>
+            <a class="auto-products__item swiper-slide" href="#">
               <div class="auto-products__icon">
                 <img src="./static/img/auto/predict-128.svg">
               </div>
               <div class="auto-products__name">Предикт</div>
               <div class="auto-products__description">Автоматический анализ качества звонков</div>
-            </div>
-            <div class="auto-products__item swiper-slide">
+            </a>
+            <a class="auto-products__item swiper-slide" href="#">
               <div class="auto-products__icon">
                 <img src="./static/img/auto/optimizator-128.svg">
               </div>
               <div class="auto-products__name">Оптимизатор</div>
               <div class="auto-products__description">Автоматическое управление контекстной рекламой</div>
-            </div>
-            <div class="auto-products__item swiper-slide">
+            </a>
+            <a class="auto-products__item swiper-slide" href="#">
               <div class="auto-products__icon">
                 <img src="./static/img/auto/antifraud-128.svg">
               </div>
               <div class="auto-products__name">Антифрод</div>
               <div class="auto-products__description">Автоматическая защита от накрутки звонков</div>
-            </div>
+            </a>
           </div>
         </div>
       </section>
-      <section class="auto-direct">
+      <section class="auto-direct" id="autoplay-trigger">
         <div class="container">
           <div class="auto-direct__title">Для кого?</div>
           <div class="auto-direct__list">
             <div class="auto-direct__item">
-              <div class="auto-direct__icon"></div>
+              <div class="auto-direct__icon">
+                <img src="./static/img/auto/direct1.svg">
+              </div>
               <div class="auto-direct__name">Руководитель дилерского центра</div>
               <div class="auto-direct__description">
                 <div class="auto-direct__description-item">Контроль эффективности рекламы в продажу</div>
@@ -360,7 +362,9 @@
               </div>
             </div>
             <div class="auto-direct__item">
-              <div class="auto-direct__icon"></div>
+              <div class="auto-direct__icon">
+                <img src="./static/img/auto/direct2.svg">
+              </div>
               <div class="auto-direct__name">Руководитель отдела маркетинга</div>
               <div class="auto-direct__description">
                 <div class="auto-direct__description-item">Контроль работы агентств</div>
@@ -370,7 +374,9 @@
               </div>
             </div>
             <div class="auto-direct__item">
-              <div class="auto-direct__icon"></div>
+              <div class="auto-direct__icon">
+                <img src="./static/img/auto/direct3.svg">
+              </div>
               <div class="auto-direct__name">Руководитель отдела продаж</div>
               <div class="auto-direct__description">
                 <div class="auto-direct__description-item">Контроль работы сотрудника с помощью прослушивания звонков</div>
@@ -380,7 +386,9 @@
               </div>
             </div>
             <div class="auto-direct__item">
-              <div class="auto-direct__icon"></div>
+              <div class="auto-direct__icon">
+                <img src="./static/img/auto/direct4.svg">
+              </div>
               <div class="auto-direct__name">Бренд менеджер</div>
               <div class="auto-direct__description">
                 <div class="auto-direct__description-item">Показатели по конверсии до запроса для эффективного распределения бюджета</div>
@@ -396,6 +404,131 @@
         <div class="container">
           <div class="auto-analytic__title">Сквозная аналитика</div>
           <div class="auto-analytic__subtitle">Делайте выводы об эффективности рекламы на основе полных данных от показов и затрат на рекламу до денег в кассе, собрав все данные в одном окне.</div>
+          <div class="auto-analytic__slider">
+            <div class="swiper-container" id="auto-analytic-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./static/img/ecommerce/screenshot-1.jpg">
+                  <div class="auto-analytic__comment com1">
+                    <div class="auto-analytic__comment-title">Подробная статистика по всему трафику. От показов рекламы до сделок.</div>
+                    <div class="auto-analytic__comment-text">Если по отчету реклама в Яндексе принесла 10 сделок, а facebook 0, перераспределите бюджет в сторонуЯндекс. Вкладывайте деньги тольков эффективную рекламу.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./static/img/ecommerce/screenshot-2.jpg">
+                  <div class="auto-analytic__comment com2">
+                    <div class="auto-analytic__comment-title">Воронки и графики для быстрого мониторинга</div>
+                    <div class="auto-analytic__comment-text">Основные показатели эффективности на одном экране. Настройте нужные вам показатели и фильтры за пару кликов.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./static/img/ecommerce/screenshot-3.jpg">
+                  <div class="auto-analytic__comment com3">
+                    <div class="auto-analytic__comment-title">Тепловая карта звонков и заявок</div>
+                    <div class="auto-analytic__comment-text">Настройте временной таргетинг и корректировки показа рекламы на то время, когда вас ищет клиент. Оптимизируйте работу менеджеров с учетом нагрузки по дням и часам.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./static/img/ecommerce/screenshot-4.jpg">
+                  <div class="auto-analytic__comment com4">
+                    <div class="auto-analytic__comment-title">Анализируйте конверсию по устройствам и браузерам</div>
+                    <div class="auto-analytic__comment-text">Настраивайте корректировки для рекламы в зависимости от конверсии с устройств. Следите и улучшайте работу сайта.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./static/img/ecommerce/screenshot-5.jpg">
+                  <div class="auto-analytic__comment com5">
+                    <div class="auto-analytic__comment-title">Оценивайте, как изменения на сайте и в рекламе отразились на результатах.</div>
+                    <div class="auto-analytic__comment-text">Вносите изменения в сайт и рекламные кампании, запускаете новые виды рекламы? Как оценить результаты? Сравните два периода до и после.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./static/img/ecommerce/screenshot-6.jpg">
+                  <div class="auto-analytic__comment com6">
+                    <div class="auto-analytic__comment-title">Выделите номер для каждого вида рекламы, чтобы точно знать, откуда звонят клиенты.</div>
+                    <div class="auto-analytic__comment-text">Используйте статические номера для оффлайн рекламы, чтобы точно знать, какое размещение принесло звонки.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./static/img/ecommerce/screenshot-7.jpg">
+                  <div class="auto-analytic__comment com7">
+                    <div class="auto-analytic__comment-title">Будьте с клиентами на связи. Виджет повышает конверсию с сайта на 30%. Бонус: 50 минут бесплатно для новых клиентов.</div>
+                    <div class="auto-analytic__comment-text">Форма заказа звонка для быстрой связи вашего менеджера с клиентом. Настройте дизайн, условия показа и переадресации. Собирайте заявки в нерабочее время. Установите автопрозвон заявок с форм вашего сайта или Facebook Leads. Тестируйте
+                      разные формы и тексты. А, чтобы не упустить ни один звонок, включите прозвон пропущенных.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./static/img/ecommerce/screenshot-8.jpg">
+                  <div class="auto-analytic__comment com8">
+                    <div class="auto-analytic__comment-title">Слушайте и анализируйте разговоры менеджеров с вашими потенциальными клиентами.</div>
+                    <div class="auto-analytic__comment-text">Контролируйте работу операторов и выстраивайте лучшие скрипты продаж. Следите за количеством неотвеченных звонков. Помечайте звонки специальным тегом, чтобы вывести их в отдельный столбец в отчете.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./static/img/ecommerce/screenshot-9.jpg">
+                  <div class="auto-analytic__comment com9">
+                    <div class="auto-analytic__comment-title">Инструмент для сбора контактов посетителей вашего сайта. </div>
+                    <div class="auto-analytic__comment-text">Не нужно больше придумывать хитрые способы, чтобы получить e-mail клиентов. Вы больше не попадете в спам. Ведь клиенты, заинтересованные в услугах компании, сами придут на ваш сайт и оставят адрес электронной почты.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./static/img/ecommerce/screenshot-10.jpg">
+                  <div class="auto-analytic__comment com10">
+                    <div class="auto-analytic__comment-title">Больше мессенджеров – больше возможностей продаж</div>
+                    <div class="auto-analytic__comment-text">Добавьте разные виджеты для одной кнопки: обратный звонок, умную заявку, ссылки на мессенджеры и социальные сети: Facebook, VK, чате Telegram или WhatsApp и другие. Таким образом клиенты смогут выбрать наиболее удобный способ связи
+                      с вашей компанией.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./static/img/ecommerce/screenshot-11.jpg">
+                  <div class="auto-analytic__comment com11">
+                    <div class="auto-analytic__comment-title">Предложите клиенту приехать к вам в офис бесплатно с помощью виджета CallToVisit.</div>
+                    <div class="auto-analytic__comment-text">Форма на сайте для вызова такси до вашего офиса. Посетитель сайта оставляет свой адрес. После этого за ним приезжает такси, которое довезет его к вам офис для совершения сделки. Не теряйте прибыль по причине неудобного расположения
+                      вашего офиса продаж. Такси прямо до офиса – гарантия того, что клиент к вам приедет.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./static/img/ecommerce/screenshot-12.jpg">
+                  <div class="auto-analytic__comment com12">
+                    <div class="auto-analytic__comment-title">Данные по каждой сделке доступны в личном кабинете Calltouch.</div>
+                    <div class="auto-analytic__comment-text">В Calltouch автоматически собираются актуальные данные по всем видам рекламы и по всем сделкам с клиентами. Показатели рекламы как на ладони: от звонка до денег в кассе. Отслеживайте сумму дохода с каждого источника рекламы. Это даст
+                      четкое представление о том, окупаются ли инвестиции.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./static/img/ecommerce/screenshot-13.jpg">
+                  <div class="auto-analytic__comment com13">
+                    <div class="auto-analytic__comment-title">Увеличивайте прибыль интернет магазина</div>
+                    <div class="auto-analytic__comment-text">Отслеживайте заявки, звонки, корзины и продажи с них с привязкой к источнику перехода. Полноценная аналитика от показов рекламы до покупок, не только в разрезе источников трафика, но и отдельно по каждому товару.</div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <img src="./static/img/ecommerce/screenshot-14.jpg">
+                  <div class="auto-analytic__comment com14">
+                    <div class="auto-analytic__comment-title">Отслеживайте весь путь ваших клиентов: сколько раз заходили на ваш сайт, по каким каналам, какая реклама повлияла на их решение о покупке.</div>
+                    <div class="auto-analytic__comment-text">Путь к покупке бывает тернистым. Клиент зашел на ваш сайт с медийной рекламы. Позже вернулся с объявления в контекстной рекламе, но так и не позвонил. В третий раз он увидел ваше предложение в соц. сетях, и, наконец, купил. Важно знать,
+                      все источники, откуда приходил клиент, чтобы можно было правильно оптимизировать расходы на эти виды рекламы.</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-pagination auto-analytic__slider__pagination"></div>
+            <div class="auto-analytic__tabs">
+              <div class="auto-analytic__tab active" data-scale-id="0">Детальная статистика</div>
+              <div class="auto-analytic__tab" data-scale-id="1">Дашборд</div>
+              <div class="auto-analytic__tab" data-scale-id="2">Технологии и устройства</div>
+              <div class="auto-analytic__tab" data-scale-id="3">Сравнение периодов</div>
+              <div class="auto-analytic__tab" data-scale-id="4">Статический коллтрекинг</div>
+              <div class="auto-analytic__tab" data-scale-id="5">Виджет обратного звонка</div>
+              <div class="auto-analytic__tab" data-scale-id="6">Записи разговоров звонков</div>
+              <div class="auto-analytic__tab" data-scale-id="7">Умная заявка</div>
+              <div class="auto-analytic__tab" data-scale-id="8">CallToVisit</div>
+              <div class="auto-analytic__tab" data-scale-id="9">МиниCRM</div>
+              <div class="auto-analytic__tab" data-scale-id="10">Модуль E-commerce</div>
+              <div class="auto-analytic__tab" data-scale-id="11">Контроль менеджеров</div>
+              <div class="auto-analytic__tab" data-scale-id="12">Мультиканальность</div>
+            </div>
+          </div>
         </div>
       </section>
       <section class="auto-integrations">
@@ -424,10 +557,10 @@
             </div>
           </div>
           <div class="auto-integrations__actions">
-            <a class="auto-integrations__all" href="">Смотреть все</a>
+            <a class="auto-integrations__all" href="https://www.calltouch.ru/integration/" target="_blank">Смотреть все</a>
             <div class="auto-integrations__help">
               <div class="auto-integrations__help-text">Не нашли вашей CRM?</div>
-              <div class="auto-integrations__help-btn">Заполните бриф</div>
+              <a class="auto-integrations__help-btn" href="https://calltouch.typeform.com/to/pIdyTR/" target="_blank">Заполните бриф</a>
             </div>
           </div>
           <div class="auto-integrations__faq">Даже, если вы используете самописную систему, вы можете легко настроить передачу данных о заявках и звонках из Calltouch, и о сделках и продажах в кабинет из вашей CRM
@@ -436,8 +569,8 @@
       </section>
       <section class="auto-banner">
         <div class="container">
-          <div class="auto-banner__title">Здесь нужно написать какой-то призыв</div>
-          <a class="auto-banner__btn" href="">Подключиться</a>
+          <div class="auto-banner__title">Получите доступ в ваш личный кабинет прямо сейчас </div>
+          <a class="auto-banner__btn" href="https://my.calltouch.ru/user/registration" target="_blank">Подключиться</a>
         </div>
       </section>
       <section class="auto-calltraking">
@@ -463,10 +596,17 @@
           <div class="auto-calltraking__info">
             <div class="auto-calltraking__calls">
               <div class="auto-calltraking__calls__title">Журнал звонков</div>
-              <div class="auto-calltraking__calls__list">
-                <div class="auto-calltraking__calls__item"></div>
-                <div class="auto-calltraking__calls__item"></div>
+              <div class="auto-calltraking__calls__list swiper-container" id="calls-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./static/img/auto/call-journal.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/img/auto/call-journal+text.jpg">
+                  </div>
+                </div>
               </div>
+              <div class="auto-calltraking__calls__pagination"></div>
             </div>
             <div class="auto-calltraking__content">
               <div class="auto-calltraking__boost">Удобный плеер и мини CRM</div>
@@ -485,7 +625,31 @@
             <span>50</span>минут бесплатно новым клиентам</div>
           <div class="auto-widget__callback__title">Обратный звонок</div>
           <div class="auto-widget__callback">
-            <div class="auto-widget__callback__list"></div>
+            <div class="auto-widget__callback__list">
+              <div class="swiper-container" id="callback-slider">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./static/img/auto/callback1.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/img/auto/callback2.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/img/auto/callback3.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/img/auto/callback4.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/img/auto/callback5.jpg">
+                  </div>
+                  <div class="swiper-slide">
+                    <img src="./static/img/auto/callback6.jpg">
+                  </div>
+                </div>
+              </div>
+              <div class="auto-widget__callback__list__pagination"></div>
+            </div>
             <div class="auto-widget__callback__content">
               <div class="auto-widget__callback__boost">От 5 рублей/минута</div>
               <div class="auto-widget__callback__boost">Установка в 2 клика</div>
@@ -496,7 +660,7 @@
               <div class="auto-widget__callback__boost">Гибкие настройки переадресации</div>
               <div class="auto-widget__callback__boost">Голосовое оповещение менеджеров</div>
               <div class="auto-widget__callback__boost">Поддержка DTMF</div>
-              <a class="auto-widget__callback__btn" href="">Подробнее</a>
+              <a class="auto-widget__callback__btn" href="https://www.calltouch.ru/product/callback/" target="_blank">Подробнее</a>
             </div>
           </div>
         </div>
@@ -506,52 +670,73 @@
           <div class="auto-sale__title">Проводите акции?</div>
           <div class="auto-sale__info">
             <div class="auto-sale__subtitle">Создайте промо виджет и расскажите клиентам о ночи продаж, выгодах и преимуществах вашего дилерского центра.</div>
-            <div class="auto-sale__btn">Проводите акции?</div>
+            <a class="auto-sale__btn" href="https://www.calltouch.ru/product/callback/" target="_blank">Подробнее</a>
           </div>
-          <div class="auto-sale__list"></div>
+          <div class="auto-sale__list">
+            <div class="swiper-container" id="auto-sale-slider">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./static/img/auto/action1.jpg">
+                </div>
+                <div class="swiper-slide">
+                  <img src="./static/img/auto/action2.jpg">
+                </div>
+              </div>
+            </div>
+            <div class="auto-sale__list__pagination"></div>
+          </div>
         </div>
       </section>
       <section class="auto-promo">
         <div class="container">
           <div class="auto-promo__title">Промо-лендинг</div>
           <div class="auto-promo__subtitle">Адаптивная страница для контекстной рекламы, SMS и Email рассылок за 5 минут.</div>
-          <div class="auto-promo__preview"></div>
+          <div class="auto-promo__preview">
+            <img class="auto-promo__preview__desk" src="./static/img/auto/promo-d.jpg">
+            <img class="auto-promo__preview__mob" src="./static/img/auto/promo-m.jpg">
+          </div>
           <div class="auto-promo__list">
-            <div class="auto-promo__item">Уникальный URL-адрес</div>
             <div class="auto-promo__item">Минималистичный дизайн</div>
             <div class="auto-promo__item">Подробная статистика для анализа эффективности страниц и рекламы</div>
             <div class="auto-promo__item">Версия для ПК и мобильных устройств</div>
+            <div class="auto-promo__item">Уникальный URL-адрес</div>
             <div class="auto-promo__item">Неограниченное количество страниц без привлечения разработки</div>
             <div class="auto-promo__item">Оплата только за состоявшиеся разговоры по вашему тарифу обратного звонка</div>
             <div class="auto-promo__item">Определение источника обращения благодаря встроенному скрипту подмены</div>
             <div class="auto-promo__item">Проведение А/Б тестов</div>
           </div>
-          <div class="auto-promo__btn">Подробнее</div>
+          <a class="auto-promo__btn" href="https://www.calltouch.ru/product/lidogeneratsiya/" target="_blank">Подробнее</a>
         </div>
       </section>
       <section class="auto-banner">
         <div class="container">
-          <div class="auto-banner__title">Здесь нужно написать какой-то призыв</div>
-          <div class="auto-banner__btn">Подключиться</div>
+          <div class="auto-banner__title">Получите доступ в ваш личный кабинет прямо сейчас</div>
+          <a class="auto-banner__btn" href="https://my.calltouch.ru/user/registration" target="_blank">Подключиться</a>
         </div>
       </section>
       <section class="auto-fast">
         <div class="container">
           <div class="auto-fast__title">Оперативно обрабатывайте звонки и заявки</div>
-          <div class="auto-fast__img"></div>
+          <img class="auto-fast__img" src="./static/img/auto/fast.svg">
           <div class="auto-fast__list">
             <div class="auto-fast__item">
-              <div class="auto-fast__icon"></div>
+              <div class="auto-fast__icon">
+                <img src="./static/img/auto/fast3.svg">
+              </div>
               <div class="auto-fast__name">Прозвон форм с сайта</div>
               <div class="auto-fast__text">Настройте скрипт обрабатывать заявки с форм на сайте. Сразу после отправки формы Calltouch инициирует звонок и соединит вашего менеджера с клиентом.</div>
             </div>
             <div class="auto-fast__item">
-              <div class="auto-fast__icon"></div>
+              <div class="auto-fast__icon">
+                <img src="./static/img/auto/fast2.svg">
+              </div>
               <div class="auto-fast__name">Прозвон форм с Facebook Leads</div>
               <div class="auto-fast__text">Обрабатывайте заявки из Facebook Leads максимально оперативно с помощью обратного звонка без скачиваний файлов и запросов к отделу маркетинга. После отправки формы Calltouch инициирует звонок между менеджером и клиентом.</div>
             </div>
             <div class="auto-fast__item">
-              <div class="auto-fast__icon"></div>
+              <div class="auto-fast__icon">
+                <img src="./static/img/auto/fast1.svg">
+              </div>
               <div class="auto-fast__name">Прозвон пропущенных звонков</div>
               <div class="auto-fast__text">Система автоматически прозванивает все пропущенные звонки в течение 5 минут, пока клиент еще не передумал.</div>
               <div class="auto-fast__sub">По нашим данным привлечение лида с контекстной рекламы в автотематике стоит от 2300 до 800 рублей.</div>
@@ -560,7 +745,7 @@
           </div>
         </div>
       </section>
-      <section class="auto-target">
+      <section class="auto-target auto-target--predict">
         <div class="container">
           <div class="auto-target__header">
             <div class="auto-target__logo">
@@ -579,13 +764,16 @@
               <div class="auto-target__item">Расшифрует записи в текст с возможностью поиска по слову или фразе</div>
               <div class="auto-target__item">Позволяет использовать произвольные теги</div>
               <div class="auto-target__item">Экономит затраты и время ваших сотрудников на прослушивание звонков</div>
-              <div class="auto-target__btn">Подробнее</div>
+              <a class="auto-target__btn" href="https://www.calltouch.ru/product/predict/" target="_blank">Подробнее</a>
             </div>
           </div>
         </div>
       </section>
-      <section class="auto-target">
+      <section class="auto-target auto-target--optimizator">
         <div class="container">
+          <div class="auto-target__img">
+            <img src="./static/img/auto/optimizator-ill.svg">
+          </div>
           <div class="auto-target__header">
             <div class="auto-target__logo">
               <img src="./static/img/auto/optimizator-128.svg">
@@ -595,11 +783,11 @@
             <div class="auto-target__description">Укажите целевое действие и его приемлемую стоимость или суточный расход. Оптимизатор спрогнозирует и применит ставки для достижения наилучшего результата по выбранным рекламным кампаниям.</div>
             <div class="auto-target__text">Подключите оптимизатор и получите</div>
             <div class="auto-target__top">на 45% больше лидов за тот же бюджет</div>
-            <div class="auto-target__btn">Подробнее</div>
+            <a class="auto-target__btn" href="https://www.calltouch.ru/product/optimizator/" target="_blank">Подробнее</a>
           </div>
         </div>
       </section>
-      <section class="auto-target">
+      <section class="auto-target auto-target--antifrod">
         <div class="container">
           <div class="auto-target__header">
             <div class="auto-target__logo">
@@ -620,26 +808,32 @@
               <div class="auto-target__item">Можно оценить рекламную площадку на фрод уже по итогам первого месяца</div>
               <div class="auto-target__item">Экономит время сотрудников на прослушивании звонков</div>
               <div class="auto-target__item">Исключает человеческий фактор, т.к. используются объективные критерии проверки</div>
-              <div class="auto-target__btn">Подробнее</div>
+              <a class="auto-target__btn" href="https://www.calltouch.ru/product/antifrod/" target="_blank">Подробнее</a>
             </div>
           </div>
         </div>
       </section>
-      <section class="auto-data">
+      <section class="auto-data" id="calculate">
         <div class="container">
           <div class="auto-data__title">Ваши данные будут в безопасности</div>
           <div class="auto-data__subtitle">Разграничивайте доступ между дилерами, сотрудниками и подрядчиками.</div>
           <div class="auto-data__list">
             <div class="auto-data__item">
-              <div class="auto-data__logo"></div>
+              <div class="auto-data__logo">
+                <img src="./static/img/auto/data1.svg">
+              </div>
               <div class="auto-data__text">Импортер</div>
             </div>
             <div class="auto-data__item">
-              <div class="auto-data__logo"></div>
+              <div class="auto-data__logo">
+                <img src="./static/img/auto/data2.svg">
+              </div>
               <div class="auto-data__text">Дилер</div>
             </div>
             <div class="auto-data__item">
-              <div class="auto-data__logo"></div>
+              <div class="auto-data__logo">
+                <img src="./static/img/auto/data3.svg">
+              </div>
               <div class="auto-data__text">Подрядчик</div>
             </div>
           </div>
@@ -672,7 +866,7 @@
                 </div>
               </div>
               <div class="auto-cases__description">Когда всё хорошо, кажется, лучше ничего не трогать. Но «Рольф» не знает полумер. Пришел, увидел и не прогадал: посещаемость дилерского центра выросла на 162%. И это не предел.</div>
-              <div class="auto-cases__btn">Подробнее</div>
+              <a class="auto-cases__btn" href="_" target="_blank">Подробнее</a>
             </div>
             <div class="auto-cases__item">
               <div class="auto-cases__type">Авторитейл</div>
@@ -696,7 +890,7 @@
                 </div>
               </div>
               <div class="auto-cases__description">Компания «Газелькин» поделилась кейсом, в котором рассказала, как коллтрекинг помог отследить эффективность оффлайн-рекламы.</div>
-              <div class="auto-cases__btn">Подробнее</div>
+              <a class="auto-cases__btn" href="_" target="_blank">Подробнее</a>
             </div>
             <div class="auto-cases__item">
               <div class="auto-cases__type">Авторитейл</div>
@@ -720,7 +914,8 @@
                 </div>
               </div>
               <div class="auto-cases__description">Наталья Скуб, менеджер по маркетингу сети автотехцентров Яуза Моторс, рассказала о том, как интеграция CRM компании и Calltouch позволила проследить источники лидов и увеличить конверсию на 28.5%</div>
-              <div class="auto-cases__btn">Подробнее</div>
+              <a class="auto-cases__btn" href="_"
+                target="_blank">Подробнее</a>
             </div>
           </div>
         </div>
@@ -728,34 +923,34 @@
       <section class="auto-feedback">
         <div class="container">
           <div class="auto-feedback__title">Отзывы</div>
-        </div>
-        <div class="auto-feedback__list swiper-container" id="auto-feedback-slider">
-          <div class="swiper-wrapper">
-            <div class="auto-feedback__item swiper-slide">
-              <div class="auto-feedback__company">УК «Охотный ряд»</div>
-              <div class="auto-feedback__name">Сергей Иванов</div>
-              <div class="auto-feedback__type">Специалист по электронной коммерции</div>
-              <div class="auto-feedback__text">Удобный интерфейс, сквозная аналитика и легкая интеграция с другими инструментами позволили этому сервису получить нашу прочную симпатию.</div>
-            </div>
-            <div class="auto-feedback__item swiper-slide">
-              <div class="auto-feedback__company">Квартал «Новые Котельники»</div>
-              <div class="auto-feedback__name">Артем Воднев</div>
-              <div class="auto-feedback__type">Менеджер по рекламе</div>
-              <div class="auto-feedback__text">Сервис Calltouch поднял высокую планку на рынке сквозной аналитики, а уровень знаний технической поддержки достаточно высок, чтобы решить любую маркетинговую задачу в краткие сроки.</div>
-            </div>
-            <div class="auto-feedback__item swiper-slide">
-              <div class="auto-feedback__company">Сеть клубов «Территория Фитнеса»</div>
-              <div class="auto-feedback__name">Вадим Ткачев</div>
-              <div class="auto-feedback__type">Руководитель отдела интернет- маркетинга</div>
-              <div class="auto-feedback__text">При помощи сервиса мы успешно выстраиваем воронки продаж по всем источникам трафика, ведем сквозную аналитику и оптимизируем рекламные кампании.</div>
+          <div class="auto-feedback__list swiper-container" id="auto-feedback-slider">
+            <div class="swiper-wrapper">
+              <div class="auto-feedback__item swiper-slide">
+                <div class="auto-feedback__company">УК «Охотный ряд»</div>
+                <div class="auto-feedback__name">Сергей Иванов</div>
+                <div class="auto-feedback__type">Специалист по электронной коммерции</div>
+                <div class="auto-feedback__text">Удобный интерфейс, сквозная аналитика и легкая интеграция с другими инструментами позволили этому сервису получить нашу прочную симпатию.</div>
+              </div>
+              <div class="auto-feedback__item swiper-slide">
+                <div class="auto-feedback__company">Квартал «Новые Котельники»</div>
+                <div class="auto-feedback__name">Артем Воднев</div>
+                <div class="auto-feedback__type">Менеджер по рекламе</div>
+                <div class="auto-feedback__text">Сервис Calltouch поднял высокую планку на рынке сквозной аналитики, а уровень знаний технической поддержки достаточно высок, чтобы решить любую маркетинговую задачу в краткие сроки.</div>
+              </div>
+              <div class="auto-feedback__item swiper-slide">
+                <div class="auto-feedback__company">Сеть клубов «Территория Фитнеса»</div>
+                <div class="auto-feedback__name">Вадим Ткачев</div>
+                <div class="auto-feedback__type">Руководитель отдела интернет- маркетинга</div>
+                <div class="auto-feedback__text">При помощи сервиса мы успешно выстраиваем воронки продаж по всем источникам трафика, ведем сквозную аналитику и оптимизируем рекламные кампании.</div>
+              </div>
             </div>
           </div>
         </div>
       </section>
       <section class="auto-banner auto-banner--light">
         <div class="container">
-          <div class="auto-banner__title">Здесь нужно написать какой-то призыв</div>
-          <div class="auto-banner__btn">Подключиться</div>
+          <div class="auto-banner__title">Получите доступ в ваш личный кабинет прямо сейчас</div>
+          <a class="auto-banner__btn" href="https://my.calltouch.ru/user/registration" target="_blank">Подключиться</a>
         </div>
       </section>
     </main>

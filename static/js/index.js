@@ -36086,36 +36086,141 @@ var Common = exports.Common = function () {
   }, {
     key: 'autoSliders',
     value: function autoSliders() {
+      var isInViewport = function isInViewport(e) {
+        var _ref3 = arguments.length > 1 && arguments[1] !== undefined ? arguments[1] : e.getBoundingClientRect(),
+            t = _ref3.top,
+            h = _ref3.height;
+
+        return t <= innerHeight && t + h >= 0;
+      };
       var $autoIntroSlider = new _swiper2.default('#auto-intro-slider', {
         slidesPerView: 'auto',
+        direction: 'horizontal',
         spaceBetween: 0,
         loop: true,
         freeMode: true,
-        speed: 5000,
+        speed: 2500,
+        waitForTransition: false,
         autoplay: {
-          delay: 0,
-          disableOnInteraction: false
+          delay: 300
         }
       });
+      $autoIntroSlider.autoplay.stop();
+      (0, _jquery2.default)(window).on('scroll.ratesEffectSlider', this.throttle(function () {
+        if (isInViewport(document.getElementById('autoplay-trigger'))) {
+          $autoIntroSlider.autoplay.start();
+          (0, _jquery2.default)(window).unbind('scroll.ratesEffectSlider');
+          console.log('triggered', $autoIntroSlider);
+        }
+      }));
 
       var $autoIntegrationSlider = new _swiper2.default('#auto-integrations-slider', {
-        slidesPerView: 'auto',
-        spaceBetween: 0,
+        slidesPerView: 4,
+        loopAdditionalSlides: 5,
+        spaceBetween: 16,
         loop: true,
-        freeMode: true,
-        speed: 5000,
+        speed: 2000,
         autoplay: {
-          delay: 0,
-          disableOnInteraction: false
+          delay: 2000
+        },
+        breakpoints: {
+          // when window width is <= 960px
+          1120: {
+            slidesPerView: 1
+          }
         }
       });
 
       var $autoFeedbackSlider = new _swiper2.default('#auto-feedback-slider', {
-        slidesPerView: 'auto',
-        spaceBetween: 24,
+        slidesPerView: 3,
         loop: true,
-        freeMode: true
+        spaceBetween: 24,
+        loopAdditionalSlides: 5,
+        breakpoints: {
+          // when window width is <= 960px
+          1120: {
+            slidesPerView: 1
+          }
+        }
       });
+
+      var $callsSlider = new _swiper2.default('#calls-slider', {
+        slidesPerView: 1,
+        effect: 'fade',
+        speed: 2000,
+        pagination: {
+          el: '.auto-calltraking__calls__pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        autoplay: {
+          delay: 4000
+        }
+      });
+
+      var $callbackSlider = new _swiper2.default('#callback-slider', {
+        slidesPerView: 1,
+        effect: 'fade',
+        speed: 2000,
+        pagination: {
+          el: '.auto-widget__callback__list__pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        autoplay: {
+          delay: 4000
+        }
+      });
+
+      var $saleSlider = new _swiper2.default('#auto-sale-slider', {
+        slidesPerView: 1,
+        effect: 'fade',
+        speed: 2000,
+        pagination: {
+          el: '.auto-sale__list__pagination',
+          type: 'bullets',
+          clickable: true
+        },
+        autoplay: {
+          delay: 4000
+        }
+      });
+    }
+  }, {
+    key: 'autoAnalyticSlider',
+    value: function autoAnalyticSlider() {
+      if (!(0, _jquery2.default)('#auto-analytic-slider').length) return false;
+      var $tabs = (0, _jquery2.default)('[data-scale-id]');
+
+      var $slider = new _swiper2.default('#auto-analytic-slider', {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        effect: 'fade',
+        pagination: {
+          el: '.auto-analytic__slider__pagination',
+          type: 'bullets'
+        },
+        autoHeight: true,
+        // autoplay: {
+        //   delay: 8000,
+        //   disableOnInteraction: false
+        // },
+        on: {
+          slideChange: function slideChange() {
+            $tabs.removeClass('active');
+            (0, _jquery2.default)('[data-scale-id=\'' + this.realIndex + '\']').addClass('active');
+          }
+        }
+      });
+
+      var changeSlide = function changeSlide(e) {
+        var index = e.target.dataset.scaleId;
+        $tabs.removeClass('active');
+        (0, _jquery2.default)('[data-scale-id=\'' + index + '\']').addClass('active');
+        $slider.slideTo(index, 400);
+      };
+
+      $tabs.on('click', changeSlide);
     }
   }, {
     key: 'freeRocketAnimation',
@@ -36170,6 +36275,7 @@ var Common = exports.Common = function () {
       this.lidogenerationSelector();
       this.ecommerceSlider();
       this.freeAbilitySlider();
+      this.autoAnalyticSlider();
       this.freeFeedbackSlider();
       this.freeRocketAnimation();
       this.autoSliders();
